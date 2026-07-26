@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1b28">
+<title>ページが見つかりません｜日下部税理士事務所</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root{ --ink:#0d1b28; --sky:#8fc0ec; --accent:#2e7cc3; }
+  *{ box-sizing:border-box; margin:0; }
+  body{
+    font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+    color:#fff;
+    background:
+      radial-gradient(90% 130% at 85% -10%, rgba(46,124,195,.32), transparent 55%),
+      linear-gradient(150deg,#10263d,var(--ink) 60%);
+    min-height:100vh; display:grid; place-items:center; text-align:center; padding:2rem; line-height:1.9;
+  }
+  .en{ font-family:"Outfit",sans-serif; font-weight:600; font-size:.72rem; letter-spacing:.42em; text-transform:uppercase; color:var(--sky); }
+  .code{ font-family:"Outfit",sans-serif; font-weight:300; font-size:clamp(5rem,20vw,9rem); line-height:1.05; letter-spacing:.04em;
+    color:transparent; -webkit-text-stroke:1.5px rgba(255,255,255,.75); margin:.4rem 0 .6rem; }
+  @supports not (-webkit-text-stroke: 1px black){ .code{ color:rgba(255,255,255,.85); } }
+  h1{ font-family:"Outfit","Zen Kaku Gothic New",sans-serif; font-weight:800; font-size:1.4rem; letter-spacing:.02em; margin-bottom:1rem; }
+  p{ color:rgba(255,255,255,.75); font-size:.95rem; margin-bottom:2.2rem; }
+  .btns{ display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap; }
+  a.btn{ display:inline-flex; align-items:center; gap:.5rem; padding:.9rem 1.8rem; border-radius:999px;
+    font-weight:600; font-size:.93rem; letter-spacing:.06em; text-decoration:none; transition:.3s cubic-bezier(.25,.6,.25,1); }
+  .primary{ background:#fff; color:var(--ink); }
+  .primary:hover{ background:var(--sky); transform:translateY(-2px); }
+  .outline{ border:1.5px solid rgba(255,255,255,.5); color:#fff; }
+  .outline:hover{ border-color:#fff; transform:translateY(-2px); }
+</style>
+</head>
+<body>
+  <main>
+    <p class="en">Page Not Found</p>
+    <div class="code" aria-hidden="true">404</div>
+    <h1>ページが見つかりませんでした</h1>
+    <p>お探しのページは移動または削除された可能性があります。<br>お手数ですが、トップページからお進みください。</p>
+    <div class="btns">
+      <a class="btn primary" href="/">トップページへ</a>
+      <a class="btn outline" href="/contact.html">お問い合わせ</a>
+    </div>
+  </main>
+</body>
+</html>
