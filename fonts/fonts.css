@@ -1,0 +1,11 @@
+/* 自前ホスティングのWebフォント（fontsource由来・woff2のみ） */
+@import "zen-kaku-gothic-new/400.css";
+@import "zen-kaku-gothic-new/500.css";
+@import "zen-kaku-gothic-new/700.css";
+@import "zen-kaku-gothic-new/900.css";
+@import "outfit/300.css";
+@import "outfit/400.css";
+@import "outfit/500.css";
+@import "outfit/600.css";
+@import "outfit/700.css";
+@import "outfit/800.css";
