@@ -2650,3 +2650,38 @@ a.plan-card:hover .plan-jump i { transform: translateY(3px); }
 .article-back { margin-top: 1.8rem; font-size: .95rem; }
 .article-back a { color: var(--color-primary); font-weight: 600; }
 .article-back a:hover { text-decoration: underline; }
+
+/* =========================================================================
+   コラム記事内の図版・表（親族図／グラフ／比較表）
+   ========================================================================= */
+.col-fig { margin: 1.6rem 0 1.9rem; }
+.col-fig svg { display: block; width: 100%; max-width: 560px; margin: 0 auto; height: auto; font-family: inherit; }
+.col-fig figcaption {
+  margin-top: .7rem; font-size: .85rem; line-height: 1.7;
+  color: var(--color-muted); text-align: center;
+}
+.col-fig--framed {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.2rem 1rem 1rem;
+}
+
+.col-table {
+  width: 100%; border-collapse: collapse;
+  margin: 1rem 0 1.6rem; font-size: .93rem;
+}
+.col-table th, .col-table td {
+  border: 1px solid var(--color-border-strong);
+  padding: .62rem .7rem; text-align: center; vertical-align: middle;
+}
+.col-table thead th { background: var(--color-primary); color: #fff; font-weight: 700; }
+.col-table tbody th { background: var(--color-primary-soft); color: var(--color-ink); text-align: left; font-weight: 700; }
+.col-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.col-table tr.is-total th, .col-table tr.is-total td { background: #eef4fb; font-weight: 700; color: var(--color-ink); }
+
+@media (max-width: 640px) {
+  .col-fig--framed { padding: .8rem .55rem .7rem; }
+  .col-table { font-size: .82rem; }
+  .col-table th, .col-table td { padding: .45rem .35rem; }
+}
