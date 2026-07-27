@@ -2663,6 +2663,22 @@ a.plan-card:hover .plan-jump i { transform: translateY(3px); }
 .col-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0 1.6rem; }
 .col-table-wrap .col-table { margin: 0; min-width: 480px; }
 
+/* =========================================================================
+   本文の強調表示（赤文字・黄色マーカー）
+   ※ 1章につき1か所程度にとどめること。多用すると強調の効果がなくなります。
+   ※ 赤とマーカーを同じ文に重ねて使わないこと（読みにくくなります）
+   ========================================================================= */
+.em-red { color: #c62828; font-weight: 700; }
+.em-mark {
+  font-weight: 700;
+  background-image: linear-gradient(transparent 58%, #ffe999 58%);
+  background-repeat: no-repeat;
+  padding: 0 .08em;
+}
+@media print {
+  .em-mark { background: #ffe999; }
+}
+
 @media (max-width: 640px) {
   .col-fig--framed { padding: .8rem .55rem .7rem; }
   .col-table { font-size: .82rem; }
