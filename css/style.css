@@ -2695,7 +2695,6 @@ a.plan-card:hover .plan-jump i { transform: translateY(3px); }
   line-height: 1.95; font-size: 1rem;
 }
 .col-intro p:last-child { margin-bottom: 0; }
-.col-intro .ci-hello { color: var(--color-ink); }
 .col-intro .ci-lead-in { margin-bottom: .7rem; font-weight: 600; color: var(--color-ink); }
 
 .col-qbox {
