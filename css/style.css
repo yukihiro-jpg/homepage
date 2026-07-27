@@ -2685,3 +2685,34 @@ a.plan-card:hover .plan-jump i { transform: translateY(3px); }
   .col-table { font-size: .82rem; }
   .col-table th, .col-table td { padding: .45rem .35rem; }
 }
+
+/* =========================================================================
+   コラム冒頭のごあいさつ＋「このコラムを読むと」ボックス
+   ========================================================================= */
+.col-intro { margin-bottom: 1.9rem; }
+.col-intro p {
+  margin: 0 0 1.15rem; color: var(--color-body);
+  line-height: 1.95; font-size: 1rem;
+}
+.col-intro p:last-child { margin-bottom: 0; }
+.col-intro .ci-hello { color: var(--color-ink); }
+.col-intro .ci-lead-in { margin-bottom: .7rem; font-weight: 600; color: var(--color-ink); }
+
+.col-qbox {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 12px;
+  padding: 1.15rem 1.35rem;
+  margin: 0 0 1.25rem;
+}
+.col-qbox ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+.col-qbox li {
+  position: relative; padding-left: 1.15em;
+  font-weight: 700; color: var(--color-primary); line-height: 1.8;
+}
+.col-qbox li::before { content: "・"; position: absolute; left: 0; }
+
+@media (max-width: 640px) {
+  .col-qbox { padding: .95rem 1rem; }
+  .col-qbox li { font-size: .95rem; }
+}
