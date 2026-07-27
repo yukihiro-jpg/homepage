@@ -2714,3 +2714,118 @@ a.plan-card:hover .plan-jump i { transform: translateY(3px); }
   .col-qbox { padding: .95rem 1rem; }
   .col-qbox li { font-size: .95rem; }
 }
+
+/* =========================================================================
+   口コミ投稿のお願いページ（review.html）
+   ========================================================================= */
+.rv-lead { margin-bottom: 1.6rem; }
+.rv-lead p { margin: 0 0 1rem; color: var(--color-body); line-height: 1.95; }
+.rv-lead p:last-child { margin-bottom: 0; }
+
+.rv-note {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 12px;
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 2.2rem;
+}
+.rv-note > p {
+  margin: 0 0 .7rem; font-weight: 700; color: var(--color-primary);
+}
+.rv-note > p i { margin-right: .4em; }
+.rv-note ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.rv-note li {
+  position: relative; padding-left: 1.1em;
+  color: var(--color-body); line-height: 1.8; font-size: .95rem;
+}
+.rv-note li::before {
+  content: "・"; position: absolute; left: 0; color: var(--color-accent); font-weight: 700;
+}
+
+.rv-step {
+  border: 1px solid var(--color-border-strong);
+  border-radius: 14px;
+  padding: 1.4rem 1.4rem 1.5rem;
+  margin-bottom: 1.6rem;
+  background: #fff;
+}
+.rv-step-head {
+  display: flex; align-items: center; gap: .7rem;
+  margin: 0 0 1.1rem;
+  font-size: 1.08rem; font-weight: 700; color: var(--color-ink);
+}
+.rv-step-num {
+  flex: 0 0 auto;
+  width: 1.9em; height: 1.9em; border-radius: 50%;
+  background: var(--color-primary); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: .95rem; font-weight: 700;
+}
+
+.rv-field { margin-bottom: 1.3rem; }
+.rv-field:last-child { margin-bottom: 0; }
+.rv-label {
+  display: block; margin-bottom: .4rem;
+  font-weight: 700; color: var(--color-ink); line-height: 1.7;
+}
+.rv-hint {
+  margin: 0 0 .5rem;
+  font-size: .87rem; color: #5a6774; line-height: 1.75;
+}
+.rv-hint--top { margin-bottom: .8rem; }
+
+.rv-input {
+  width: 100%;
+  padding: .75rem .85rem;
+  font-family: inherit; font-size: 1rem; color: var(--color-ink);
+  background: #fff;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 8px;
+  line-height: 1.8;
+  -webkit-appearance: none; appearance: none;
+}
+select.rv-input {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='%2317456e' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .9rem center;
+  background-size: 12px 8px;
+  padding-right: 2.4rem;
+}
+.rv-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(46, 124, 195, .18);
+}
+.rv-textarea { resize: vertical; min-height: 4.5em; }
+.rv-draft {
+  resize: vertical; min-height: 10em;
+  background: #fbfcfd;
+}
+
+.rv-count {
+  margin: .55rem 0 1rem;
+  font-size: .88rem; color: #5a6774;
+}
+.rv-count-tip { margin-left: .6em; font-weight: 700; }
+.rv-count-tip.is-short { color: #a5442f; }
+.rv-count-tip.is-ok    { color: #1c5c94; }
+
+.rv-copy { width: 100%; }
+.rv-copied {
+  margin: .7rem 0 0;
+  font-weight: 700; color: #1c5c94; font-size: .93rem;
+}
+
+.rv-cta { margin: 0 0 .9rem; }
+.rv-cta .btn { width: 100%; }
+
+.rv-thanks {
+  margin-top: 2rem; padding-top: 1.4rem;
+  border-top: 1px solid var(--color-border-strong);
+}
+.rv-thanks p { margin: 0 0 .6rem; color: var(--color-body); line-height: 1.9; }
+.rv-thanks p:last-child { margin-bottom: 0; }
+
+@media (min-width: 641px) {
+  .rv-copy, .rv-cta .btn { width: auto; }
+}
