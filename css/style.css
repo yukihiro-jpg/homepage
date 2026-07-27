@@ -2660,6 +2660,9 @@ a.plan-card:hover .plan-jump i { transform: translateY(3px); }
 .col-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .col-table tr.is-total th, .col-table tr.is-total td { background: #eef4fb; font-weight: 700; color: var(--color-ink); }
 
+.col-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0 1.6rem; }
+.col-table-wrap .col-table { margin: 0; min-width: 480px; }
+
 @media (max-width: 640px) {
   .col-fig--framed { padding: .8rem .55rem .7rem; }
   .col-table { font-size: .82rem; }
