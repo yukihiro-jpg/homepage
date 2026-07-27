@@ -1,18 +1,17 @@
 /* =========================================================================
    口コミ投稿のお願いページ（review.html）
-   お客様がご入力になった文章をつなげて下書きを組み立てます。
-   ※こちらで用意した文例を混ぜないこと。お客様ご自身の言葉だけを使います。
+   お客様が選ばれた項目とご入力になった文章をつなげて下書きを組み立てます。
+
+   ※選択肢は「事実の断片」にとどめ、宣伝文句にしないこと。
+   　文章として仕上げるのはお客様ご自身、というたてつけを崩さないでください。
    ========================================================================= */
 (function () {
   "use strict";
 
-  var svc   = document.getElementById("rv-service");
-  var q1    = document.getElementById("rv-q1");
-  var q2    = document.getElementById("rv-q2");
-  var q3    = document.getElementById("rv-q3");
   var draft = document.getElementById("rv-draft");
-  if (!svc || !draft) return;
+  if (!draft) return;
 
+  var episode  = document.getElementById("rv-episode");
   var countNum = document.getElementById("rv-count-num");
   var countTip = document.getElementById("rv-count-tip");
   var copyBtn  = document.getElementById("rv-copy");
@@ -21,35 +20,56 @@
   // 下書きを手直しされたあとは、自動生成で上書きしない
   var edited = false;
 
+  /* 指定グループで選ばれた項目 ＋ 「その他」の入力を集める */
+  function pick(group) {
+    var vals = [];
+    var boxes = document.querySelectorAll(
+      '.rv-chips[data-group="' + group + '"] input[type="checkbox"]'
+    );
+    Array.prototype.forEach.call(boxes, function (cb) {
+      if (cb.checked) vals.push(cb.value);
+    });
+    var other = document.querySelector('.rv-other[data-group="' + group + '"]');
+    if (other) {
+      var t = other.value.trim().replace(/[、。\s]+$/, "");
+      if (t) vals.push(t);
+    }
+    return vals;
+  }
+
   function tidy(s) {
     s = (s || "").replace(/\r/g, "").trim();
     if (!s) return "";
-    // 文末に句点がなければ足す
     if (!/[。．.!?！？」）)]$/.test(s)) s += "。";
     return s;
   }
 
   function build() {
     var lines = [];
-    var s = svc.value;
 
-    if (s) {
-      lines.push("水戸市の日下部税理士事務所に、" + s + "をお願いしました。");
+    var svc = pick("service");
+    if (svc.length) {
+      lines.push("水戸市の日下部税理士事務所に、" + svc.join("と") + "をお願いしました。");
     }
-    var a1 = tidy(q1.value);
-    var a2 = tidy(q2.value);
-    var a3 = tidy(q3.value);
 
-    if (a1) lines.push(a1);
-    if (a2) lines.push(a2);
-    if (a3) {
-      // 「〜方」「〜人」で終わっていれば、おすすめの一文に整える
-      if (/(方|人|方々|経営者|社長)$/.test(a3.replace(/。$/, ""))) {
-        lines.push(a3.replace(/。$/, "") + "におすすめしたいです。");
-      } else {
-        lines.push(a3);
-      }
+    var before = pick("before");
+    if (before.length) {
+      lines.push("お願いする前は、" + before.join("、") + "という状況でした。");
     }
+
+    var good = pick("good");
+    if (good.length) {
+      lines.push("実際にお願いしてみて、" + good.join("、") + "ところが良かったです。");
+    }
+
+    var ep = tidy(episode ? episode.value : "");
+    if (ep) lines.push(ep);
+
+    var rec = pick("recommend");
+    if (rec.length) {
+      lines.push(rec.join("、") + "におすすめしたいです。");
+    }
+
     return lines.join("\n");
   }
 
@@ -63,6 +83,9 @@
     } else if (n < 60) {
       countTip.textContent = "もう少し詳しいと参考にされやすくなります";
       countTip.className = "rv-count-tip is-short";
+    } else if (n > 400) {
+      countTip.textContent = "少し長めです。削っても構いません";
+      countTip.className = "rv-count-tip is-short";
     } else {
       countTip.textContent = "読んだ方の参考になる長さです";
       countTip.className = "rv-count-tip is-ok";
@@ -74,10 +97,13 @@
     updateCount();
   }
 
-  [svc, q1, q2, q3].forEach(function (el) {
-    if (!el) return;
-    el.addEventListener("input", refresh);
+  /* 入力欄の変化をすべて拾う */
+  var watched = document.querySelectorAll(
+    '.rv-chips input[type="checkbox"], .rv-other, #rv-episode'
+  );
+  Array.prototype.forEach.call(watched, function (el) {
     el.addEventListener("change", refresh);
+    el.addEventListener("input", refresh);
   });
 
   draft.addEventListener("input", function () {
@@ -97,15 +123,15 @@
         copied.hidden = false;
         window.setTimeout(function () { copied.hidden = true; }, 4000);
       }
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(text).then(done, fallback);
-      } else {
-        fallback();
-      }
       function fallback() {
         draft.focus();
         draft.select();
         try { document.execCommand("copy"); done(); } catch (e) { /* 手動でコピーしていただく */ }
+      }
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } else {
+        fallback();
       }
     });
   }

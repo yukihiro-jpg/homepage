@@ -89,39 +89,92 @@
 
       <!-- ================= ステップ1 ================= -->
       <div class="rv-step" data-reveal>
-        <p class="rv-step-head"><span class="rv-step-num">1</span>3つの質問にお答えください</p>
+        <p class="rv-step-head"><span class="rv-step-num">1</span>5つの質問にお答えください</p>
+        <p class="rv-hint rv-hint--top">当てはまるものを選ぶだけで結構です。<strong>それぞれ2〜3つくらいまで</strong>にしていただくと、読みやすい文章になります。当てはまるものがなければ、いちばん下の欄にご自由にご記入ください。</p>
 
         <div class="rv-field">
-          <label class="rv-label" for="rv-service">ご利用いただいたサービス</label>
-          <select id="rv-service" class="rv-input">
-            <option value="">選んでください</option>
-            <option>相続税の申告</option>
-            <option>相続の生前対策・シミュレーション</option>
-            <option>法人の税務・会計顧問</option>
-            <option>個人事業の税務・会計顧問</option>
-            <option>確定申告</option>
-            <option>財務コンサルティング</option>
-            <option>事業承継のご相談</option>
-            <option>その他のご相談</option>
-          </select>
+          <span class="rv-label">Q1　ご利用いただいたサービス <span class="rv-multi">いくつでも</span></span>
+          <div class="rv-chips" data-group="service">
+            <label class="rv-chip"><input type="checkbox" value="相続税の申告"><span>相続税の申告</span></label>
+            <label class="rv-chip"><input type="checkbox" value="相続の生前対策"><span>相続の生前対策・シミュレーション</span></label>
+            <label class="rv-chip"><input type="checkbox" value="遺言書の相談"><span>遺言書についてのご相談</span></label>
+            <label class="rv-chip"><input type="checkbox" value="事業承継の相談"><span>事業承継のご相談</span></label>
+            <label class="rv-chip"><input type="checkbox" value="法人の税務顧問"><span>法人の税務・会計顧問</span></label>
+            <label class="rv-chip"><input type="checkbox" value="個人事業の税務顧問"><span>個人事業主の税務・会計顧問</span></label>
+            <label class="rv-chip"><input type="checkbox" value="確定申告"><span>確定申告（所得税）</span></label>
+            <label class="rv-chip"><input type="checkbox" value="記帳代行"><span>記帳代行</span></label>
+            <label class="rv-chip"><input type="checkbox" value="決算対策"><span>決算・決算対策</span></label>
+            <label class="rv-chip"><input type="checkbox" value="財務コンサルティング"><span>財務コンサルティング</span></label>
+            <label class="rv-chip"><input type="checkbox" value="融資の相談"><span>融資・資金調達のご相談</span></label>
+            <label class="rv-chip"><input type="checkbox" value="会社設立の相談"><span>会社設立・開業のご相談</span></label>
+            <label class="rv-chip"><input type="checkbox" value="不動産や農地の相談"><span>不動産・農地に関するご相談</span></label>
+          </div>
+          <input type="text" class="rv-input rv-other" data-group="service" placeholder="その他（ご自由にご記入ください）" aria-label="その他のサービス">
         </div>
 
         <div class="rv-field">
-          <label class="rv-label" for="rv-q1">Q1　ご相談の前は、どんなことでお困りでしたか？</label>
-          <p class="rv-hint">例：父が亡くなって、何から手をつけていいか分からなかった／自分で確定申告をしていたが、これで合っているのか不安だった</p>
-          <textarea id="rv-q1" class="rv-input rv-textarea" rows="3" placeholder="思いつくままご記入ください"></textarea>
+          <span class="rv-label">Q2　ご相談の前は、どんなことでお困りでしたか？ <span class="rv-multi">いくつでも</span></span>
+          <div class="rv-chips" data-group="before">
+            <label class="rv-chip"><input type="checkbox" value="何から手をつけていいか分からない"><span>何から手をつけていいか分からなかった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="相続税がいくらかかるか分からない"><span>相続税がいくらかかるか分からなかった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="誰に相談していいか分からない"><span>誰に相談していいか分からなかった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="期限が迫っていて焦っている"><span>期限が迫っていて焦っていた</span></label>
+            <label class="rv-chip"><input type="checkbox" value="自分でやっていたが合っているか不安"><span>自分でやっていたが不安だった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="今の税理士に相談しづらい"><span>今の税理士に相談しづらかった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="節税ができているか分からない"><span>節税できているか分からなかった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="数字を経営に活かせていない"><span>数字を経営に活かせていなかった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="資金繰りが不安"><span>資金繰りが不安だった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="家族の間で話がまとまらない"><span>家族間で話がまとまらなかった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="手続きが多くて手が回らない"><span>手続きが多くて手が回らなかった</span></label>
+            <label class="rv-chip"><input type="checkbox" value="何を聞けばいいのかも分からない"><span>何を聞けばいいのかも分からなかった</span></label>
+          </div>
+          <input type="text" class="rv-input rv-other" data-group="before" placeholder="その他（ご自由にご記入ください）" aria-label="その他のお困りごと">
         </div>
 
         <div class="rv-field">
-          <label class="rv-label" for="rv-q2">Q2　実際にご依頼になって、印象に残っていることは何ですか？</label>
-          <p class="rv-hint">例：質問するとその日のうちに返事をもらえた／専門用語を使わずに説明してくれた／こちらが気づかなかった節税を提案してくれた</p>
-          <textarea id="rv-q2" class="rv-input rv-textarea" rows="3" placeholder="よかった点でも、意外だった点でも構いません"></textarea>
+          <span class="rv-label">Q3　実際にご依頼になって、良かった点はどこですか？ <span class="rv-multi">いくつでも</span></span>
+          <div class="rv-chips" data-group="good">
+            <label class="rv-chip"><input type="checkbox" value="説明が分かりやすい"><span>説明が分かりやすい</span></label>
+            <label class="rv-chip"><input type="checkbox" value="返事や対応が早い"><span>返事・対応が早い</span></label>
+            <label class="rv-chip"><input type="checkbox" value="専門用語を使わずに話してくれる"><span>専門用語を使わずに話してくれる</span></label>
+            <label class="rv-chip"><input type="checkbox" value="こちらが質問しやすい雰囲気がある"><span>質問しやすい雰囲気がある</span></label>
+            <label class="rv-chip"><input type="checkbox" value="こちらが気づかなかった提案をしてくれる"><span>気づかなかった提案をしてくれる</span></label>
+            <label class="rv-chip"><input type="checkbox" value="結果として税額を抑えられた"><span>税額を抑えられた</span></label>
+            <label class="rv-chip"><input type="checkbox" value="任せることができて負担が大きく減った"><span>任せられて負担が減った</span></label>
+            <label class="rv-chip"><input type="checkbox" value="期限にきちんと間に合った"><span>期限に間に合った</span></label>
+            <label class="rv-chip"><input type="checkbox" value="料金が明確で安心できる"><span>料金が明確で安心できた</span></label>
+            <label class="rv-chip"><input type="checkbox" value="親身に話を聞いてくれる"><span>親身に話を聞いてくれる</span></label>
+            <label class="rv-chip"><input type="checkbox" value="経営についてのアドバイスがもらえる"><span>経営のアドバイスがもらえる</span></label>
+            <label class="rv-chip"><input type="checkbox" value="税務署への対応まで任せられた"><span>税務署対応まで任せられた</span></label>
+            <label class="rv-chip"><input type="checkbox" value="オンラインでも相談できる"><span>オンラインで相談できた</span></label>
+            <label class="rv-chip"><input type="checkbox" value="土日や夜間にも対応してもらえる"><span>土日・夜間に対応してもらえた</span></label>
+            <label class="rv-chip"><input type="checkbox" value="こちらのペースに合わせてくれる"><span>こちらのペースに合わせてくれる</span></label>
+            <label class="rv-chip"><input type="checkbox" value="目先だけでなく将来のことまで考えてくれる"><span>将来のことまで考えてくれる</span></label>
+          </div>
+          <input type="text" class="rv-input rv-other" data-group="good" placeholder="その他（ご自由にご記入ください）" aria-label="その他の良かった点">
         </div>
 
         <div class="rv-field">
-          <label class="rv-label" for="rv-q3">Q3　どんな方におすすめしたいですか？</label>
-          <p class="rv-hint">例：初めて相続を経験する方／水戸周辺で税理士を探している経営者の方</p>
-          <textarea id="rv-q3" class="rv-input rv-textarea" rows="2" placeholder="ひと言で構いません"></textarea>
+          <label class="rv-label" for="rv-episode">Q4　特に印象に残っている場面があれば教えてください <span class="rv-multi">自由記入</span></label>
+          <p class="rv-hint">ここがいちばん、読む方の参考になります。ひと言でも構いません。<br>例：夜に電話したのに翌朝すぐ折り返しをいただいた／こちらが忘れていた期限を先に教えてもらえた</p>
+          <textarea id="rv-episode" class="rv-input rv-textarea" rows="3" placeholder="思い出せることがあればご記入ください（なければ空欄で結構です）"></textarea>
+        </div>
+
+        <div class="rv-field">
+          <span class="rv-label">Q5　どんな方におすすめしたいですか？ <span class="rv-multi">いくつでも</span></span>
+          <div class="rv-chips" data-group="recommend">
+            <label class="rv-chip"><input type="checkbox" value="初めて相続を経験される方"><span>初めて相続を経験する方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="相続税がかかるかどうか分からない方"><span>相続税がかかるか分からない方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="水戸市周辺で税理士をお探しの方"><span>水戸市周辺で税理士をお探しの方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="税理士を変えようか迷っている方"><span>税理士を変えようか迷っている方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="起業したばかりの方"><span>起業したばかりの方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="経営の相談もしたい経営者の方"><span>経営の相談もしたい経営者の方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="農地や不動産をお持ちの方"><span>農地や不動産をお持ちの方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="確定申告をご自分でされている方"><span>確定申告を自分でしている方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="ご家族に負担をかけたくない方"><span>家族に負担をかけたくない方</span></label>
+            <label class="rv-chip"><input type="checkbox" value="親御さんの相続が心配な方"><span>親の相続が心配な方</span></label>
+          </div>
+          <input type="text" class="rv-input rv-other" data-group="recommend" placeholder="その他（ご自由にご記入ください）" aria-label="その他のおすすめしたい方">
         </div>
       </div>
 
