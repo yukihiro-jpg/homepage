@@ -2714,3 +2714,26 @@ a.plan-card:hover .plan-jump i { transform: translateY(3px); }
   .col-qbox { padding: .95rem 1rem; }
   .col-qbox li { font-size: .95rem; }
 }
+
+/* =========================================================================
+   人物イラスト（コラムの親族図・表で使用）
+   使い方：ページ内に <svg class="svg-defs"> の symbol 定義を置き、
+   　　　　<svg class="person-fig"><use href="#p-father"></use></svg> で呼び出す
+   ========================================================================= */
+.svg-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+.person-fig { display: block; width: 52px; height: 63px; margin: 0 auto; }
+.person-fig--sm { width: 40px; height: 49px; }
+.person-name {
+  display: block; margin-top: .25rem;
+  font-size: .8rem; font-weight: 700; color: var(--color-body); line-height: 1.3;
+}
+.person-pair { display: flex; gap: .45rem; justify-content: center; align-items: flex-end; }
+.col-table td.is-person { padding-top: .7rem; padding-bottom: .6rem; }
+
+@media (max-width: 640px) {
+  .person-fig { width: 40px; height: 49px; }
+  .person-fig--sm { width: 31px; height: 38px; }
+  .person-name { font-size: .74rem; margin-top: .15rem; }
+  .person-pair { gap: .25rem; }
+}

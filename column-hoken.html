@@ -63,6 +63,56 @@
 
 <main id="main">
 
+  <!-- ▼ 人物イラストの定義（画面には表示されません） -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false"><defs>
+    <symbol id="p-father" viewBox="0 0 64 78">
+      <rect x="27" y="42" width="10" height="12" rx="4" fill="#f2c9a4"/>
+      <path d="M11 78 L11 62 C11 48 53 48 53 62 L53 78 Z" fill="#3a6ea5"/>
+      <path d="M32 51.5 L26 55.5 L32 64 L38 55.5 Z" fill="#ffffff"/>
+      <path d="M32 55.5 L29.7 58.5 L32 68 L34.3 58.5 Z" fill="#e0a13f"/>
+      <circle cx="32" cy="26" r="19.5" fill="#ffdfc4"/>
+      <path d="M13.62 19.5 A19.5 19.5 0 0 1 50.38 19.5 C46 22.5 40 23.6 32 23.6 C24 23.6 18 22.5 13.62 19.5 Z" fill="#4a3b33"/>
+      <circle cx="24.5" cy="29.5" r="3.6" fill="#3f342e"/>
+      <circle cx="39.5" cy="29.5" r="3.6" fill="#3f342e"/>
+      <circle cx="25.9" cy="28.1" r="1.35" fill="#ffffff"/>
+      <circle cx="40.9" cy="28.1" r="1.35" fill="#ffffff"/>
+      <circle cx="18.2" cy="34.5" r="3.3" fill="#f79b83" opacity=".45"/>
+      <circle cx="45.8" cy="34.5" r="3.3" fill="#f79b83" opacity=".45"/>
+      <path d="M27.6 36.8 Q32 41.8 36.4 36.8" fill="none" stroke="#3f342e" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-mother" viewBox="0 0 64 78">
+      <rect x="27" y="42" width="10" height="12" rx="4" fill="#f2c9a4"/>
+      <path d="M11 78 L11 62 C11 48 53 48 53 62 L53 78 Z" fill="#d98b6e"/>
+      <path d="M32 51.5 C28.5 51.5 26 53.5 25.4 55.6 L32 59.5 L38.6 55.6 C38 53.5 35.5 51.5 32 51.5 Z" fill="#fbeee8"/>
+      <path d="M11 27 C11 5.5 53 5.5 53 27 C53 40 51.5 49.5 49.5 54 L14.5 54 C12.5 49.5 11 40 11 27 Z" fill="#7a5238"/>
+      <circle cx="32" cy="26" r="19.5" fill="#ffdfc4"/>
+      <path d="M13.62 19.5 A19.5 19.5 0 0 1 50.38 19.5 C46 24 40 25.4 32 25.4 C24 25.4 18 24 13.62 19.5 Z" fill="#7a5238"/>
+      <circle cx="24.5" cy="30.5" r="3.6" fill="#3f342e"/>
+      <circle cx="39.5" cy="30.5" r="3.6" fill="#3f342e"/>
+      <circle cx="25.9" cy="29.1" r="1.35" fill="#ffffff"/>
+      <circle cx="40.9" cy="29.1" r="1.35" fill="#ffffff"/>
+      <circle cx="18.2" cy="35.5" r="3.3" fill="#f79b83" opacity=".5"/>
+      <circle cx="45.8" cy="35.5" r="3.3" fill="#f79b83" opacity=".5"/>
+      <path d="M28 37.8 Q32 42.2 36 37.8" fill="none" stroke="#3f342e" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="p-child" viewBox="0 0 64 78">
+      <rect x="28" y="45" width="8" height="10" rx="3.5" fill="#f2c9a4"/>
+      <path d="M18 78 L18 62 C18 48 46 48 46 62 L46 78 Z" fill="#4a9d72"/>
+      <path d="M32 51.5 C29.6 51.5 27.9 52.6 27.2 53.9 L32 56.8 L36.8 53.9 C36.1 52.6 34.4 51.5 32 51.5 Z" fill="#eaf4ee"/>
+      <circle cx="32" cy="30" r="18" fill="#ffdfc4"/>
+      <path d="M15.03 24 A18 18 0 0 1 48.97 24 C44.5 27 38.5 28.2 32 28.2 C25.5 28.2 19.5 27 15.03 24 Z" fill="#6b5138"/>
+      <path d="M29.5 12.6 C33.5 8.8 38.5 10.6 37.2 14.4 C35.2 12.4 32.2 12.1 29.5 12.6 Z" fill="#6b5138"/>
+      <circle cx="24.8" cy="33.6" r="3.9" fill="#3f342e"/>
+      <circle cx="39.2" cy="33.6" r="3.9" fill="#3f342e"/>
+      <circle cx="26.3" cy="32.1" r="1.5" fill="#ffffff"/>
+      <circle cx="40.7" cy="32.1" r="1.5" fill="#ffffff"/>
+      <circle cx="18.6" cy="38.5" r="3.4" fill="#f79b83" opacity=".55"/>
+      <circle cx="45.4" cy="38.5" r="3.4" fill="#f79b83" opacity=".55"/>
+      <path d="M28.6 40.4 Q32 45.4 35.4 40.4 Z" fill="#c76a5c"/>
+    </symbol>
+  </defs></svg>
+
+
   <section class="page-hero" data-en="COLUMN">
     <div class="container">
       <nav class="breadcrumb" aria-label="パンくず">
@@ -120,32 +170,35 @@
         <p>この記事では、次のご家族を例に説明していきます。</p>
 
         <figure class="col-fig col-fig--framed">
-          <svg viewBox="0 0 400 195" role="img" aria-label="家族構成の図。被相続人である父と、配偶者である母、子である長男と長女。法定相続人は母・長男・長女の3人。">
-            <rect x="76" y="12" width="112" height="46" rx="8" fill="#2a6ca6"/>
-            <text x="132" y="31" text-anchor="middle" fill="#dbeaf7" font-size="15">被相続人</text>
-            <text x="132" y="51" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="700">父</text>
+          <svg viewBox="0 0 400 300" role="img" aria-label="家族構成の図。被相続人である父と、配偶者である母、子である長男と長女。法定相続人は母・長男・長女の3人。">
+            <use href="#p-father" x="88" y="6" width="64" height="78"/>
+            <text x="120" y="102" text-anchor="middle" fill="#16202b" font-size="18" font-weight="700">父</text>
+            <text x="120" y="121" text-anchor="middle" fill="#5a6774" font-size="14">被相続人</text>
 
-            <rect x="212" y="12" width="112" height="46" rx="8" fill="#ffffff" stroke="#17456e" stroke-width="2"/>
-            <text x="268" y="31" text-anchor="middle" fill="#5a6774" font-size="15">配偶者</text>
-            <text x="268" y="51" text-anchor="middle" fill="#16202b" font-size="19" font-weight="700">母</text>
+            <use href="#p-mother" x="248" y="6" width="64" height="78"/>
+            <text x="280" y="102" text-anchor="middle" fill="#16202b" font-size="18" font-weight="700">母</text>
+            <text x="280" y="121" text-anchor="middle" fill="#5a6774" font-size="14">配偶者</text>
 
-            <line x1="188" y1="35" x2="212" y2="35" stroke="#17456e" stroke-width="2"/>
-            <line x1="200" y1="35" x2="200" y2="92" stroke="#17456e" stroke-width="2"/>
-            <line x1="120" y1="92" x2="280" y2="92" stroke="#17456e" stroke-width="2"/>
-            <line x1="120" y1="92" x2="120" y2="112" stroke="#17456e" stroke-width="2"/>
-            <line x1="280" y1="92" x2="280" y2="112" stroke="#17456e" stroke-width="2"/>
+            <line x1="152" y1="45" x2="248" y2="45" stroke="#b4bfc9" stroke-width="2"/>
+            <line x1="152" y1="51" x2="248" y2="51" stroke="#b4bfc9" stroke-width="2"/>
+            <text x="200" y="36" text-anchor="middle" fill="#7b8794" font-size="14">夫婦</text>
 
-            <rect x="64" y="112" width="112" height="46" rx="8" fill="#ffffff" stroke="#17456e" stroke-width="2"/>
-            <text x="120" y="131" text-anchor="middle" fill="#5a6774" font-size="15">子</text>
-            <text x="120" y="151" text-anchor="middle" fill="#16202b" font-size="19" font-weight="700">長男</text>
+            <line x1="200" y1="51" x2="200" y2="140" stroke="#b4bfc9" stroke-width="2"/>
+            <line x1="100" y1="140" x2="300" y2="140" stroke="#b4bfc9" stroke-width="2"/>
+            <line x1="100" y1="140" x2="100" y2="156" stroke="#b4bfc9" stroke-width="2"/>
+            <line x1="300" y1="140" x2="300" y2="156" stroke="#b4bfc9" stroke-width="2"/>
 
-            <rect x="224" y="112" width="112" height="46" rx="8" fill="#ffffff" stroke="#17456e" stroke-width="2"/>
-            <text x="280" y="131" text-anchor="middle" fill="#5a6774" font-size="15">子</text>
-            <text x="280" y="151" text-anchor="middle" fill="#16202b" font-size="19" font-weight="700">長女</text>
+            <use href="#p-child" x="68" y="156" width="64" height="78"/>
+            <text x="100" y="252" text-anchor="middle" fill="#16202b" font-size="18" font-weight="700">長男</text>
+            <text x="100" y="271" text-anchor="middle" fill="#5a6774" font-size="14">子</text>
 
-            <text x="200" y="184" text-anchor="middle" fill="#2a6ca6" font-size="15" font-weight="700">法定相続人は「母・長男・長女」の3人</text>
+            <use href="#p-child" x="268" y="156" width="64" height="78"/>
+            <text x="300" y="252" text-anchor="middle" fill="#16202b" font-size="18" font-weight="700">長女</text>
+            <text x="300" y="271" text-anchor="middle" fill="#5a6774" font-size="14">子</text>
+
+            <text x="200" y="295" text-anchor="middle" fill="#2a6ca6" font-size="15" font-weight="700">法定相続人は「母・長男・長女」の3人</text>
           </svg>
-          <figcaption>図1：例として使うご家族の構成。父が亡くなり、母・長男・長女の3人が相続人になるケースです。</figcaption>
+          <figcaption>図1：例として使うご家族の構成。父が亡くなり、母・長男・長女の3人が相続人になるケースです。このイラストは、以降の図や表でも同じ人物を表します。</figcaption>
         </figure>
 
         <p>法定相続人が3人なので、この場合の非課税枠は次のように計算します。</p>
@@ -244,14 +297,34 @@
         <h2 id="ch4" class="ch-head"><span class="ch-num" aria-hidden="true">4</span>契約形態で変わる税金の種類</h2>
         <p>生命保険にかかる税金は、「契約者（保険料を払う人）」「被保険者（保険の対象になる人）」「受取人（保険金を受け取る人）」の組み合わせによって、まったく違う税金になります。ここを間違えると、せっかくの非課税枠が使えません。</p>
 
+        <p>次の表では、図1と同じイラストで人物を表しています。</p>
+
         <table class="col-table">
           <thead>
             <tr><th>契約者<br>（保険料を払う人）</th><th>被保険者</th><th>受取人</th><th>かかる税金</th></tr>
           </thead>
           <tbody>
-            <tr><td>父</td><td>父</td><td>母・子</td><td><strong>相続税</strong><br>（非課税枠あり）</td></tr>
-            <tr><td>子</td><td>父</td><td>子</td><td>所得税<br>（一時所得）</td></tr>
-            <tr><td>母</td><td>父</td><td>子</td><td>贈与税<br>（負担が重くなりやすい）</td></tr>
+            <tr>
+              <td class="is-person"><svg class="person-fig" role="img" aria-label="父"><use href="#p-father"/></svg><span class="person-name">父</span></td>
+              <td class="is-person"><svg class="person-fig" role="img" aria-label="父"><use href="#p-father"/></svg><span class="person-name">父</span></td>
+              <td class="is-person"><div class="person-pair">
+                <span><svg class="person-fig person-fig--sm" role="img" aria-label="母"><use href="#p-mother"/></svg><span class="person-name">母</span></span>
+                <span><svg class="person-fig person-fig--sm" role="img" aria-label="子"><use href="#p-child"/></svg><span class="person-name">子</span></span>
+              </div></td>
+              <td><strong>相続税</strong><br>（非課税枠あり）</td>
+            </tr>
+            <tr>
+              <td class="is-person"><svg class="person-fig" role="img" aria-label="子"><use href="#p-child"/></svg><span class="person-name">子</span></td>
+              <td class="is-person"><svg class="person-fig" role="img" aria-label="父"><use href="#p-father"/></svg><span class="person-name">父</span></td>
+              <td class="is-person"><svg class="person-fig" role="img" aria-label="子"><use href="#p-child"/></svg><span class="person-name">子</span></td>
+              <td>所得税<br>（一時所得）</td>
+            </tr>
+            <tr>
+              <td class="is-person"><svg class="person-fig" role="img" aria-label="母"><use href="#p-mother"/></svg><span class="person-name">母</span></td>
+              <td class="is-person"><svg class="person-fig" role="img" aria-label="父"><use href="#p-father"/></svg><span class="person-name">父</span></td>
+              <td class="is-person"><svg class="person-fig" role="img" aria-label="子"><use href="#p-child"/></svg><span class="person-name">子</span></td>
+              <td>贈与税<br>（負担が重くなりやすい）</td>
+            </tr>
           </tbody>
         </table>
 
