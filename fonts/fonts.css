@@ -1,11 +1,85 @@
-/* 自前ホスティングのWebフォント（fontsource由来・woff2のみ） */
-@import "zen-kaku-gothic-new/400.css";
-@import "zen-kaku-gothic-new/500.css";
-@import "zen-kaku-gothic-new/700.css";
-@import "zen-kaku-gothic-new/900.css";
-@import "outfit/300.css";
-@import "outfit/400.css";
-@import "outfit/500.css";
-@import "outfit/600.css";
-@import "outfit/700.css";
-@import "outfit/800.css";
+/* ============================================================
+   自前ホスティングのWebフォント
+   tools/build-fonts.py が自動生成します。直接編集しないでください。
+   収録文字数: 1289（このサイトで使う文字＋かな・英数・記号）
+   ============================================================ */
+
+@font-face {
+  font-family: 'Zen Kaku Gothic New';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('kskac-jp-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic New';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('kskac-jp-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic New';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('kskac-jp-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Zen Kaku Gothic New';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('kskac-jp-900.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('kskac-en-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('kskac-en-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('kskac-en-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('kskac-en-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('kskac-en-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('kskac-en-800.woff2') format('woff2');
+}
