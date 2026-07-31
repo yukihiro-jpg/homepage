@@ -8,6 +8,17 @@
 <!-- Google アナリティクス（GA4）※測定IDを変えるときは全HTMLを一括置換すること -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJYJXQECM"></script>
 <script>
+  /* 事務所内からのアクセスを集計に含めないための仕組み。
+     https://kskac.com/?noga=1 を一度開いた端末は、以後そのブラウザでは計測しない。
+     解除するときは https://kskac.com/?noga=0 を開く。 */
+  (function () {
+    try {
+      var q = window.location.search;
+      if (q.indexOf("noga=1") > -1) localStorage.setItem("kskac-noga", "1");
+      if (q.indexOf("noga=0") > -1) localStorage.removeItem("kskac-noga");
+      if (localStorage.getItem("kskac-noga") === "1") window["ga-disable-G-EYJYJXQECM"] = true;
+    } catch (e) {}
+  })();
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
   gtag("js", new Date());

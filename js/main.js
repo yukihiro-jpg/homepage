@@ -183,6 +183,26 @@
     }
   }
 
+  /* --- アクセス解析の除外設定を行ったときの確認表示 ---------------------
+     ?noga=1 / ?noga=0 を付けて開いたときだけ、結果を短く画面に出す。
+     除外そのものは各ページの<head>で先に処理している。 */
+  if (window.location.search.indexOf("noga=") > -1) {
+    var isOff = false;
+    try { isOff = localStorage.getItem("kskac-noga") === "1"; } catch (_) {}
+    var note = document.createElement("div");
+    note.setAttribute("role", "status");
+    note.style.cssText =
+      "position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);z-index:9999;" +
+      "max-width:calc(100% - 2rem);padding:.9rem 1.3rem;border-radius:10px;" +
+      "background:#0d1b28;color:#fff;font-size:.92rem;line-height:1.7;text-align:center;" +
+      "box-shadow:0 12px 30px rgba(0,0,0,.32)";
+    note.textContent = isOff
+      ? "この端末のこのブラウザからのアクセスは、今後アクセス解析に記録されません。"
+      : "除外を解除しました。この端末からのアクセスは、今後アクセス解析に記録されます。";
+    document.body.appendChild(note);
+    window.setTimeout(function () { note.remove(); }, 8000);
+  }
+
   /* --- 電話番号のタップを計測（GA4）-------------------------------------
      GA4の拡張計測機能は tel: リンクを数えないため、ここで自前に送る。
      アナリティクスが未読込・未設置でも何も起きない（エラーにしない）。 */
