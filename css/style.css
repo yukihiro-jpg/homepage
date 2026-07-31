@@ -547,10 +547,13 @@ button { font-family: inherit; cursor: pointer; }
   max-width: 42em;
   line-height: 2.05;
 }
-/* スマホでは手動改行・nowrapを解除して自然に折り返す */
+/* スマホでは手動改行を解除して自然に折り返す（見出しは意味のまとまりで折り返す） */
 @media (max-width: 860px) {
   .hero-lead br { display: none; }
-  .hero-title .nowrap { white-space: normal; }
+}
+/* 狭い画面では見出しを少し小さくし、「水戸の税務パートナー」を1行に収める */
+@media (max-width: 600px) {
+  .hero-title { font-size: calc(5.3px + 7.11vw); }
 }
 .hero-actions {
   margin-top: 2.4rem;
@@ -1737,30 +1740,27 @@ a.news-item:hover::after { color: var(--color-accent); transform: translate(3px,
   max-width: 720px; margin: clamp(2rem, 4vw, 2.8rem) auto 0; text-align: center;
   font-size: 1.02rem; line-height: 2.0; color: var(--color-body);
 }
+/* 締めの一文。枠で囲わず、上の短いラインだけで区切る */
 .message-quote {
-  position: relative; overflow: hidden;
-  max-width: 760px; margin: clamp(1.8rem, 3.5vw, 2.6rem) auto 0;
-  text-align: center; padding: clamp(1.9rem, 4vw, 2.75rem) 1.5rem;
-  border-radius: var(--radius-lg);
-  background:
-    radial-gradient(80% 120% at 85% -10%, rgba(46,124,195,.4), transparent 55%),
-    linear-gradient(135deg, var(--color-primary-darker), var(--color-primary));
-  color: #fff; box-shadow: var(--shadow-lg);
+  position: relative;
+  max-width: 760px; margin: clamp(2rem, 4vw, 2.9rem) auto 0;
+  text-align: center; padding: clamp(1.5rem, 3vw, 2rem) 1rem 0;
 }
 .message-quote::before {
-  content: "\201C"; position: absolute; top: -.08em; left: .18em;
-  font-family: var(--font-en); font-weight: 700; font-size: 6rem; line-height: 1;
-  color: rgba(255,255,255,.14); pointer-events: none;
+  content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 3.2rem; height: 3px; border-radius: 3px; background: var(--grad-brand);
 }
 .message-quote p {
   position: relative;
   font-size: clamp(1.3rem, 1rem + 1.3vw, 1.85rem);
-  font-weight: 800; line-height: 1.6; letter-spacing: .01em;
+  font-weight: 800; line-height: 1.7; letter-spacing: .01em;
+  color: var(--color-ink);
 }
 .mq-accent {
-  background: linear-gradient(96deg, #9fd4ff 0%, #56b6f5 55%, #46e0d0 100%);
-  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-  color: #7fd6ec;
+  color: var(--color-primary);
+  background-image: linear-gradient(transparent 62%, #ffe999 62%);
+  background-repeat: no-repeat;
+  padding: 0 .1em;
 }
 @media (max-width: 640px) {
   .message-cards { grid-template-columns: 1fr; }
@@ -2674,9 +2674,17 @@ a.plan-card:hover .plan-jump i { transform: translateY(3px); }
   background-image: linear-gradient(transparent 58%, #ffe999 58%);
   background-repeat: no-repeat;
   padding: 0 .08em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
 }
 @media print {
   .em-mark { background: #ffe999; }
+}
+/* 濃い背景の面（CTAバンドなど）では、黄色を全面に敷いて文字を濃色にする */
+.cta-band .em-mark, .article-cta .em-mark {
+  color: var(--color-ink-deep);
+  background-image: linear-gradient(#ffe999, #ffe999);
+  border-radius: 4px;
+  padding: .08em .32em;
 }
 
 @media (max-width: 640px) {
