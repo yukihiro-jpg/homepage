@@ -183,6 +183,19 @@
     }
   }
 
+  /* --- 電話番号のタップを計測（GA4）-------------------------------------
+     GA4の拡張計測機能は tel: リンクを数えないため、ここで自前に送る。
+     アナリティクスが未読込・未設置でも何も起きない（エラーにしない）。 */
+  document.addEventListener("click", function (e) {
+    if (typeof window.gtag !== "function" || !e.target.closest) return;
+    var tel = e.target.closest('a[href^="tel:"]');
+    if (!tel) return;
+    window.gtag("event", "tel_click", {
+      link_url: tel.getAttribute("href"),
+      page_path: window.location.pathname
+    });
+  });
+
   /* --- フッターの年号を自動更新 --- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();

@@ -4,6 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0d1b28">
+
+<!-- Google アナリティクス（GA4）※測定IDを変えるときは全HTMLを一括置換すること -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJYJXQECM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-EYJYJXQECM");
+</script>
+<script>
+  /* お問い合わせ送信完了ページ：GA4に「問い合わせ完了」を記録する */
+  gtag("event", "generate_lead", { form_name: "contact" });
+</script>
 <meta name="robots" content="noindex">
 <title>送信完了｜日下部税理士事務所（茨城県水戸市）</title>
 <meta name="description" content="お問い合わせの送信が完了しました。日下部税理士事務所（茨城県水戸市）。">
