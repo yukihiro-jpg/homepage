@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1b28">
+
+<!-- Google アナリティクス（GA4）※測定IDを変えるときは全HTMLを一括置換すること -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJYJXQECM"></script>
+<script>
+  /* 事務所内からのアクセスを集計に含めないための仕組み。
+     https://kskac.com/?noga=1 を一度開いた端末は、以後そのブラウザでは計測しない。
+     解除するときは https://kskac.com/?noga=0 を開く。 */
+  (function () {
+    try {
+      var q = window.location.search;
+      if (q.indexOf("noga=1") > -1) localStorage.setItem("kskac-noga", "1");
+      if (q.indexOf("noga=0") > -1) localStorage.removeItem("kskac-noga");
+      if (localStorage.getItem("kskac-noga") === "1") window["ga-disable-G-EYJYJXQECM"] = true;
+    } catch (e) {}
+  })();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-EYJYJXQECM");
+</script>
+<title>黒字なのに、お金が足りません｜利益と現金のズレと納税資金の備え方｜日下部税理士事務所（茨城県水戸市）</title>
+<meta name="description" content="決算は黒字なのに通帳が増えない。その原因の多くは借入金の元本返済と納税資金です。利益と現金がズレる仕組み、簡易キャッシュフローの計算、消費税は預かり金であること、3か月分の資金繰り表の作り方を、水戸市の税理士が図表でわかりやすく解説します。">
+<link rel="canonical" href="https://kskac.com/column-shikinguri.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="黒字なのに、お金が足りません〜税理士が『利益と現金のズレ』と納税資金の備え方を解説します〜">
+<meta property="og:description" content="利益が出ているのに通帳が減る。原因は借入金の元本返済と納税資金です。3か月分の資金繰り表で先に見える化する方法を図表で解説します。">
+<meta property="og:url" content="https://kskac.com/column-shikinguri.html">
+<meta property="og:site_name" content="日下部税理士事務所">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="日下部税理士事務所 ホームへ">
+      <span class="brand-text">
+        <span class="brand-name">日下部税理士事務所</span>
+        <span class="brand-sub">Kusakabe Tax &amp; Accounting</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
+      <ul class="nav-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">事務所紹介 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="about.html#greeting">代表挨拶</a></li>
+            <li><a href="about.html#works">業務案内</a></li>
+            <li><a href="about.html#access">アクセスマップ</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス・料金 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="service-tax.html">税務・会計顧問</a></li>
+            <li><a href="service-consulting.html">財務コンサルティング</a></li>
+            <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+          </ul>
+        </li>
+        <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">初回相談 無料</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" data-en="COLUMN">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくず">
+        <ol>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+          <li aria-current="page">黒字なのに、お金が足りません</li>
+        </ol>
+      </nav>
+      <p class="article-meta"><time datetime="2026-08-02">2026.08.02</time> <span class="news-cat">税務・会計</span></p>
+      <h1>黒字なのに、お金が足りません<br>〜税理士が『利益と現金のズレ』と納税資金の備え方を解説します〜</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="col-intro" data-reveal>
+        <p>今回は、「決算は黒字なのに、手元のお金が増えない」という状態について解説をしていきます。<br>
+        決算書では利益が出ている。税金もきちんと納めた。それなのに通帳の残高は思ったほど増えていない——。これは珍しいことではありません。むしろ<strong>売上が伸びている会社ほど起こりやすい</strong>現象です。</p>
+        <p class="ci-lead-in">このコラムを読むと…</p>
+        <div class="col-qbox">
+          <ul>
+          <li>利益が出ているのに、どうして通帳が減るんだろう？</li>
+          <li>税金を納める月に、いつも資金が苦しくなるのはなぜ？</li>
+          <li>まず何から手をつければいいんだろう？</li>
+          </ul>
+        </div>
+        <p>このようなことが理解できるようになります。とても分かりやすく簡潔にまとめましたので、ぜひ最後まで読んでくださいね。</p>
+      </div>
+
+      <nav class="toc" aria-label="目次">
+        <p class="toc-head"><i class="fa-solid fa-list-ul" aria-hidden="true"></i> 目次</p>
+        <ol>
+          <li><a href="#ch1">黒字なのに、通帳が減っていきます</a></li>
+          <li><a href="#ch2">利益とお金は、別々に動いています</a></li>
+          <li><a href="#ch3">いちばん多い原因は、借入金の返済です</a></li>
+          <li><a href="#ch4">消費税は「預かっているお金」です</a></li>
+          <li><a href="#ch5">3か月分の資金繰り表をつくってみましょう</a></li>
+          <li><a href="#ch6">納税資金は、先によけておく</a></li>
+          <li><a href="#ch7">まとめ</a></li>
+        </ol>
+      </nav>
+
+      <article class="article-body">
+        <h2 id="ch1" class="ch-head"><span class="ch-num" aria-hidden="true">1</span>黒字なのに、通帳が減っていきます</h2>
+        <p>「決算では利益が出ているのに、お金がありません」——顧問先の社長から、よくいただくご相談です。</p>
+        <p>売上は前年より伸びている。決算書の最後の行にも、きちんと利益が並んでいる。それなのに、月末の支払いのたびに残高を気にしなければならない。そして<strong>税金の納付月になると、決まって資金が足りなくなる。</strong></p>
+        <p>こうしたご相談を受けたとき、私は必ず同じことをお伝えしています。<strong class="em-mark">利益とお金は、まったく別の動き方をします。</strong>決算書の利益を見ているだけでは、資金がどう動くかは分かりません。</p>
+        <p>そして多くの場合、原因ははっきりしています。<strong class="em-red">借入金の元本返済と、税金の支払いです。</strong>この2つは、どちらも決算書の利益にはほとんど姿を見せません。それでいて、お金は確実に出ていきます。</p>
+
+        <div class="callout">この状態は、経営が下手だから起きるのではありません。<strong>仕組みとしてそうなっている</strong>だけです。仕組みが分かれば対処できますし、対処の仕方もそれほど難しくありません。</div>
+
+        <h2 id="ch2" class="ch-head"><span class="ch-num" aria-hidden="true">2</span>利益とお金は、別々に動いています</h2>
+        <p>まず、なぜズレるのかを整理します。決算書の利益は「儲かったかどうか」を表すもので、「お金が増えたかどうか」を表すものではありません。両者がズレる代表的な原因が、次のものです。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>できごと</th><th>利益への影響</th><th>お金への影響</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>借入金の元本を返済した</th><td>影響なし</td><td>その分だけ減る</td></tr>
+            <tr><th>機械や車を買った</th><td>減価償却で少しずつ費用</td><td>買った月に一度に減る</td></tr>
+            <tr><th>在庫を多めに仕入れた</th><td>売れるまで費用にならない</td><td>仕入れた時点で減る</td></tr>
+            <tr><th>売上が伸びた（掛け売り）</th><td>売上として計上される</td><td>入金までは増えない</td></tr>
+            <tr><th>減価償却費を計上した</th><td>費用になる</td><td>減らない</td></tr>
+            <tr><th>法人税・消費税を納付した</th><td>利益の計算の外</td><td>その分だけ減る</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>上から4つは、<strong>利益より先にお金が出ていく</strong>ものです。特に伸びている会社では、売上の増加に合わせて在庫や売掛金がふくらみます。売上が伸びれば伸びるほど、入金より先に仕入代金や人件費を払わなければならない。<strong class="em-mark">成長しているのに資金が苦しくなるのは、これが理由です。</strong></p>
+        <p>逆に減価償却費は、費用として利益を減らしますが、お金は出ていきません。すでに買ったときに払い終えているからです。ですから、会社に残るお金を考えるときは、<strong>いったん利益に足し戻して考えます。</strong></p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 232" role="img" aria-label="会社に残るお金の考え方。税引後の利益に減価償却費を足したものが簡易キャッシュフローで、そこから借入金の元本返済を引いた残りが実際に増える現金。">
+            <rect x="20" y="8" width="360" height="40" rx="8" fill="#ffffff" stroke="#b4bfc9" stroke-width="1.5"/>
+            <text x="34" y="34" fill="#16202b" font-size="15" font-weight="700">税引後の利益</text>
+            <text x="240" y="34" fill="#5a6774" font-size="14">決算書の最後の行</text>
+
+            <text x="34" y="70" fill="#1c5c94" font-size="15" font-weight="700">＋ 減価償却費</text>
+            <text x="160" y="70" fill="#5a6774" font-size="14">お金が出ていかない費用</text>
+
+            <rect x="20" y="82" width="360" height="46" rx="8" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="34" y="104" fill="#1c5c94" font-size="15" font-weight="700">＝ 簡易キャッシュフロー</text>
+            <text x="34" y="122" fill="#16202b" font-size="14">1年で会社に入ってくるお金のもと</text>
+
+            <text x="34" y="152" fill="#a5442f" font-size="15" font-weight="700">− 借入金の元本返済</text>
+            <text x="190" y="152" fill="#5a6774" font-size="14">費用にならない支出</text>
+
+            <rect x="20" y="164" width="360" height="46" rx="8" fill="#2a6ca6"/>
+            <text x="34" y="186" fill="#ffffff" font-size="15" font-weight="700">＝ 実際に増える現金</text>
+            <text x="34" y="204" fill="#dbeaf7" font-size="14">ここがマイナスなら、黒字でもお金は減ります</text>
+            <text x="20" y="226" fill="#5a6774" font-size="14">※分かりやすさを優先した簡易的な考え方です</text>
+          </svg>
+          <figcaption>図1：会社に残るお金の考え方。利益からではなく、この順番で見ていきます。</figcaption>
+        </figure>
+
+        <h2 id="ch3" class="ch-head"><span class="ch-num" aria-hidden="true">3</span>いちばん多い原因は、借入金の返済です</h2>
+        <p>実際の数字で見ていきます。次のような会社を考えてみましょう。</p>
+        <ul>
+          <li>税引前の利益が<strong>500万円</strong>（きちんと黒字です）</li>
+          <li>減価償却費が<strong>200万円</strong></li>
+          <li>借入金の元本返済が<strong>年間600万円</strong></li>
+          <li>税金の負担は、ここでは<strong>30%</strong>として計算します</li>
+        </ul>
+
+        <table class="col-table">
+          <thead>
+            <tr><th>項目</th><th>金額</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>税引前の利益</th><td class="num">500万円</td></tr>
+            <tr><th>法人税など（30%と仮定）</th><td class="num">−150万円</td></tr>
+            <tr><th>税引後の利益</th><td class="num">350万円</td></tr>
+            <tr><th>減価償却費を足し戻す</th><td class="num">＋200万円</td></tr>
+            <tr><th>簡易キャッシュフロー</th><td class="num">550万円</td></tr>
+            <tr><th>借入金の元本返済</th><td class="num">−600万円</td></tr>
+            <tr class="is-total"><th>1年で増える現金</th><td class="num">−50万円</td></tr>
+          </tbody>
+        </table>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 175" role="img" aria-label="入ってくるお金550万円に対し、借入金の元本返済が600万円。差し引き50万円のマイナス。">
+            <text x="20" y="30" fill="#16202b" font-size="14" font-weight="700">入ってくる</text>
+            <rect x="120" y="14" width="229" height="30" rx="4" fill="#2a6ca6"/>
+            <text x="234" y="34" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">550万円</text>
+
+            <text x="20" y="80" fill="#16202b" font-size="14" font-weight="700">出ていく</text>
+            <rect x="120" y="64" width="250" height="30" rx="4" fill="#a5442f"/>
+            <text x="245" y="84" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">600万円</text>
+
+            <line x1="20" y1="118" x2="380" y2="118" stroke="#b4bfc9" stroke-width="1"/>
+            <text x="200" y="142" text-anchor="middle" fill="#a5442f" font-size="16" font-weight="700">1年で 50万円のマイナス</text>
+            <text x="200" y="164" text-anchor="middle" fill="#5a6774" font-size="14">決算書は黒字。それでも現金は減ります</text>
+          </svg>
+          <figcaption>図2：黒字でも現金が減る仕組み。返済が入ってくるお金を上回っています。</figcaption>
+        </figure>
+
+        <p>この会社は<strong>間違いなく黒字です。</strong>それでも、1年で現金は50万円減ります。社長が「利益は出ているのにお金がない」と感じるのは当然です。</p>
+        <p>大切なのは、これが<strong class="em-red">経営の失敗ではなく、返済の条件と利益の水準が合っていないだけ</strong>だという点です。打つ手はあります。返済期間を延ばしてもらう、借り換えをする、複数の借入をまとめる——金融機関との交渉で解決できることが少なくありません。</p>
+        <p>たとえば残っている借入が3,000万円で、5年で返す約束になっているとします。これを7年に延ばしてもらえれば、年間の返済は600万円から約430万円に下がります。すると先ほどの計算は「550万円−430万円」となり、<strong>年間120万円のプラスに変わります。</strong>利益を170万円増やすのは大変ですが、返済条件の見直しなら交渉次第で実現できることがあります。複数の借入をひとつにまとめる、金利の高いものから借り換える、といった方法もあります。</p>
+        <p>この計算は、<strong>年に一度、決算書ができた時点でやっておくべきもの</strong>です。数字を並べるだけですから、5分あれば終わります。そして、もしマイナスなら、翌期が始まる前に手を打てます。逆に言えば、この計算をしていない会社は、<strong>返済が重すぎることに何年も気づかないまま進んでしまいます。</strong></p>
+
+        <h2 id="ch4" class="ch-head"><span class="ch-num" aria-hidden="true">4</span>消費税は「預かっているお金」です</h2>
+        <p>もうひとつの大きな原因が、税金の納付です。なかでも社長を悩ませるのが<strong>消費税</strong>です。</p>
+        <p>法人税は、利益が出たときにその一部を納めるものですから、感覚として理解しやすいと思います。ところが消費税は違います。<strong class="em-mark">消費税は、お客様から預かったお金を、代わりに納めているだけです。</strong>会社の儲けから払うものではありません。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 170" role="img" aria-label="1100万円の入金の内訳。1000万円は会社の売上、100万円は預かった消費税で会社のお金ではない。">
+            <text x="20" y="26" fill="#16202b" font-size="15" font-weight="700">通帳に入ってくる 1,100万円</text>
+            <rect x="20" y="38" width="327" height="44" rx="5" fill="#2a6ca6"/>
+            <rect x="347" y="38" width="33" height="44" rx="5" fill="#a5442f"/>
+            <text x="183" y="66" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">売上 1,000万円</text>
+
+            <text x="20" y="110" fill="#a5442f" font-size="15" font-weight="700">このうち 100万円は預かった消費税</text>
+            <text x="20" y="132" fill="#16202b" font-size="15">会社のお金ではありません。</text>
+            <text x="20" y="154" fill="#16202b" font-size="15">あとでまとめて納めることになります。</text>
+          </svg>
+          <figcaption>図3：入金額のうち一定部分は、はじめから預かり金です。使ってしまうと納付月に困ります。</figcaption>
+        </figure>
+
+        <p>たとえば課税売上が6,000万円、課税仕入が3,500万円の会社であれば、預かった消費税から支払った消費税を差し引いて、<strong>250万円ほどを納めることになります</strong>（税率10%で単純化した場合）。この250万円は、1年かけて少しずつ預かってきたものです。</p>
+        <p>ところが多くの会社では、預かった消費税も他の入金と一緒に通帳に入り、そのまま運転資金として使われます。そして納付月に、<strong class="em-red">「こんなに払うのか」と驚くことになります。</strong>使ってしまったお金を、あらためて用意しなければならないからです。</p>
+        <p>税金が出ていく時期は、あらかじめ決まっています。3月決算の会社を例にすると、次のようになります。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>時期</th><th>出ていくお金</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>5月末</th><td>法人税・地方税・消費税の確定納付（1年でいちばん大きな山）</td></tr>
+            <tr><th>7月10日</th><td>源泉所得税（納期の特例を使っている場合）</td></tr>
+            <tr><th>11月末</th><td>法人税・消費税の中間納付（前年の税額が一定以上の場合）</td></tr>
+            <tr><th>1月20日</th><td>源泉所得税（納期の特例を使っている場合）</td></tr>
+            <tr><th>毎月</th><td>社会保険料、借入金の返済</td></tr>
+            <tr><th>年に数回</th><td>固定資産税・償却資産税（市町村の定める時期）</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>消費税の中間納付は、前年の税額に応じて<strong>年1回・3回・11回</strong>と回数が変わります。前年に大きく儲かった翌年は中間納付が増えますので、<strong>「去年と同じつもり」でいると足りなくなります。</strong></p>
+        <p>もうひとつ知っておいていただきたいのが、<strong>業種によって消費税の負担がまったく違う</strong>ことです。納める金額は「預かった消費税 − 支払った消費税」ですが、<strong>給与には消費税がかかりません。</strong>そのため、売上に対して人件費の割合が高い会社ほど、差し引ける金額が少なくなり、納付額が重くなります。建設業やサービス業で「うちは消費税がきつい」と感じられるのは、この構造によるものです。</p>
+        <p>なお、同じ人にかかる費用でも、外注費であれば消費税の計算上差し引けます。ただし<strong>実態が雇用であるものを外注として処理することは認められません。</strong>税務調査で否認されると、消費税と源泉所得税をさかのぼって課されることになります。判断に迷う場合は必ずご相談ください。</p>
+
+        <h2 id="ch5" class="ch-head"><span class="ch-num" aria-hidden="true">5</span>3か月分の資金繰り表をつくってみましょう</h2>
+        <p>ここまでの話は、すべて<strong>「先に分かっていれば困らない」</strong>ものです。そこでおすすめしているのが、資金繰り表です。</p>
+        <p>資金繰り表というと難しく聞こえますが、やることは単純です。<strong class="em-mark">月初の残高に入ってくるお金を足し、出ていくお金を引く。それだけです。</strong>会計ソフトも専用の様式も要りません。</p>
+        <p>そして<strong>まずは3か月分だけ</strong>で十分です。1年分を作ろうとすると、途中で嫌になってしまいます。3か月なら30分ほどで書けます。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>項目</th><th>9月</th><th>10月</th><th>11月</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>月初の残高</th><td class="num">800万円</td><td class="num">820万円</td><td class="num">850万円</td></tr>
+            <tr><th>入金（売上代金など）</th><td class="num">＋600万円</td><td class="num">＋620万円</td><td class="num">＋600万円</td></tr>
+            <tr><th>出金（仕入・給与・経費）</th><td class="num">−530万円</td><td class="num">−540万円</td><td class="num">−530万円</td></tr>
+            <tr><th>借入金の返済</th><td class="num">−50万円</td><td class="num">−50万円</td><td class="num">−50万円</td></tr>
+            <tr><th>税金の納付</th><td class="num">0円</td><td class="num">0円</td><td class="num">−250万円</td></tr>
+            <tr class="is-total"><th>月末の残高</th><td class="num">820万円</td><td class="num">850万円</td><td class="num">620万円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>この表を作ると、<strong>11月に中間納付があり、その月だけで残高が230万円減る</strong>ことが、9月の時点で分かります。分かっていれば、10月の仕入を調整する、支払いの時期をずらしてもらう、あらかじめ融資の相談をしておく——といった手が打てます。</p>
+        <p>逆に、この表がないまま11月を迎えると、納付書が届いてから慌てることになります。<strong class="em-red">同じ資金不足でも、2か月前に分かるのと当日に分かるのとでは、打てる手がまったく違います。</strong></p>
+        <p>顧問先とご一緒するときも、いきなり精緻なものは作りません。まず3か月分を、一緒に手を動かしながら書いてみる。それだけで社長の表情が変わることがよくあります。<strong>「見えていなかった」だけで、見えれば対処できる</strong>ものだからです。</p>
+
+        <h2 id="ch6" class="ch-head"><span class="ch-num" aria-hidden="true">6</span>納税資金は、先によけておく</h2>
+        <p>資金繰り表で先が見えるようになったら、次は備え方です。おすすめしているのは、次のようなことです。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>やること</th><th>なぜ効くのか</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>納税用の口座を別に作る</th><td>使えないお金を物理的に分けます。いちばん確実な方法です</td></tr>
+            <tr><th>入金の一部を毎月そちらへ移す</th><td>売上の入金があったら、その一部を先に移してしまいます</td></tr>
+            <tr><th>年間の納税予定を出してもらう</th><td>「いつ・いくら」が分かれば、逆算して積み立てられます</td></tr>
+            <tr><th>決算の2か月前に着地を見込む</th><td>納税額の見当がつき、対策を打つ時間も残ります</td></tr>
+            <tr><th>簡易キャッシュフローを毎年確認する</th><td>返済条件が重すぎないかを、年に一度点検できます</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>とくに効果が大きいのが、<strong class="em-mark">納税用の口座を分けることです。</strong>同じ通帳に入っていると、どうしても「使えるお金」に見えてしまいます。別の口座に移してしまえば、その心配がありません。</p>
+        <p>金額の目安は、顧問税理士に納税予定を出してもらうのが確実です。当事務所では毎月の経営レポートの中で、<strong>今期の着地見込みと納税予定</strong>をお伝えするようにしています。決算のときに初めて税額を知る、という状態にはしないという方針です。</p>
+        <p>そして、それでも資金が足りないと分かったときは、<strong>早めに金融機関へ相談してください。</strong>資金が尽きてから駆け込むのと、3か月前に相談に行くのとでは、金融機関の受け止め方がまったく違います。資金繰り表を持参できれば、なお良いでしょう。「先を見て経営している会社」という評価につながります。</p>
+
+        <h2 id="ch7" class="ch-head"><span class="ch-num" aria-hidden="true">7</span>まとめ</h2>
+        <p>今回の内容を整理します。</p>
+        <ul>
+          <li><strong class="em-mark">利益とお金は別々に動きます。</strong>決算書の利益だけを見ていても、資金の動きは分かりません</li>
+          <li>黒字なのにお金が減る原因の多くは、<strong>借入金の元本返済</strong>です。利益に足し戻した簡易キャッシュフローと比べてください</li>
+          <li>消費税は<strong>預かっているお金</strong>です。会社の儲けから払うものではありません</li>
+          <li>税金が出ていく時期は決まっています。<strong>中間納付の回数は前年の税額で変わります</strong></li>
+          <li><strong>まず3か月分の資金繰り表</strong>を。30分で書けて、2か月先の資金不足が見えます</li>
+          <li>納税用の口座を分けておくと、確実に備えられます</li>
+        </ul>
+        <p>「黒字なのにお金がない」という状態は、放っておくと危険ですが、<strong>仕組みが分かってしまえば対処できます。</strong>むしろ、この違和感に気づいて相談に来られる社長は、経営を数字で見ようとされている方だと思います。</p>
+        <p>当事務所では、<strong>初回のご相談（約60分）を無料</strong>でお受けしています。決算書をお持ちいただければ、その場で簡易キャッシュフローを一緒に計算し、返済の条件が重すぎないかを確認できます。資金繰り表の作り方も、ご希望があればその場でお伝えします。</p>
+
+        <p class="article-note">※本記事は、よくいただくご相談をもとにした一般的な解説です。記載の金額は前提を単純化した計算例であり、実際の税額や資金の動きは会社ごとに異なります。消費税の計算方法（簡易課税制度やインボイス制度の経過措置など）や中間納付の回数は、売上規模や選択している制度によって変わります。本記事は2026年8月時点の情報に基づいています。具体的なご相談は当事務所までお問い合わせください。</p>
+      </article>
+
+      <div class="article-cta">
+        <h2>決算書を持って、一度ご相談ください</h2>
+        <p>簡易キャッシュフローの計算と返済条件の点検を、その場で一緒に行います。初回のご相談（約60分）は無料です。</p>
+        <a class="btn btn-accent btn-lg" href="contact.html"><i class="fa-solid fa-paper-plane"></i> 初回無料相談はこちら</a>
+      </div>
+      <aside class="related" aria-labelledby="related-head" data-reveal>
+        <h2 class="related-head" id="related-head">あわせて読みたいコラム</h2>
+        <ul class="related-list">
+          <li>
+            <a href="column-kessan.html">
+              <span class="related-meta"><time datetime="2026-03-18">2026.03.18</time><span class="news-cat">税務・会計</span></span>
+              <span class="related-title">決算前に見直したい法人の節税対策　〜税理士が『決算対策』のポイントをわかりやすく解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-zoyo.html">
+              <span class="related-meta"><time datetime="2026-02-10">2026.02.10</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">生前贈与で相続税はいくら減る？　〜税理士が『暦年贈与と相続時精算課税』を具体例で比較します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-yuigon.html">
+              <span class="related-meta"><time datetime="2026-07-28">2026.07.28</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">その遺言書、かえってご家族を苦しめるかもしれません　〜税理士が『遺留分と納税資金』を実例で解説します〜</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <p class="article-back"><a href="column.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> お知らせ・コラム一覧へ戻る</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand-text"><span class="brand-name">日下部税理士事務所</span></span>
+      </a>
+      <p class="footer-desc">茨城県水戸市に根ざした、税理士による提案型の事務所です。</p>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">メニュー</h2>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">事務所紹介</a></li>
+        <li><a href="services.html">サービス・料金</a></li>
+        <li><a href="column.html">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">サービス</h2>
+      <ul>
+        <li><a href="service-tax.html">税務・会計顧問</a></li>
+        <li><a href="service-consulting.html">財務コンサルティング</a></li>
+        <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">事務所情報</h2>
+      <address class="footer-address">
+        〒311-4151<br>
+        茨城県水戸市姫子1丁目820-6<br>
+        ヴィラエスポワールⅠ 1F<br>
+        <a href="tel:029-215-9400">TEL：029-215-9400</a><br>
+        <span>FAX：029-215-9477</span>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <small>&copy; <span id="year">2026</span> 日下部税理士事務所</small>
+      <small>茨城県水戸市の税理士事務所</small>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "黒字なのに、お金が足りません〜税理士が『利益と現金のズレ』と納税資金の備え方を解説します〜",
+  "description": "決算は黒字なのに通帳が増えない原因は、借入金の元本返済と納税資金です。簡易キャッシュフローの計算、消費税は預かり金であること、3か月分の資金繰り表の作り方を解説します。",
+  "datePublished": "2026-08-02",
+  "dateModified": "2026-08-02",
+  "inLanguage": "ja",
+  "author": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "publisher": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://kskac.com/column-shikinguri.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kskac.com/" },
+    { "@type": "ListItem", "position": 2, "name": "お知らせ・コラム", "item": "https://kskac.com/column.html" },
+    { "@type": "ListItem", "position": 3, "name": "黒字なのに、お金が足りません", "item": "https://kskac.com/column-shikinguri.html" }
+  ]
+}
+</script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
