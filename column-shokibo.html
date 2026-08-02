@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1b28">
+
+<!-- Google アナリティクス（GA4）※測定IDを変えるときは全HTMLを一括置換すること -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJYJXQECM"></script>
+<script>
+  /* 事務所内からのアクセスを集計に含めないための仕組み。
+     https://kskac.com/?noga=1 を一度開いた端末は、以後そのブラウザでは計測しない。
+     解除するときは https://kskac.com/?noga=0 を開く。 */
+  (function () {
+    try {
+      var q = window.location.search;
+      if (q.indexOf("noga=1") > -1) localStorage.setItem("kskac-noga", "1");
+      if (q.indexOf("noga=0") > -1) localStorage.removeItem("kskac-noga");
+      if (localStorage.getItem("kskac-noga") === "1") window["ga-disable-G-EYJYJXQECM"] = true;
+    } catch (e) {}
+  })();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-EYJYJXQECM");
+</script>
+<title>親を自分の家に引き取って介護したら、実家の8割引きが使えませんでした｜小規模宅地等の特例と介護｜日下部税理士事務所（茨城県水戸市）</title>
+<meta name="description" content="小規模宅地等の特例は、老人ホームに入所した場合には救済規定がありますが、子の自宅に引き取って介護した場合は対象外です。要介護認定と対象施設の要件、使える場合と使えない場合の早見表、相続税が0円と310万円に分かれる計算例を、水戸市の税理士が図表でわかりやすく解説します。">
+<link rel="canonical" href="https://kskac.com/column-shokibo.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="親を自分の家に引き取って介護したら、実家の8割引きが使えませんでした〜税理士が『小規模宅地等の特例と介護』を実例で解説します〜">
+<meta property="og:description" content="施設に空きがなく、やむを得ず子の家で介護した。そのために実家の土地の8割引きが使えなくなりました。要件と対策を図表で解説します。">
+<meta property="og:url" content="https://kskac.com/column-shokibo.html">
+<meta property="og:site_name" content="日下部税理士事務所">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="日下部税理士事務所 ホームへ">
+      <span class="brand-text">
+        <span class="brand-name">日下部税理士事務所</span>
+        <span class="brand-sub">Kusakabe Tax &amp; Accounting</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
+      <ul class="nav-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">事務所紹介 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="about.html#greeting">代表挨拶</a></li>
+            <li><a href="about.html#works">業務案内</a></li>
+            <li><a href="about.html#access">アクセスマップ</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス・料金 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="service-tax.html">税務・会計顧問</a></li>
+            <li><a href="service-consulting.html">財務コンサルティング</a></li>
+            <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+          </ul>
+        </li>
+        <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">初回相談 無料</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" data-en="COLUMN">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくず">
+        <ol>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+          <li aria-current="page">親を自分の家に引き取って介護したら、実家の8割引きが使えませんでした</li>
+        </ol>
+      </nav>
+      <p class="article-meta"><time datetime="2026-08-02">2026.08.02</time> <span class="news-cat">相続・相続対策</span></p>
+      <h1>親を自分の家に引き取って介護したら、実家の8割引きが使えませんでした<br>〜税理士が『小規模宅地等の特例と介護』を実例で解説します〜</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="col-intro" data-reveal>
+        <p>今回は、ご自宅の土地の評価額を大きく下げられる「小規模宅地等の特例」について解説をしていきます。<br>
+        この特例には、老人ホームに入所した場合の救済規定があります。ところが、<strong>施設に空きがなく、やむを得ずお子さんの家で介護した場合</strong>には、その救済が届きません。介護のためにしたことが、結果として税金を増やしてしまうことがあるのです。</p>
+        <p class="ci-lead-in">このコラムを読むと…</p>
+        <div class="col-qbox">
+          <ul>
+          <li>実家の土地が8割引きになるって、どういうこと？</li>
+          <li>親が施設に入ったら、実家はもう対象外なんだろうか？</li>
+          <li>うちで親を看ることにしたけれど、何か手続きは要るのかな？</li>
+          </ul>
+        </div>
+        <p>このようなことが理解できるようになります。とても分かりやすく簡潔にまとめましたので、ぜひ最後まで読んでくださいね。</p>
+      </div>
+
+      <nav class="toc" aria-label="目次">
+        <p class="toc-head"><i class="fa-solid fa-list-ul" aria-hidden="true"></i> 目次</p>
+        <ol>
+          <li><a href="#ch1">施設が見つからず、私の家で介護しました</a></li>
+          <li><a href="#ch2">実家の土地が8割引きになる特例</a></li>
+          <li><a href="#ch3">「住んでいた家」でなくなると、外れてしまいます</a></li>
+          <li><a href="#ch4">使える場所・使えない場所の一覧</a></li>
+          <li><a href="#ch5">結局、相続税はいくら変わるのか</a></li>
+          <li><a href="#ch6">では、どうすればよかったのか</a></li>
+          <li><a href="#ch7">まとめ</a></li>
+        </ol>
+      </nav>
+
+      <article class="article-body">
+        <h2 id="ch1" class="ch-head"><span class="ch-num" aria-hidden="true">1</span>施設が見つからず、私の家で介護しました</h2>
+        <p>お父様が実家で一人暮らしをされていました。年齢を重ねて介護が必要になり、息子さんが介護施設を探し始めます。ところが、いくつ問い合わせても<strong>空きが見つかりません。</strong></p>
+        <p>このまま一人にしておくわけにはいかない。そう考えた息子さんは、お父様をご自分の家に引き取り、ご家族で介護をされました。実家は空き家のまま残しておきました。</p>
+        <p>その後、お父様が亡くなり、相続税の申告のご相談にお越しになりました。そこで判明したのが、<strong class="em-red">実家の土地に「小規模宅地等の特例」が使えない、ということでした。</strong></p>
+        <p>「介護のために引き取ったのに、どうしてですか」——当然のお気持ちだと思います。しかし現在の制度では、こうなってしまいます。</p>
+
+        <div class="callout">先に結論をお伝えします。この特例は<strong>「亡くなった方が住んでいた自宅の土地」</strong>を対象にしています。老人ホームに入所した場合には、実家を自宅とみなす救済規定があります。しかし<strong class="em-mark">お子さんの家に引き取られた場合は、その救済の対象に入っていません。</strong></div>
+
+        <h2 id="ch2" class="ch-head"><span class="ch-num" aria-hidden="true">2</span>実家の土地が8割引きになる特例</h2>
+        <p>まず、この特例がどれほど大きいかをご説明します。</p>
+        <p>亡くなった方が住んでいたご自宅の土地は、要件を満たせば<strong class="em-mark">330㎡までの評価額を80%減らせます。</strong>これを「小規模宅地等の特例（特定居住用宅地等）」といいます。残された家族が、住む場所や生活の基盤を失わずに済むようにという趣旨の制度です。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 190" role="img" aria-label="小規模宅地等の特例の効果。評価額4000万円の自宅の土地が、特例の適用により800万円まで下がる。">
+            <text x="20" y="24" fill="#16202b" font-size="15" font-weight="700">特例なし</text>
+            <rect x="20" y="34" width="360" height="34" rx="5" fill="#a5442f"/>
+            <text x="200" y="57" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">4,000万円</text>
+
+            <polygon points="194,76 206,76 200,88" fill="#b4bfc9"/>
+            <text x="216" y="86" fill="#1c5c94" font-size="14" font-weight="700">330㎡まで 80%減</text>
+
+            <text x="20" y="118" fill="#16202b" font-size="15" font-weight="700">特例あり</text>
+            <rect x="20" y="128" width="72" height="34" rx="5" fill="#2a6ca6"/>
+            <text x="56" y="151" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">800万円</text>
+            <text x="104" y="151" fill="#12283f" font-size="15" font-weight="700">3,200万円の減額</text>
+            <text x="20" y="182" fill="#5a6774" font-size="14">※土地200㎡・評価額4,000万円の場合</text>
+          </svg>
+          <figcaption>図1：特例が使えるかどうかで、同じ土地の評価額がこれだけ変わります。</figcaption>
+        </figure>
+
+        <p>誰が引き継ぐかによって、条件が変わります。</p>
+
+        <table class="col-table">
+          <thead>
+            <tr><th>引き継ぐ人</th><th>主な条件</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>配偶者</th><td>条件なし。住み続けなくても、売っても適用できます</td></tr>
+            <tr><th>同居していた親族</th><td>申告期限まで、住み続けかつ所有し続けること</td></tr>
+            <tr><th>別居の親族</th><td>配偶者も同居の相続人もいない場合に限り、一定の要件で適用（いわゆる家なき子）</td></tr>
+          </tbody>
+        </table>
+
+        <p>3つめの「別居の親族」は、いわゆる<strong>家なき子</strong>と呼ばれるものです。持ち家のないお子さんが実家を引き継ぐ場合を想定した規定で、亡くなった方に配偶者も同居の相続人もいないこと、そのお子さんが3年以内にご自分やご家族の持ち家に住んでいないことなど、細かい条件があります。今回のように<strong>お子さんがご自分の家をお持ちの場合は、そもそも当てはまりません。</strong></p>
+        <p>ただし、いずれの場合も<strong>大前提</strong>があります。その土地が<strong class="em-red">「亡くなった方が住んでいた自宅の土地」であること。</strong>ここが今回のご相談の分かれ目でした。この前提を欠くと、同居でも家なき子でも、入口にすら立てません。</p>
+
+        <h2 id="ch3" class="ch-head"><span class="ch-num" aria-hidden="true">3</span>「住んでいた家」でなくなると、外れてしまいます</h2>
+        <p>特例の対象になるのは、原則として<strong>亡くなる直前に、その方が実際に住んでいた家の土地</strong>です。空き家になっていた実家は、この原則からは外れてしまいます。</p>
+        <p>とはいえ、高齢になれば施設に移ることは珍しくありません。そこで平成26年から、<strong>老人ホーム等に入所した場合には、入所直前まで住んでいた家を自宅とみなす</strong>という救済規定が設けられました。</p>
+        <p>この救済を受けるには、次の2つを<strong>どちらも</strong>満たす必要があります。</p>
+
+        <table class="col-table">
+          <thead>
+            <tr><th>要件</th><th>内容</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>① 認定を受けていること</th><td>亡くなる直前に、要介護認定・要支援認定（または障害支援区分の認定）を受けていること</td></tr>
+            <tr><th>② 対象の施設であること</th><td>法令で定められた施設に入居・入所していること（次章の一覧）</td></tr>
+          </tbody>
+        </table>
+
+        <p>さらに、空き家になった実家を<strong>他人に貸したり、事業に使ったりしていないこと</strong>も条件です。「誰も使っていない状態で残しておく」のが、この規定の前提になっています。施設に入られたあと、空き家の管理が大変だからと賃貸に出してしまうと、それだけで対象から外れてしまいます。もったいない話ですが、実際によくあることです。</p>
+        <p>そもそもこの特例は、<strong>残されたご家族が住む場所や生活の基盤を失わずに済むように</strong>という趣旨で設けられています。だからこそ「亡くなった方の生活の本拠だったかどうか」が問われます。老人ホームの救済規定も、施設に移らざるを得なかった方の実家を、生活の本拠とみなし続けるための例外という位置づけです。</p>
+        <p>今回のご相談では、<strong class="em-red">②の要件を満たしませんでした。</strong>お子さんのご自宅は、法令に定められた施設ではないからです。介護の必要性や、施設の空きがなかったという事情は、残念ながら考慮されません。</p>
+        <p>結果として、実家の土地は「亡くなった方が住んでいた自宅の土地」に当たらないと判断し、<strong>特例を適用せずに申告をしました。</strong></p>
+        <p>ここで「では、お父様が最後に住んでいた息子さんの家の土地はどうなるのか」と思われるかもしれません。理屈のうえでは、そちらがお父様の生活の本拠です。ただし<strong>その土地が息子さん名義であれば、そもそもお父様の相続財産ではありません。</strong>相続財産でないものに特例を使うことはできず、行き場がなくなってしまいます。</p>
+
+        <div class="callout">まぎらわしいのが<strong>入院</strong>との違いです。病気の治療でご入院された場合は、家財をそのままにして退院後に戻る状況であれば、<strong class="em-mark">一時的に留守にしているだけと扱われ、自宅として認められるのが一般的です。</strong>病院は先ほどの対象施設に含まれていませんが、そもそも生活の拠点が移ったとは考えないためです。同じ「自宅を離れる」でも、扱いが分かれます。</div>
+
+        <h2 id="ch4" class="ch-head"><span class="ch-num" aria-hidden="true">4</span>使える場所・使えない場所の一覧</h2>
+        <p>救済規定の対象になる施設は、法令で決められています。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>対象になる施設</th><th>具体例</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>老人福祉法の施設</th><td>特別養護老人ホーム、養護老人ホーム、軽費老人ホーム、有料老人ホーム、認知症グループホーム</td></tr>
+            <tr><th>介護保険法の施設</th><td>介護老人保健施設、介護医療院</td></tr>
+            <tr><th>高齢者住まい法</th><td>サービス付き高齢者向け住宅（一定のもの）</td></tr>
+            <tr><th>障害者総合支援法</th><td>障害者支援施設、共同生活援助を行う住居</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>ご自宅を離れたあと、どこで暮らしていたかによって結論が変わります。整理すると次のとおりです。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 300" role="img" aria-label="亡くなる直前にどこで暮らしていたかによる判定。自宅は適用可、一時的な入院は原則適用可、対象施設に入所し要介護認定ありは適用可、認定なしは適用不可、子や親族の家での介護は適用不可。">
+            <rect x="20" y="8" width="360" height="34" rx="6" fill="#0d1b28"/>
+            <text x="200" y="31" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">亡くなる直前、どこで暮らしていたか</text>
+
+            <rect x="20" y="54" width="228" height="38" rx="6" fill="#ffffff" stroke="#b4bfc9" stroke-width="1.5"/>
+            <text x="34" y="78" fill="#16202b" font-size="15">自宅にそのまま</text>
+            <rect x="258" y="54" width="122" height="38" rx="6" fill="#2a6ca6"/>
+            <text x="319" y="78" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">◎ 使える</text>
+
+            <rect x="20" y="100" width="228" height="38" rx="6" fill="#ffffff" stroke="#b4bfc9" stroke-width="1.5"/>
+            <text x="34" y="124" fill="#16202b" font-size="15">病院に入院（一時的）</text>
+            <rect x="258" y="100" width="122" height="38" rx="6" fill="#2a6ca6"/>
+            <text x="319" y="124" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">◎ 原則使える</text>
+
+            <rect x="20" y="146" width="228" height="52" rx="6" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="34" y="168" fill="#16202b" font-size="15">対象施設に入所</text>
+            <text x="34" y="188" fill="#1c5c94" font-size="14" font-weight="700">＋ 要介護認定あり</text>
+            <rect x="258" y="146" width="122" height="52" rx="6" fill="#2a6ca6"/>
+            <text x="319" y="177" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">◎ 使える</text>
+
+            <rect x="20" y="206" width="228" height="38" rx="6" fill="#ffffff" stroke="#b4bfc9" stroke-width="1.5"/>
+            <text x="34" y="230" fill="#16202b" font-size="15">対象施設だが認定なし</text>
+            <rect x="258" y="206" width="122" height="38" rx="6" fill="#a5442f"/>
+            <text x="319" y="230" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">× 使えない</text>
+
+            <rect x="20" y="252" width="228" height="38" rx="6" fill="#fbeeea" stroke="#a5442f" stroke-width="1.5"/>
+            <text x="34" y="276" fill="#16202b" font-size="15">子・親族の家で介護</text>
+            <rect x="258" y="252" width="122" height="38" rx="6" fill="#a5442f"/>
+            <text x="319" y="276" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">× 使えない</text>
+          </svg>
+          <figcaption>図2：暮らしていた場所による判定。いちばん下が、今回のご相談のケースです。</figcaption>
+        </figure>
+
+        <p>要介護認定について、ひとつ大事な点があります。認定は<strong class="em-mark">「亡くなる直前」に受けていればよく、施設に入る時点で必要なわけではありません。</strong>入所後に申請して認定を受けたのでも間に合います。</p>
+        <p>なお、認定の申請中に相続が開始してしまった場合も、認定の効力が申請日にさかのぼるため、要件を満たすものとして扱われる場合があります。判断が難しいところですので、必ず個別にご確認ください。</p>
+        <p>認定の手続きは、お住まいの市町村の窓口へ申請するところから始まります。そのあと調査員による訪問調査と、かかりつけのお医者さんが書く意見書をもとに審査が行われ、<strong>結果が出るまでおおむね1か月</strong>かかります。介護が必要になった段階で早めに申請しておけば、あとで施設に入られたときに要件がそろいます。<strong>先に済ませておいて損はありません。</strong></p>
+
+        <h2 id="ch5" class="ch-head"><span class="ch-num" aria-hidden="true">5</span>結局、相続税はいくら変わるのか</h2>
+        <p>数字で見ていきます。分かりやすくするため、次のように単純化します。</p>
+        <ul>
+          <li>亡くなったのはお父様。<strong>相続人はお子さん1人</strong></li>
+          <li>実家の土地は<strong>200㎡・評価額4,000万円</strong></li>
+          <li>そのほかの財産は<strong>現預金2,000万円</strong>（建物の評価は考えないものとします）</li>
+          <li>基礎控除は「3,000万円＋600万円×1人」で<strong>3,600万円</strong></li>
+        </ul>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>項目</th><th>施設に入所していた場合</th><th>子の家で介護した場合</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>土地の評価額</th><td class="num">4,000万円</td><td class="num">4,000万円</td></tr>
+            <tr><th>特例による減額</th><td class="num">−3,200万円</td><td>適用なし</td></tr>
+            <tr><th>土地（減額後）</th><td class="num">800万円</td><td class="num">4,000万円</td></tr>
+            <tr><th>現預金</th><td class="num">2,000万円</td><td class="num">2,000万円</td></tr>
+            <tr><th>課税価格の合計</th><td class="num">2,800万円</td><td class="num">6,000万円</td></tr>
+            <tr><th>基礎控除</th><td class="num">3,600万円</td><td class="num">3,600万円</td></tr>
+            <tr><th>課税遺産総額</th><td>基礎控除以下</td><td class="num">2,400万円</td></tr>
+            <tr class="is-total"><th>相続税</th><td class="num">0円</td><td class="num">310万円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 165" role="img" aria-label="相続税の比較。施設に入所していた場合は0円、子の家で介護した場合は310万円で、310万円の差。">
+            <text x="20" y="30" fill="#16202b" font-size="15" font-weight="700">施設に入所</text>
+            <rect x="150" y="14" width="6" height="30" rx="3" fill="#2a6ca6"/>
+            <text x="166" y="34" fill="#12283f" font-size="16" font-weight="700">0円</text>
+
+            <text x="20" y="86" fill="#16202b" font-size="15" font-weight="700">子の家で介護</text>
+            <rect x="150" y="70" width="220" height="30" rx="4" fill="#a5442f"/>
+            <text x="260" y="90" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">310万円</text>
+
+            <line x1="20" y1="122" x2="380" y2="122" stroke="#b4bfc9" stroke-width="1"/>
+            <text x="200" y="148" text-anchor="middle" fill="#16202b" font-size="16" font-weight="700">その差 310万円</text>
+          </svg>
+          <figcaption>図3：単純化した前提での比較。介護の形が違うだけで、納める税額がこれだけ変わります。</figcaption>
+        </figure>
+
+        <p>同じ財産、同じ家族構成、同じ「親を大切に介護した」という事実。それでも結論は分かれます。<strong class="em-red">制度の要件に当てはまるかどうかだけで決まってしまうのです。</strong></p>
+
+        <div class="callout">ひとつ注意点があります。<strong>特例を使って相続税が0円になる場合でも、申告は必要です。</strong>期限内に申告書を出すことが、特例を認めてもらうための条件だからです。「税額が0円なら申告は要らない」と自己判断され、あとから本来不要だったはずの税金を課されてしまう例が実際にあります。財産の合計がもともと基礎控除以下で0円になる場合とは、扱いがまったく違いますのでご注意ください。</div>
+
+        <h2 id="ch6" class="ch-head"><span class="ch-num" aria-hidden="true">6</span>では、どうすればよかったのか</h2>
+        <p>正直に申し上げますと、<strong>介護のあり方そのものを税金で決めるべきではない</strong>と考えています。施設に空きがなく、ご自宅で看るしかない。その選択は間違っていません。</p>
+        <p>そのうえで、知っていれば取れた手立てもあります。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>こんな場面</th><th>やっておきたいこと</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>施設を探し始めた</th><td>入所が決まる前に、<strong>要介護認定の申請</strong>を済ませておく。申請から結果まで1か月ほどかかります</td></tr>
+            <tr><th>空きを待っている</th><td>空きが出て入所できれば要件を満たします。<strong>実家は空き家のまま残す</strong>（貸すと対象外になります）</td></tr>
+            <tr><th>子の家で看ることにした</th><td>実家の土地に特例は使えない前提で、<strong>相続税がいくらになるか試算しておく</strong></td></tr>
+            <tr><th>実家を活用したい</th><td>賃貸に出すと「貸付事業用宅地等」として200㎡まで50%減の可能性。ただし<strong class="em-red">貸し始めてから3年を超えないと原則使えません</strong></td></tr>
+            <tr><th>実家を手放したい</th><td>ご本人がお元気なうちに売却すると、譲渡所得の特別控除を使える場合があります</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>もっとも大切なのは、<strong class="em-mark">介護が始まった時点で、一度試算をしておくことです。</strong>相続が起きてからでは、選べる手立てがほとんど残っていません。今回のご相談も、お父様をお引き取りになった時点でご相談いただけていれば、実家の使い道を含めて別の道を検討できたはずです。</p>
+        <p>試算といっても、難しいことをするわけではありません。財産のおおよその内訳と、相続人が何人になるかが分かれば、相続税がかかりそうかどうかの見当はつきます。そのうえで「特例が使える場合」と「使えない場合」の両方を出しておけば、実家をどうするかの判断材料になります。ご相談としては30分から1時間ほどのお話です。</p>
+        <p>もうひとつ、お子さんが何人かいらっしゃる場合はご注意ください。特例を使うには、<strong>申告期限までに遺産の分け方が決まっていること</strong>が原則です。誰が実家を引き継ぐかで折り合いがつかないまま期限を迎えると、いったん特例なしで申告し、納税することになります。分け方が決まってから手続きを取れば適用を受けられますが、そのための書類を期限内に出しておく必要があります。</p>
+        <p>なお、この論点は制度と介護の実態が噛み合っていない部分だと感じています。高齢化が進み、施設の受け入れは追いついていません。ご家族はそれぞれの事情に応じて介護の形を選ばざるを得ないのが実情です。今後の制度改正が待たれるところですが、<strong>現行のルールで判断するほかありません。</strong></p>
+
+        <h2 id="ch7" class="ch-head"><span class="ch-num" aria-hidden="true">7</span>まとめ</h2>
+        <p>今回の内容を整理します。</p>
+        <ul>
+          <li>小規模宅地等の特例は、自宅の土地の評価額を<strong class="em-mark">330㎡まで80%減らせる</strong>大きな制度です</li>
+          <li>対象は「亡くなった方が住んでいた自宅の土地」。老人ホーム等への入所には救済規定があります</li>
+          <li>救済を受けるには<strong>要介護認定</strong>と<strong>対象施設であること</strong>の両方が必要です</li>
+          <li><strong class="em-red">お子さんの家に引き取って介護した場合は、対象になりません。</strong>施設に空きがなかった事情は考慮されません</li>
+          <li>今回の例では、相続税が<strong>0円と310万円</strong>に分かれました</li>
+          <li>特例を使って0円になる場合も、<strong>申告は必要</strong>です</li>
+        </ul>
+        <p>ご家族の介護は、税金の都合で決めるものではありません。それでも、<strong>知らないまま数百万円の差がつくのは避けたい</strong>ところです。要介護認定を先に受けておく、実家を貸すかどうかを慎重に決める——こうした小さな判断の積み重ねで、結果は変わります。</p>
+        <p>当事務所では、<strong>初回のご相談（約60分）を無料</strong>でお受けしています。「親の介護が始まった」「実家が空き家になっている」という段階でのご相談を、いちばん歓迎しています。相続が起きてからでは間に合わないことが、確かにあるからです。</p>
+
+        <p class="article-note">※本記事は、実際にお受けしたご相談をもとに、ご依頼者が特定されないよう内容を変更したうえで紹介しています。記載の評価額・税額は前提を単純化した計算例であり、実際の適用可否は個別の事情や法令・通達により異なります。本記事は2026年8月時点の情報に基づいています。具体的なご相談は当事務所までお問い合わせください。</p>
+      </article>
+
+      <div class="article-cta">
+        <h2>介護が始まったら、一度ご相談ください</h2>
+        <p>「実家をどうするか」の段階でのご相談を歓迎しています。初回のご相談（約60分）は無料です。</p>
+        <a class="btn btn-accent btn-lg" href="contact.html"><i class="fa-solid fa-paper-plane"></i> 初回無料相談はこちら</a>
+      </div>
+      <aside class="related" aria-labelledby="related-head" data-reveal>
+        <h2 class="related-head" id="related-head">あわせて読みたいコラム</h2>
+        <ul class="related-list">
+          <li>
+            <a href="column-tochi.html">
+              <span class="related-meta"><time datetime="2026-07-31">2026.07.31</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">同じ土地なのに、評価額の見立てが10倍以上違いました　〜税理士が『土地の評価』と無料相談の使い方を実例で解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-kyoyu.html">
+              <span class="related-meta"><time datetime="2026-05-20">2026.05.20</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">共有取得による遺産分割の注意点を理解しよう　〜税理士が『共有取得』についてわかりやすく解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-souzokunin.html">
+              <span class="related-meta"><time datetime="2026-04-15">2026.04.15</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">遺産を相続できるのは誰？　〜税理士が『法定相続人』についてわかりやすく解説します〜</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <p class="article-back"><a href="column.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> お知らせ・コラム一覧へ戻る</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand-text"><span class="brand-name">日下部税理士事務所</span></span>
+      </a>
+      <p class="footer-desc">茨城県水戸市に根ざした、税理士による提案型の事務所です。</p>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">メニュー</h2>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">事務所紹介</a></li>
+        <li><a href="services.html">サービス・料金</a></li>
+        <li><a href="column.html">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">サービス</h2>
+      <ul>
+        <li><a href="service-tax.html">税務・会計顧問</a></li>
+        <li><a href="service-consulting.html">財務コンサルティング</a></li>
+        <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">事務所情報</h2>
+      <address class="footer-address">
+        〒311-4151<br>
+        茨城県水戸市姫子1丁目820-6<br>
+        ヴィラエスポワールⅠ 1F<br>
+        <a href="tel:029-215-9400">TEL：029-215-9400</a><br>
+        <span>FAX：029-215-9477</span>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <small>&copy; <span id="year">2026</span> 日下部税理士事務所</small>
+      <small>茨城県水戸市の税理士事務所</small>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "親を自分の家に引き取って介護したら、実家の8割引きが使えませんでした〜税理士が『小規模宅地等の特例と介護』を実例で解説します〜",
+  "description": "小規模宅地等の特例は老人ホーム入所には救済規定がありますが、子の自宅で介護した場合は対象外です。要件と対策、相続税が0円と310万円に分かれる計算例を解説します。",
+  "datePublished": "2026-08-02",
+  "dateModified": "2026-08-02",
+  "inLanguage": "ja",
+  "author": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "publisher": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://kskac.com/column-shokibo.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kskac.com/" },
+    { "@type": "ListItem", "position": 2, "name": "お知らせ・コラム", "item": "https://kskac.com/column.html" },
+    { "@type": "ListItem", "position": 3, "name": "親を自分の家に引き取って介護したら、実家の8割引きが使えませんでした", "item": "https://kskac.com/column-shokibo.html" }
+  ]
+}
+</script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
