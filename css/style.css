@@ -1409,7 +1409,10 @@ a.news-item:hover::after { color: var(--color-accent); transform: translate(3px,
   .steps { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 860px) {
+/* ヘッダーのメニューは900px以下でハンバーガーに切り替える。
+   901〜1120pxでは横並びのまま文字と余白を詰める（下のブロック）。
+   ※他のレイアウトの切り替えは従来どおり860pxのまま */
+@media (max-width: 900px) {
   /* モバイルナビ（インクネイビーのフルスクリーンメニュー） */
   .nav-toggle { display: flex; }
   .site-nav {
@@ -1477,7 +1480,21 @@ a.news-item:hover::after { color: var(--color-accent); transform: translate(3px,
   }
   .has-dropdown .dropdown a:hover,
   .has-dropdown .dropdown a.is-active { color: var(--color-sky); background: transparent; }
+}
 
+/* タブレット横向きなど（901〜1120px）：横並びを保ちつつ、
+   事務所名とメニューが2行に折り返さないよう文字と余白を詰める */
+@media (min-width: 901px) and (max-width: 1120px) {
+  .header-inner { gap: .8rem; }
+  .brand-sub { display: none; }
+  .brand-name { font-size: 1.12rem; }
+  .site-nav { gap: 1rem; }
+  .nav-list { gap: 1rem; }
+  .nav-list > li > a { font-size: .9rem; }
+  .nav-cta { padding-inline: .9rem; font-size: .88rem; }
+}
+
+@media (max-width: 860px) {
   /* ヒーローの装飾（縦書き英字・SCROLL）はモバイルでは非表示 */
   .hero-side, .hero-scroll { display: none; }
   .hero-grid { min-height: 0; }
