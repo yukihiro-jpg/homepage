@@ -107,6 +107,26 @@ python3 -m http.server 8000   # → ブラウザで http://localhost:8000
 
 ---
 
+## 🎨 アイコン（Font Awesome）
+
+アイコンは外部から読み込まず、**サイトで使う22種類だけ**を抜き出して同梱しています
+（`icons/kskac-icons.woff2` 約2.8KB／元は154KB）。
+アイコンを追加・変更したら、次を実行してください。
+
+```
+python3 tools/build-icons.py
+```
+
+- 使えるアイコン名は `icons/src/css/all.css` にあるもの（Font Awesome Free 6.6.0 の solid）
+- HTMLに `<i class="fa-solid fa-〇〇">` と書いてから上のコマンドを実行すると、
+  そのアイコンが自動で収録されます。実行しないと**新しいアイコンは表示されません**
+- `css/style.css` の中で `content: "\f0??"` と直接指定しているものも自動で拾います
+
+ライセンス：Font Awesome Free（アイコン CC BY 4.0／フォント SIL OFL 1.1）。
+原文は `icons/src/LICENSE.txt`。
+
+---
+
 ## 📊 アクセス解析（Googleアナリティクス GA4）
 
 - 測定ID：`G-EYJYJXQECM`（プロパティ名「kskac.com」）
