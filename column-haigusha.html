@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1b28">
+
+<!-- Google アナリティクス（GA4）※測定IDを変えるときは全HTMLを一括置換すること -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJYJXQECM"></script>
+<script>
+  /* 事務所内からのアクセスを集計に含めないための仕組み。
+     https://kskac.com/?noga=1 を一度開いた端末は、以後そのブラウザでは計測しない。
+     解除するときは https://kskac.com/?noga=0 を開く。 */
+  (function () {
+    try {
+      var q = window.location.search;
+      if (q.indexOf("noga=1") > -1) localStorage.setItem("kskac-noga", "1");
+      if (q.indexOf("noga=0") > -1) localStorage.removeItem("kskac-noga");
+      if (localStorage.getItem("kskac-noga") === "1") window["ga-disable-G-EYJYJXQECM"] = true;
+    } catch (e) {}
+  })();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-EYJYJXQECM");
+</script>
+<title>奥さまに全部相続させれば安心？｜配偶者の税額軽減と二次相続｜日下部税理士事務所（茨城県水戸市）</title>
+<meta name="description" content="配偶者の税額軽減を使えば一次相続の税額は0円にできますが、お子さんの代（二次相続）で負担が増えることがあります。同じ財産・同じ家族で合計税額が1,160万円と504万円に分かれる具体例をもとに、分け方の考え方と判断材料を、水戸市の税理士が図表でわかりやすく解説します。">
+<link rel="canonical" href="https://kskac.com/column-haigusha.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="奥さまに全部相続させれば安心？〜税理士が『配偶者の税額軽減と二次相続』について具体例でわかりやすく解説します〜">
+<meta property="og:description" content="「とりあえず全部お母さんに」で一次相続は0円。しかし二次相続まで通算すると656万円も損をすることがあります。具体例を図表で解説します。">
+<meta property="og:url" content="https://kskac.com/column-haigusha.html">
+<meta property="og:site_name" content="日下部税理士事務所">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="icons/icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="日下部税理士事務所 ホームへ">
+      <span class="brand-text">
+        <span class="brand-name">日下部税理士事務所</span>
+        <span class="brand-sub">Kusakabe Tax &amp; Accounting</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
+      <ul class="nav-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">事務所紹介 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="about.html#greeting">代表挨拶</a></li>
+            <li><a href="about.html#works">業務案内</a></li>
+            <li><a href="about.html#access">アクセスマップ</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス・料金 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="service-tax.html">税務・会計顧問</a></li>
+            <li><a href="service-consulting.html">財務コンサルティング</a></li>
+            <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+          </ul>
+        </li>
+        <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">初回相談 無料</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" data-en="COLUMN">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくず">
+        <ol>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+          <li aria-current="page">奥さまに全部相続させれば安心？</li>
+        </ol>
+      </nav>
+      <p class="article-meta"><time datetime="2026-10-18">2026.10.18</time> <span class="news-cat">相続・相続対策</span></p>
+      <h1>奥さまに全部相続させれば安心？<br>〜税理士が『配偶者の税額軽減と二次相続』について具体例でわかりやすく解説します〜</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="col-intro" data-reveal>
+        <p>今回は、相続の場面で必ず話題になる「配偶者の税額軽減」について解説をしていきます。<br>
+        お父様が亡くなったとき、「<strong>とりあえず全部お母さんに相続させておけばいい</strong>」というお話をよく聞きます。たしかに、そうすればその場で納める相続税は0円になることが多いのです。ところがその判断が、お子さんの代になって大きな負担となって返ってくることがあります。</p>
+        <p class="ci-lead-in">このコラムを読むと…</p>
+        <div class="col-qbox">
+          <ul>
+          <li>妻が全部相続すれば税金はかからないんだよね？</li>
+          <li>二次相続って聞くけれど、何が問題なんだろう？</li>
+          <li>うちの場合、どう分けるのがいいんだろう？</li>
+          </ul>
+        </div>
+        <p>このようなことが理解できるようになります。とても分かりやすく簡潔にまとめましたので、ぜひ最後まで読んでくださいね。</p>
+      </div>
+
+      <nav class="toc" aria-label="目次">
+        <p class="toc-head"><i class="fa-solid fa-list-ul" aria-hidden="true"></i> 目次</p>
+        <ol>
+          <li><a href="#ch1">「とりあえず全部、母さんに」で大丈夫でしょうか</a></li>
+          <li><a href="#ch2">配偶者の税額軽減は、たしかに大きい</a></li>
+          <li><a href="#ch3">見落とされるのが「二次相続」です</a></li>
+          <li><a href="#ch4">同じご家族で、これだけ差が出ます</a></li>
+          <li><a href="#ch5">では、いくら相続させるのがよいのか</a></li>
+          <li><a href="#ch6">それでも、税金だけで決めないでください</a></li>
+          <li><a href="#ch7">まとめ</a></li>
+        </ol>
+      </nav>
+
+      <article class="article-body">
+        <h2 id="ch1" class="ch-head"><span class="ch-num" aria-hidden="true">1</span>「とりあえず全部、母さんに」で大丈夫でしょうか</h2>
+        <p>お父様が亡くなり、残されたのはお母様とお子さん2人。遺産の分け方を話し合う席で、こんな結論になることがよくあります。</p>
+        <p>「お母さんの生活があるんだから、全部お母さんが相続すればいい」「どうせいずれ自分たちのところに来るんだし」「それに、そうすれば税金もかからないらしいよ」</p>
+        <p>ご家族思いの、よくわかるご判断だと思います。実際、<strong>その場で納める相続税は0円になることが多い</strong>のも事実です。</p>
+        <p>ただ、相続は一度では終わりません。いずれお母様が亡くなったとき、<strong class="em-red">もう一度、今度は軽減のない状態で相続税がかかります。</strong>このときの負担まで含めて考えると、結論が変わることがあるのです。</p>
+
+        <div class="callout">最初の相続（お父様の相続）を<strong>一次相続</strong>、次の相続（お母様の相続）を<strong>二次相続</strong>と呼びます。<strong class="em-mark">相続対策は、この2回を合計していくら納めるかで考えます。</strong>一次相続だけを見て「0円で済んだ」と安心すると、後で思わぬ負担が生じます。</div>
+
+        <h2 id="ch2" class="ch-head"><span class="ch-num" aria-hidden="true">2</span>配偶者の税額軽減は、たしかに大きい</h2>
+        <p>まず、この制度の中身を確認します。亡くなった方の配偶者が財産を相続した場合、次の金額までは相続税がかかりません。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 200" role="img" aria-label="配偶者の税額軽減の仕組み。1億6000万円までか、配偶者の法定相続分までのいずれか多い金額まで相続税がかからない。ただし適用には申告が必要。">
+            <rect x="20" y="8" width="360" height="48" rx="8" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="34" y="30" fill="#1c5c94" font-size="15" font-weight="700">① 1億6,000万円まで</text>
+            <text x="34" y="49" fill="#16202b" font-size="14">この額までは配偶者に相続税がかかりません</text>
+
+            <rect x="20" y="66" width="360" height="48" rx="8" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="34" y="88" fill="#1c5c94" font-size="15" font-weight="700">② 配偶者の法定相続分まで</text>
+            <text x="34" y="107" fill="#16202b" font-size="14">子がいる場合は財産の2分の1まで</text>
+
+            <text x="20" y="138" fill="#16202b" font-size="15" font-weight="700">①と②のうち、多い方の金額まで非課税</text>
+
+            <rect x="20" y="148" width="360" height="44" rx="8" fill="#a5442f"/>
+            <text x="34" y="169" fill="#ffffff" font-size="15" font-weight="700">ただし、適用には申告が必要です</text>
+            <text x="34" y="186" fill="#fbeeea" font-size="14">税額が0円でも、申告しないと認められません</text>
+          </svg>
+          <figcaption>図1：配偶者の税額軽減の仕組み。多くのご家庭では1億6,000万円の枠に収まります。</figcaption>
+        </figure>
+
+        <table class="col-table">
+          <thead>
+            <tr><th>項目</th><th>内容</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>非課税になる額</th><td>1億6,000万円、または配偶者の法定相続分のうち多い方</td></tr>
+            <tr><th>婚姻期間</th><td>条件なし。期間の長短は問いません</td></tr>
+            <tr><th>対象になる人</th><td>戸籍上の配偶者のみ。内縁の方は対象外です</td></tr>
+            <tr><th>必要な手続き</th><td>申告期限（10か月以内）までの遺産分割と、相続税の申告</td></tr>
+          </tbody>
+        </table>
+
+        <p>多くのご家庭では、財産が1億6,000万円を超えることはそうありません。つまり<strong class="em-mark">配偶者が全部相続すれば、一次相続の相続税は0円になります。</strong>この制度自体は、残された配偶者の生活を守るための、とてもありがたいものです。</p>
+        <p>ひとつ注意が必要なのは<strong>手続き</strong>です。この軽減は、申告して初めて認められます。「税額が0円なら申告は要らない」と自己判断され、あとから本来不要だったはずの税金を課されてしまう例が実際にあります。</p>
+        <p>もうひとつ、<strong>申告期限までに遺産の分け方が決まっていること</strong>も条件です。話し合いがまとまらないまま10か月を迎えると、いったん軽減を使わずに計算した税額を納めることになります。ただしその際に「申告期限後3年以内の分割見込書」という書類を一緒に出しておけば、後日分割が決まった時点で軽減を受け、納めすぎた分を返してもらえます。この書類を出し忘れると取り返しがつきませんので、ご注意ください。</p>
+
+        <h2 id="ch3" class="ch-head"><span class="ch-num" aria-hidden="true">3</span>見落とされるのが「二次相続」です</h2>
+        <p>問題は、お母様が亡くなったときです。一次相続のときと比べて、条件が3つとも不利になります。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 190" role="img" aria-label="一次相続と二次相続の違い。相続人は3人から2人に減り、基礎控除は4800万円から4200万円に下がり、配偶者の税額軽減は使えなくなる。">
+            <text x="106" y="22" text-anchor="middle" fill="#16202b" font-size="15" font-weight="700">一次相続（夫）</text>
+            <rect x="20" y="28" width="172" height="120" rx="8" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="34" y="56" fill="#5a6774" font-size="14">相続人</text>
+            <text x="110" y="56" fill="#16202b" font-size="15" font-weight="700">3人</text>
+            <text x="34" y="92" fill="#5a6774" font-size="14">基礎控除</text>
+            <text x="34" y="113" fill="#1c5c94" font-size="16" font-weight="700">4,800万円</text>
+            <text x="34" y="138" fill="#1c5c94" font-size="14" font-weight="700">配偶者の軽減あり</text>
+
+            <text x="294" y="22" text-anchor="middle" fill="#16202b" font-size="15" font-weight="700">二次相続（妻）</text>
+            <rect x="208" y="28" width="172" height="120" rx="8" fill="#fbeeea" stroke="#a5442f" stroke-width="1.5"/>
+            <text x="222" y="56" fill="#5a6774" font-size="14">相続人</text>
+            <text x="298" y="56" fill="#16202b" font-size="15" font-weight="700">2人</text>
+            <text x="222" y="92" fill="#5a6774" font-size="14">基礎控除</text>
+            <text x="222" y="113" fill="#a5442f" font-size="16" font-weight="700">4,200万円</text>
+            <text x="222" y="138" fill="#a5442f" font-size="14" font-weight="700">配偶者の軽減なし</text>
+
+            <text x="200" y="175" text-anchor="middle" fill="#16202b" font-size="15" font-weight="700">相続人が1人減り、軽減も使えなくなります</text>
+          </svg>
+          <figcaption>図2：同じご家族でも、二次相続では前提が変わります。</figcaption>
+        </figure>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>変わること</th><th>一次相続</th><th>二次相続</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>相続人の数</th><td>妻＋子2人＝3人</td><td>子2人のみ</td></tr>
+            <tr><th>基礎控除</th><td class="num">4,800万円</td><td class="num">4,200万円</td></tr>
+            <tr><th>配偶者の税額軽減</th><td>使える</td><td>使えない</td></tr>
+            <tr><th>1人あたりの取得額</th><td>3人で分ける</td><td>2人で分けるため増える</td></tr>
+            <tr><th>相続税の税率</th><td>取得額に応じて</td><td>取得額が増えるぶん上がりやすい</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>相続税は、1人あたりの取得額が大きいほど税率が上がる仕組みです。ですから、<strong class="em-red">一次相続で妻に寄せた財産は、二次相続で高い税率を受けることになります。</strong>さらに、お母様がもともとお持ちの財産（預貯金や実家の名義など）も合算されます。</p>
+        <p>なお、一次相続から10年以内に二次相続が起きた場合には、負担を和らげる「相次相続控除」という制度があります。ただしこれは<strong>前回納めた税額をもとに計算する</strong>ものなので、一次相続で軽減を使って0円にしていると、こちらも使えません。</p>
+        <p>また、二次相続で課税されるのは、お父様から相続した財産だけではありません。<strong>お母様がもともとお持ちの預貯金やご実家の持ち分も、すべて合算されます。</strong>お母様の財産が多いご家庭ほど、一次相続で寄せすぎたときの負担が重くなります。</p>
+        <p>逆に、お母様が相続した財産を生活費や医療・介護の費用で使われれば、そのぶん二次相続の財産は減ります。ですから実際の試算では、「どのくらい使う見込みか」という前提を置いて計算することになります。</p>
+
+        <h2 id="ch4" class="ch-head"><span class="ch-num" aria-hidden="true">4</span>同じご家族で、これだけ差が出ます</h2>
+        <p>数字で見ていきます。分かりやすくするため、次のように単純化します。</p>
+        <ul>
+          <li>亡くなったのはお父様。相続人は<strong>お母様とお子さん2人</strong></li>
+          <li>お父様の財産は<strong>1億円</strong></li>
+          <li>お母様がもともとお持ちの財産は<strong>2,000万円</strong></li>
+          <li>お母様は相続した財産を使わずに残したまま亡くなったものとします</li>
+          <li>小規模宅地等の特例や生命保険の非課税枠は考えないものとします</li>
+        </ul>
+        <p>この前提では、一次相続で計算される<strong>相続税の総額は630万円</strong>です。これを、誰がいくら取得したかに応じて分け合います。お母様の分は軽減で0円になりますから、<strong>お母様が多く取得するほど、一次相続の納税は減ります。</strong></p>
+        <p>この630万円は、次のように計算しています。財産1億円から基礎控除4,800万円を引いた5,200万円を、いったん法定相続分で分けたものとみなし、お母様が2分の1の2,600万円、お子さんが4分の1ずつの1,300万円。それぞれに税率をかけて足し合わせたものが、このご家庭にかかる相続税の総額です。<strong>この総額は、実際にどう分けても変わりません。</strong>変わるのは、そのうち誰がいくら負担するかだけです。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>項目</th><th>妻が全部（1億円）</th><th>妻が2,000万円</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>一次：相続税の総額</th><td class="num">630万円</td><td class="num">630万円</td></tr>
+            <tr><th>一次：妻の負担分</th><td>630万円 → 軽減で0円</td><td>126万円 → 軽減で0円</td></tr>
+            <tr><th>一次：子の負担分</th><td class="num">0円</td><td class="num">504万円</td></tr>
+            <tr><th>二次：妻の財産</th><td class="num">1億2,000万円</td><td class="num">4,000万円</td></tr>
+            <tr><th>二次：基礎控除</th><td class="num">4,200万円</td><td class="num">4,200万円</td></tr>
+            <tr><th>二次：相続税</th><td class="num">1,160万円</td><td>基礎控除以下で0円</td></tr>
+            <tr class="is-total"><th>一次と二次の合計</th><td class="num">1,160万円</td><td class="num">504万円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 230" role="img" aria-label="一次相続と二次相続の合計税額の比較。妻が全部相続すると1160万円、法定相続分なら635万円、2000万円だけなら504万円。">
+            <text x="20" y="38" fill="#16202b" font-size="14" font-weight="700">妻が全部</text>
+            <rect x="130" y="20" width="180" height="26" rx="4" fill="#a5442f"/>
+            <text x="318" y="39" fill="#a5442f" font-size="15" font-weight="700">1,160万円</text>
+
+            <text x="20" y="88" fill="#16202b" font-size="14" font-weight="700">法定相続分</text>
+            <rect x="130" y="70" width="49" height="26" rx="4" fill="#2a6ca6"/>
+            <rect x="179" y="70" width="50" height="26" rx="4" fill="#a5442f"/>
+            <text x="237" y="89" fill="#16202b" font-size="15" font-weight="700">635万円</text>
+
+            <text x="20" y="138" fill="#16202b" font-size="14" font-weight="700">2,000万円</text>
+            <rect x="130" y="120" width="78" height="26" rx="4" fill="#2a6ca6"/>
+            <text x="216" y="139" fill="#1c5c94" font-size="15" font-weight="700">504万円</text>
+
+            <rect x="130" y="165" width="16" height="14" rx="3" fill="#2a6ca6"/>
+            <text x="152" y="177" fill="#5a6774" font-size="14">一次相続</text>
+            <rect x="258" y="165" width="16" height="14" rx="3" fill="#a5442f"/>
+            <text x="280" y="177" fill="#5a6774" font-size="14">二次相続</text>
+
+            <line x1="20" y1="192" x2="380" y2="192" stroke="#b4bfc9" stroke-width="1"/>
+            <text x="200" y="216" text-anchor="middle" fill="#16202b" font-size="15" font-weight="700">分け方だけで、その差 656万円</text>
+          </svg>
+          <figcaption>図3：同じ財産・同じご家族でも、分け方で合計税額がこれだけ変わります。</figcaption>
+        </figure>
+
+        <p>いちばん税金が高くなるのが、<strong class="em-red">「全部お母さんに」という分け方です。</strong>一次相続では0円で済みますが、二次相続で1,160万円。良かれと思った判断が、結果としていちばん重い負担になりました。</p>
+
+        <h2 id="ch5" class="ch-head"><span class="ch-num" aria-hidden="true">5</span>では、いくら相続させるのがよいのか</h2>
+        <p>お母様の取得額を変えて、合計税額を並べてみます。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>妻が相続する額</th><th>一次相続</th><th>二次相続</th><th>合計</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>0円</th><td class="num">630万円</td><td class="num">0円</td><td class="num">630万円</td></tr>
+            <tr class="is-total"><th>2,000万円</th><td class="num">504万円</td><td class="num">0円</td><td class="num">504万円</td></tr>
+            <tr><th>5,000万円（法定相続分）</th><td class="num">315万円</td><td class="num">320万円</td><td class="num">635万円</td></tr>
+            <tr><th>1億円（全部）</th><td class="num">0円</td><td class="num">1,160万円</td><td class="num">1,160万円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>この例では、<strong class="em-mark">お母様の取得を2,000万円ほどに抑えたときがいちばん軽くなりました。</strong>二次相続の財産が基礎控除4,200万円に収まるためです。一方で、取得が0円だと一次相続の負担がそのまま残るので、かえって高くなります。</p>
+        <p>なぜ2,000万円なのか、もう少し説明します。お母様はもともと2,000万円をお持ちですから、ここで2,000万円を相続すると、お母様の財産は合計4,000万円。<strong>二次相続の基礎控除4,200万円に収まり、税額が0円になります。</strong>この「基礎控除に収まる線」が、ひとつの目安になります。</p>
+        <p>ですから、お母様の固有財産が多いご家庭では、この線はさらに下がります。たとえばお母様がすでに4,000万円お持ちであれば、一次相続での取得をほとんど増やせない、ということになります。</p>
+        <p>大切なのは、この「2,000万円」という答えが<strong>このご家庭の数字だから出てきた</strong>ということです。財産の額、お母様がもともとお持ちの財産、お子さんの人数——どれか一つ変わるだけで、最適な線は動きます。</p>
+        <p>ですから、一般論として「法定相続分で分けるとよい」「全部配偶者はダメ」と決めつけることはできません。<strong>ご家庭ごとに計算してみる以外に方法はありません。</strong>逆に言えば、計算さえすれば答えは出ます。</p>
+
+        <h2 id="ch6" class="ch-head"><span class="ch-num" aria-hidden="true">6</span>それでも、税金だけで決めないでください</h2>
+        <p>ここまで税額の話をしてきましたが、いちばん申し上げたいのはここです。</p>
+        <p><strong class="em-red">残されたお母様の暮らしが、何より優先されるべきです。</strong>税金が安くなるからといって手元の財産を減らしすぎれば、生活費や医療・介護の費用で困ることになりかねません。数百万円の節税より、そちらのほうがよほど重い問題です。</p>
+        <p>判断するときに見ていただきたい材料を整理しました。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>見るところ</th><th>考え方</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>お母様の生活費</th><td>年金や収入で足りるか。足りない分は手元に残す必要があります</td></tr>
+            <tr><th>お母様の年齢・健康</th><td>二次相続までの期間が長いほど、財産は生活で目減りします</td></tr>
+            <tr><th>お母様ご自身の財産</th><td>多いほど二次相続が重くなるため、取得を抑える方向になります</td></tr>
+            <tr><th>ご自宅があるか</th><td>二次相続で小規模宅地等の特例を誰が使えるかで結論が変わります</td></tr>
+            <tr><th>お子さんの住まい</th><td>同居か別居かで、二次相続の特例の使い方が変わります</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>「生活は守りたいが、税金も抑えたい」という場合に使えるのが<strong>配偶者居住権</strong>です。お母様は<strong class="em-mark">自宅に住み続ける権利だけを取得し、建物と土地の所有権はお子さんが相続する</strong>という分け方です。お母様の取得額を抑えながら住まいを確保でき、しかもこの権利はお母様が亡くなると消滅するため、二次相続では課税されません。</p>
+        <p>また、一次相続から二次相続までの間に、お母様からお孫さんへ生前贈与を進めるという手もあります。年月をかけられるなら、これも有効です。</p>
+        <p>ただし配偶者居住権にも注意点があります。<strong>登記をしておかないと第三者に対抗できません</strong>し、権利そのものを売ることもできません。お母様が将来、施設へ移られる可能性がある場合は、そのときご自宅をどうするかまで含めて考えておく必要があります。</p>
+
+        <h2 id="ch7" class="ch-head"><span class="ch-num" aria-hidden="true">7</span>まとめ</h2>
+        <p>今回の内容を整理します。</p>
+        <ul>
+          <li>配偶者の税額軽減により、<strong>1億6,000万円または法定相続分まで</strong>は配偶者に相続税がかかりません</li>
+          <li>ただし<strong>申告をしなければ認められません</strong>。税額が0円でも申告は必要です</li>
+          <li><strong class="em-mark">相続対策は、一次相続と二次相続の合計で考えます。</strong>一次相続だけを見ると判断を誤ります</li>
+          <li>二次相続では相続人が減って基礎控除が下がり、配偶者の軽減も使えません</li>
+          <li>今回の例では、合計税額が<strong>1,160万円と504万円</strong>に分かれました</li>
+          <li>最適な分け方はご家庭ごとに違います。<strong>計算してみる以外に方法はありません</strong></li>
+          <li>それでも、<strong>残された配偶者の暮らしを最優先に</strong>してください</li>
+        </ul>
+        <p>相続が起きてからでは、分け方を選ぶ時間は10か月しかありません。しかも悲しみの中での話し合いです。できればお元気なうちに、一度数字を見ておいていただきたいと思います。<strong>どう分けるとどうなるかが分かっていれば、いざというときの話し合いがずっと楽になります。</strong></p>
+        <p>当事務所では、<strong>初回のご相談（約60分）を無料</strong>でお受けしています。財産のおおよその内訳とご家族の構成をうかがえれば、一次相続と二次相続の合計がいくらになるか、その場で見当をお伝えできます。</p>
+
+        <p class="article-note">※本記事は一般的な解説です。記載の税額は前提を単純化した計算例であり、実際の税額は財産の内容・ご家族の構成・適用できる特例により異なります。小規模宅地等の特例、生命保険金の非課税枠、配偶者居住権の評価などは考慮していません。本記事は2026年10月時点の情報に基づいています。具体的なご相談は当事務所までお問い合わせください。</p>
+      </article>
+
+      <div class="article-cta">
+        <h2>二次相続まで含めて、試算してみませんか</h2>
+        <p>財産のおおよその内訳とご家族の構成をうかがえれば、合計税額の見当をその場でお伝えします。初回のご相談（約60分）は無料です。</p>
+        <a class="btn btn-accent btn-lg" href="contact.html"><i class="fa-solid fa-paper-plane"></i> 初回無料相談はこちら</a>
+      </div>
+      <aside class="related" aria-labelledby="related-head" data-reveal>
+        <h2 class="related-head" id="related-head">あわせて読みたいコラム</h2>
+        <ul class="related-list">
+          <li>
+            <a href="column-yuigon.html">
+              <span class="related-meta"><time datetime="2026-07-28">2026.07.28</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">その遺言書、かえってご家族を苦しめるかもしれません　〜税理士が『遺留分と納税資金』を実例で解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-shokibo.html">
+              <span class="related-meta"><time datetime="2026-08-02">2026.08.02</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">親を自分の家に引き取って介護したら、実家の8割引きが使えませんでした　〜税理士が『小規模宅地等の特例と介護』を実例で解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-souzokunin.html">
+              <span class="related-meta"><time datetime="2026-04-15">2026.04.15</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">遺産を相続できるのは誰？　〜税理士が『法定相続人』についてわかりやすく解説します〜</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <p class="article-back"><a href="column.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> お知らせ・コラム一覧へ戻る</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand-text"><span class="brand-name">日下部税理士事務所</span></span>
+      </a>
+      <p class="footer-desc">茨城県水戸市に根ざした、税理士による提案型の事務所です。</p>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">メニュー</h2>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">事務所紹介</a></li>
+        <li><a href="services.html">サービス・料金</a></li>
+        <li><a href="column.html">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">サービス</h2>
+      <ul>
+        <li><a href="service-tax.html">税務・会計顧問</a></li>
+        <li><a href="service-consulting.html">財務コンサルティング</a></li>
+        <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">事務所情報</h2>
+      <address class="footer-address">
+        〒311-4151<br>
+        茨城県水戸市姫子1丁目820-6<br>
+        ヴィラエスポワールⅠ 1F<br>
+        <a href="tel:029-215-9400">TEL：029-215-9400</a><br>
+        <span>FAX：029-215-9477</span>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <small>&copy; <span id="year">2026</span> 日下部税理士事務所</small>
+      <small>茨城県水戸市の税理士事務所</small>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "奥さまに全部相続させれば安心？〜税理士が『配偶者の税額軽減と二次相続』について具体例でわかりやすく解説します〜",
+  "description": "配偶者の税額軽減で一次相続は0円にできますが、二次相続まで通算すると負担が増えることがあります。合計税額が1,160万円と504万円に分かれる具体例で解説します。",
+  "datePublished": "2026-10-18",
+  "dateModified": "2026-10-18",
+  "inLanguage": "ja",
+  "author": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "publisher": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://kskac.com/column-haigusha.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kskac.com/" },
+    { "@type": "ListItem", "position": 2, "name": "お知らせ・コラム", "item": "https://kskac.com/column.html" },
+    { "@type": "ListItem", "position": 3, "name": "奥さまに全部相続させれば安心？", "item": "https://kskac.com/column-haigusha.html" }
+  ]
+}
+</script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
