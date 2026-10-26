@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1b28">
+
+<!-- Google アナリティクス（GA4）※測定IDを変えるときは全HTMLを一括置換すること -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJYJXQECM"></script>
+<script>
+  /* 事務所内からのアクセスを集計に含めないための仕組み。
+     https://kskac.com/?noga=1 を一度開いた端末は、以後そのブラウザでは計測しない。
+     解除するときは https://kskac.com/?noga=0 を開く。 */
+  (function () {
+    try {
+      var q = window.location.search;
+      if (q.indexOf("noga=1") > -1) localStorage.setItem("kskac-noga", "1");
+      if (q.indexOf("noga=0") > -1) localStorage.removeItem("kskac-noga");
+      if (localStorage.getItem("kskac-noga") === "1") window["ga-disable-G-EYJYJXQECM"] = true;
+    } catch (e) {}
+  })();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-EYJYJXQECM");
+</script>
+<title>令和8年分の年末調整はここが変わります｜基礎控除104万円と178万円の目安｜日下部税理士事務所（茨城県水戸市）</title>
+<meta name="description" content="令和8年分は基礎控除が最大104万円、給与所得控除の最低保障が74万円になり、所得税がかからない給与収入の目安が178万円に広がりました。扶養に入れるのは136万円まで、大学生の子は159万円まで、配偶者は169万円まで。自分の税金と扶養の判定の違いを、水戸市の税理士が図表でわかりやすく解説します。">
+<link rel="canonical" href="https://kskac.com/column-nencho.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="令和8年分の年末調整はここが変わります〜税理士が『基礎控除104万円と178万円の目安』についてわかりやすく解説します〜">
+<meta property="og:description" content="所得税がかからないのは178万円まで。でも扶養に入れるのは136万円まで。この2つは別物です。令和8年分の変更点を図表で解説します。">
+<meta property="og:url" content="https://kskac.com/column-nencho.html">
+<meta property="og:site_name" content="日下部税理士事務所">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="icons/icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="日下部税理士事務所 ホームへ">
+      <span class="brand-text">
+        <span class="brand-name">日下部税理士事務所</span>
+        <span class="brand-sub">Kusakabe Tax &amp; Accounting</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
+      <ul class="nav-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">事務所紹介 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="about.html#greeting">代表挨拶</a></li>
+            <li><a href="about.html#works">業務案内</a></li>
+            <li><a href="about.html#access">アクセスマップ</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス・料金 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="service-tax.html">税務・会計顧問</a></li>
+            <li><a href="service-consulting.html">財務コンサルティング</a></li>
+            <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+          </ul>
+        </li>
+        <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">初回相談 無料</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" data-en="COLUMN">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくず">
+        <ol>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+          <li aria-current="page">令和8年分の年末調整はここが変わります</li>
+        </ol>
+      </nav>
+      <p class="article-meta"><time datetime="2026-10-26">2026.10.26</time> <span class="news-cat">税務・会計</span></p>
+      <h1>令和8年分の年末調整はここが変わります<br>〜税理士が『基礎控除104万円と178万円の目安』についてわかりやすく解説します〜</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="col-intro" data-reveal>
+        <p>今回は、令和8年分の年末調整について解説をしていきます。<br>
+        今年は所得税のしくみが大きく変わり、「いくらまで働くと税金がかかるのか」という、いわゆる<strong>年収の壁</strong>のラインが動きました。去年は160万円でしたが、<strong>今年は178万円</strong>です。そして、親や配偶者の扶養に入れるラインも、別に動いています。</p>
+        <p class="ci-lead-in">このコラムを読むと…</p>
+        <div class="col-qbox">
+          <ul>
+          <li>いくらまで働けば、自分に税金がかからないの？</li>
+          <li>親の扶養から外れるのは、いくらからだろう？</li>
+          <li>子どもがアルバイトをしすぎると、どうなるんだろう？</li>
+          </ul>
+        </div>
+        <p>このようなことが理解できるようになります。とても分かりやすく簡潔にまとめましたので、ぜひ最後まで読んでくださいね。</p>
+      </div>
+
+      <nav class="toc" aria-label="目次">
+        <p class="toc-head"><i class="fa-solid fa-list-ul" aria-hidden="true"></i> 目次</p>
+        <ol>
+          <li><a href="#ch1">今年の年末調整は、去年と数字が違います</a></li>
+          <li><a href="#ch2">変わったのは「基礎控除」と「給与所得控除」です</a></li>
+          <li><a href="#ch3">基礎控除は、収入によって金額が変わります</a></li>
+          <li><a href="#ch4">「自分に税金がかからない」と「扶養に入れる」は別です</a></li>
+          <li><a href="#ch5">扶養の判定｜とくに大学生のお子さん</a></li>
+          <li><a href="#ch6">配偶者の判定</a></li>
+          <li><a href="#ch7">よくある勘違いとまとめ</a></li>
+        </ol>
+      </nav>
+
+      <article class="article-body">
+        <h2 id="ch1" class="ch-head"><span class="ch-num" aria-hidden="true">1</span>今年の年末調整は、去年と数字が違います</h2>
+        <p>「103万円の壁」という言葉を、長く耳にしてこられたと思います。ところがこの数字は、令和7年分で160万円に動き、<strong class="em-mark">令和8年分ではさらに178万円まで広がりました。</strong></p>
+        <p>2年続けて変わったわけですから、混乱して当然です。「結局いくらまでならいいの」というご質問を、この時期たくさんいただきます。</p>
+        <p>もともとは「103万円の壁」でした。給与所得控除55万円と基礎控除48万円を足した金額です。これが長く据え置かれていたため、物価や賃金が上がっても働く時間を抑えざるを得ない、という問題が指摘されてきました。そこで令和7年分から引き上げが始まって160万円になり、令和8年分でさらに178万円まで広がった、という流れです。</p>
+        <p>しかも厄介なことに、<strong class="em-red">動いたラインは1本ではありません。</strong>自分に税金がかかるラインと、親や夫の扶養に入れるラインは別々に動いていて、金額も違います。ここを取り違えると、「自分は税金ゼロのはずなのに、親の手取りが減った」ということが起こります。</p>
+        <p>このコラムでは、その2本を分けて整理します。</p>
+
+        <h2 id="ch2" class="ch-head"><span class="ch-num" aria-hidden="true">2</span>変わったのは「基礎控除」と「給与所得控除」です</h2>
+        <p>給与で働く方の所得税は、ごく単純に言えば<strong>「給与収入 − 給与所得控除 − 基礎控除 − その他の控除」</strong>がプラスになったときにかかります。今年はこのうち、前の2つが同時に引き上げられました。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 210" role="img" aria-label="給与収入178万円の内訳。給与所得控除74万円と基礎控除104万円を引くと0円になるため、178万円までは所得税がかからない。">
+            <text x="30" y="26" fill="#16202b" font-size="16" font-weight="700">給与収入 178万円</text>
+
+            <rect x="30" y="38" width="141" height="52" rx="5" fill="#2a6ca6"/>
+            <text x="100" y="60" text-anchor="middle" fill="#ffffff" font-size="14">給与所得控除</text>
+            <text x="100" y="81" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">74万円</text>
+
+            <rect x="171" y="38" width="199" height="52" rx="5" fill="#1f4f7a"/>
+            <text x="270" y="60" text-anchor="middle" fill="#ffffff" font-size="14">基礎控除</text>
+            <text x="270" y="81" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700">104万円</text>
+
+            <text x="200" y="114" text-anchor="middle" fill="#5a6774" font-size="15">178万円 − 74万円 − 104万円 = 0円</text>
+
+            <rect x="30" y="126" width="340" height="50" rx="8" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="200" y="149" text-anchor="middle" fill="#1c5c94" font-size="16" font-weight="700">178万円までは所得税がかかりません</text>
+            <text x="200" y="168" text-anchor="middle" fill="#16202b" font-size="14">令和7年分は160万円でした</text>
+
+            <text x="30" y="199" fill="#5a6774" font-size="14">※基礎控除104万円は合計所得489万円以下の場合</text>
+          </svg>
+          <figcaption>図1：178万円という数字の中身。2つの控除を足した金額です。</figcaption>
+        </figure>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>項目</th><th>令和7年分</th><th>令和8年分</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>基礎控除（最大）</th><td class="num">95万円</td><td class="num">104万円</td></tr>
+            <tr><th>給与所得控除の最低保障</th><td class="num">65万円</td><td class="num">74万円</td></tr>
+            <tr class="is-total"><th>所得税がかからない給与収入</th><td class="num">160万円</td><td class="num">178万円</td></tr>
+            <tr><th>扶養に入れる給与収入</th><td class="num">123万円</td><td class="num">136万円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>基礎控除104万円は、本来の62万円に<strong>42万円の上乗せ</strong>をした金額です。給与所得控除の74万円も、本来の69万円に5万円を上乗せしたものです。</p>
+        <p>ここで、言葉を一つ整理させてください。<strong>収入</strong>は、勤務先から支払われる金額そのもの（源泉徴収票の「支払金額」）です。<strong>所得</strong>は、そこから給与所得控除を引いた後の金額です。税金の決まりは「所得」で書かれていますが、私たちが普段意識しているのは「収入」のほうです。この2つを混同すると判定を間違えますので、このコラムでは給与だけで働いている方を前提に、収入に直した目安を併記していきます。</p>
+
+        <h2 id="ch3" class="ch-head"><span class="ch-num" aria-hidden="true">3</span>基礎控除は、収入によって金額が変わります</h2>
+        <p>ここで注意していただきたいのが、<strong class="em-red">104万円は誰にでも使える金額ではない</strong>ということです。収入が多い方ほど、基礎控除は小さくなります。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>合計所得金額</th><th>基礎控除</th><th>給与収入だけの場合の目安</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>489万円以下</th><td class="num">104万円</td><td>およそ665万円以下</td></tr>
+            <tr><th>489万円超 655万円以下</th><td class="num">67万円</td><td>およそ665万円超 850万円以下</td></tr>
+            <tr><th>655万円超 2,350万円以下</th><td class="num">62万円</td><td>およそ850万円超</td></tr>
+            <tr><th>2,350万円超</th><td>段階的に減り、2,500万円超で0円</td><td>—</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>もうひとつ、知っておいていただきたいことがあります。<strong class="em-mark">104万円への上乗せは、令和8年分と令和9年分だけの時限的な措置です。</strong>令和10年分からは本来の62万円に戻る予定ですので、「これからずっとこの金額」と思い込まないようにしてください。</p>
+        <p>なぜ時限的なのか、と思われるかもしれません。本来の金額を62万円に引き上げたうえで、物価上昇への対応として2年間だけ上乗せを設けた、という組み立てになっているためです。令和10年分以降にどうなるかは、今後の税制改正で決まります。</p>
+
+        <h2 id="ch4" class="ch-head"><span class="ch-num" aria-hidden="true">4</span>「自分に税金がかからない」と「扶養に入れる」は別です</h2>
+        <p>ここからが、今年いちばん誤解の多いところです。</p>
+        <p>178万円は、あくまで<strong>自分自身に所得税がかかるかどうか</strong>のラインです。一方、親や配偶者の扶養に入れるかどうかは<strong>136万円</strong>で判定します。<strong class="em-red">この2つは、まったく別の線です。</strong></p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 240" role="img" aria-label="2つの判定ラインの比較。自分に所得税がかかるのは178万円超から。親や夫の扶養から外れるのは136万円超から。136万円超178万円以下は、自分は非課税でも扶養から外れる。">
+            <text x="20" y="26" fill="#16202b" font-size="15" font-weight="700">① 自分に所得税がかかるか</text>
+            <rect x="50" y="38" width="259" height="24" rx="3" fill="#2a6ca6"/>
+            <text x="179" y="55" text-anchor="middle" fill="#ffffff" font-size="14">かからない</text>
+            <rect x="309" y="38" width="61" height="24" rx="3" fill="#a5442f"/>
+            <text x="339" y="55" text-anchor="middle" fill="#ffffff" font-size="14">かかる</text>
+            <text x="309" y="80" text-anchor="middle" fill="#16202b" font-size="14" font-weight="700">178万円</text>
+
+            <text x="20" y="120" fill="#16202b" font-size="15" font-weight="700">② 親や夫の扶養に入れるか</text>
+            <rect x="50" y="132" width="198" height="24" rx="3" fill="#2a6ca6"/>
+            <text x="149" y="149" text-anchor="middle" fill="#ffffff" font-size="14">入れる</text>
+            <rect x="248" y="132" width="122" height="24" rx="3" fill="#a5442f"/>
+            <text x="309" y="149" text-anchor="middle" fill="#ffffff" font-size="14">外れる</text>
+            <text x="248" y="174" text-anchor="middle" fill="#16202b" font-size="14" font-weight="700">136万円</text>
+
+            <rect x="30" y="186" width="340" height="48" rx="8" fill="#fbeeea" stroke="#a5442f" stroke-width="1.5"/>
+            <text x="200" y="208" text-anchor="middle" fill="#a5442f" font-size="15" font-weight="700">136万円超 178万円以下 は</text>
+            <text x="200" y="227" text-anchor="middle" fill="#16202b" font-size="14">自分は非課税でも、扶養からは外れます</text>
+          </svg>
+          <figcaption>図2：2本のラインは位置が違います。間の42万円がいちばん危ないゾーンです。</figcaption>
+        </figure>
+
+        <p>たとえばアルバイトで年収150万円を稼いだとします。自分には所得税がかかりません。ところが136万円を超えていますから、<strong>親は扶養控除を受けられなくなります。</strong>自分の手取りは増えても、家族全体では税金が増えている、ということが起こるのです。</p>
+        <p>ご自分の税金だけを見ていると気づけません。<strong class="em-mark">働く本人と、扶養している家族の両方で考える必要があります。</strong></p>
+        <p>では、136万円を少し超えてしまうと、どのくらいの影響があるのでしょうか。扶養控除38万円が消えると、親の所得税率が10%なら約3.8万円、20%なら約7.6万円の負担増です。住民税も別に増えます。</p>
+        <p>とはいえ、本人の手取りは収入が増えたぶんだけ増えています。ですから「136万円を超えたら絶対に損」というわけではありません。<strong>超えた分の手取りと、家族が失う控除を比べて判断する</strong>ことになります。中途半端に超えるのがいちばんもったいない、という言い方もできます。</p>
+
+        <h2 id="ch5" class="ch-head"><span class="ch-num" aria-hidden="true">5</span>扶養の判定｜とくに大学生のお子さん</h2>
+        <p>扶養親族になれるのは、その方の合計所得金額が<strong>62万円以下</strong>のときです。給与だけで働いている場合、給与収入<strong>136万円以下</strong>が目安になります（136万円 − 給与所得控除74万円 = 62万円）。</p>
+        <p>ただし、<strong>19歳以上23歳未満のお子さん</strong>には特別な扱いがあります。136万円を超えても、親の控除がすぐには消えない仕組みです。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 220" role="img" aria-label="19歳以上23歳未満の子を扶養する親の控除額の推移。給与収入159万円までは63万円が維持され、そこから197万円にかけて段階的に0円まで減る。">
+            <text x="20" y="24" fill="#16202b" font-size="15" font-weight="700">19〜23歳の子を扶養する親の控除額</text>
+
+            <line x1="70" y1="160" x2="375" y2="160" stroke="#b4bfc9" stroke-width="1.5"/>
+            <line x1="70" y1="40" x2="70" y2="160" stroke="#b4bfc9" stroke-width="1.5"/>
+
+            <polygon points="70,50 234,50 339,160 70,160" fill="#eef4fa"/>
+            <polyline points="70,50 234,50 339,160" fill="none" stroke="#2a6ca6" stroke-width="3"/>
+
+            <text x="65" y="55" text-anchor="end" fill="#16202b" font-size="14">63万</text>
+            <text x="65" y="165" text-anchor="end" fill="#16202b" font-size="14">0円</text>
+
+            <text x="152" y="42" text-anchor="middle" fill="#1c5c94" font-size="14" font-weight="700">満額のまま</text>
+            <text x="300" y="104" fill="#a5442f" font-size="14" font-weight="700">減っていく</text>
+
+            <text x="170" y="180" text-anchor="middle" fill="#16202b" font-size="14">136万</text>
+            <text x="234" y="180" text-anchor="middle" fill="#16202b" font-size="14">159万</text>
+            <text x="339" y="180" text-anchor="middle" fill="#16202b" font-size="14">197万</text>
+
+            <text x="200" y="208" text-anchor="middle" fill="#16202b" font-size="15" font-weight="700">159万円までは、親の控除は満額のままです</text>
+          </svg>
+          <figcaption>図3：大学生年代のお子さんの場合。136万円を超えてもすぐには影響しません。</figcaption>
+        </figure>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>お子さんの給与収入</th><th>親が受けられる控除</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>136万円以下</th><td>特定扶養親族として <strong>63万円</strong></td></tr>
+            <tr><th>136万円超 159万円以下</th><td>特定親族特別控除として <strong>63万円</strong></td></tr>
+            <tr><th>159万円超 197万円以下</th><td>段階的に減っていきます</td></tr>
+            <tr><th>197万円超</th><td class="num">0円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>同じ年収150万円でも、お子さんの年齢で結論が正反対になります。</p>
+        <ul>
+          <li><strong>20歳の大学生</strong>……本人の所得税は0円。親の控除も63万円のまま。<strong>影響なし</strong></li>
+          <li><strong>25歳のお子さん</strong>……本人の所得税は0円。しかし<strong class="em-red">親の扶養控除38万円が消えます。</strong>親の税率が20%なら、所得税だけで約7.6万円の負担増です（住民税も別に増えます）</li>
+        </ul>
+        <p>「うちの子は大学生だから159万円まで大丈夫」「卒業して就職浪人中なら136万円まで」。このように、ご家庭ごとに線が違います。</p>
+        <p>なお、扶養親族になるには金額以外の条件もあります。<strong>配偶者以外の親族であること</strong>（6親等内の血族と3親等内の姻族）、<strong>生計を一にしていること</strong>、青色事業専従者として給与を受けていないことなどです。生計を一にするというのは、必ずしも同居している必要はありません。下宿しているお子さんに仕送りをしている場合も含まれます。</p>
+        <p>また、控除の対象になるのは<strong>16歳以上</strong>のお子さんです。15歳以下のお子さんは児童手当の対象になるため、扶養控除はありません。</p>
+        <p>見落としやすいのが、勤務先の<strong>家族手当</strong>です。税金の扶養とは別に、会社独自の基準で支給されていることがあります。税金のうえでは問題がなくても手当が止まってしまう、ということがありますので、就業規則もあわせてご確認ください。</p>
+
+        <h2 id="ch6" class="ch-head"><span class="ch-num" aria-hidden="true">6</span>配偶者の判定</h2>
+        <p>配偶者の場合も、136万円を超えたらすぐ控除が消えるわけではありません。配偶者控除から配偶者特別控除へ切り替わり、段階的に減っていきます。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>配偶者の給与収入</th><th>受けられる控除</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>136万円以下</th><td>配偶者控除として <strong>38万円</strong></td></tr>
+            <tr><th>136万円超 169万円以下</th><td>配偶者特別控除として <strong>38万円</strong></td></tr>
+            <tr><th>169万円超 207万円以下</th><td>段階的に減っていきます</td></tr>
+            <tr><th>207万円超</th><td class="num">0円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>つまり<strong class="em-mark">配偶者の給与収入が169万円までなら、控除額は38万円のまま変わりません。</strong>「136万円を超えたら損」ではないので、そこは安心してください。</p>
+        <p>ただし条件があります。この控除を受けるのは<strong>扶養する側の方</strong>ですが、その方の合計所得金額が900万円を超えると控除額が減りはじめ、<strong class="em-red">1,000万円を超えると配偶者控除も配偶者特別控除も一切使えません。</strong>ご主人の収入が高いご家庭では、奥さまの年収にかかわらず控除がない、ということが起こります。</p>
+        <p>配偶者が<strong>70歳以上</strong>の場合は、控除額が38万円ではなく<strong>48万円</strong>になります（老人控除対象配偶者）。ご両親の世代では、こちらに当てはまることがあります。</p>
+        <p>判定の時期にも気をつけてください。扶養も配偶者も、すべて<strong>その年の12月31日時点の状況</strong>で判定します。年の途中でご結婚された場合も、12月31日時点で配偶者であればその年から控除の対象になります。</p>
+
+        <h2 id="ch7" class="ch-head"><span class="ch-num" aria-hidden="true">7</span>よくある勘違いとまとめ</h2>
+        <p>最後に、毎年必ずご質問をいただく点を整理します。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>何の判定か</th><th>令和8年分のライン</th><th>どこで判定するか</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>自分の所得税</th><td class="num">178万円</td><td>勤務先の年末調整</td></tr>
+            <tr><th>扶養に入れるか</th><td class="num">136万円</td><td>扶養する方の勤務先</td></tr>
+            <tr><th>自分の住民税</th><td>所得税とは別の基準</td><td>お住まいの市町村</td></tr>
+            <tr><th>社会保険の扶養</th><td>税金とは別の基準</td><td>加入先にご確認ください</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>とくに<strong>住民税</strong>にご注意ください。所得税がかからなくても、住民税はかかることがあります。「税金ゼロ」と思っていたら翌年6月に納付書が届いた、というご相談は毎年あります。</p>
+        <p>もうひとつ、実務的な注意点です。勤務先から配られる扶養控除等申告書の用紙には、<strong class="em-red">古い基準の「58万円」が印刷されたものがあります。</strong>令和8年12月以降の年末調整では<strong>62万円</strong>で判定しますので、用紙の数字をそのまま信じないでください。迷ったら勤務先の担当の方にご確認ください。</p>
+        <p>では、私たちは何をすればよいのでしょうか。やることは例年と変わりません。<strong>勤務先から配られる申告書に正しく記入して提出する</strong>こと。計算そのものは勤務先がしてくれます。今年は様式が変わって見慣れない欄が増えていますが、<strong>ご家族の今年の年収の見込み額</strong>さえ分かれば記入できます。年末までの給与明細を手元に置いて書くと確実です。</p>
+        <p>今回の内容を整理します。</p>
+        <ul>
+          <li>令和8年分は基礎控除が最大104万円、給与所得控除の最低保障が74万円になりました</li>
+          <li>自分に所得税がかからないのは<strong>給与収入178万円まで</strong>です</li>
+          <li>扶養に入れるのは<strong>136万円まで</strong>。この2つは別の線です</li>
+          <li>19〜23歳のお子さんは<strong>159万円まで</strong>親の控除が満額のまま続きます</li>
+          <li>配偶者は<strong>169万円まで</strong>控除38万円が続きます</li>
+          <li>104万円への上乗せは<strong>令和8年・9年分だけ</strong>の時限措置です</li>
+        </ul>
+        <p>年収をいくらに抑えるかは、ご家族全体で考えていただきたい問題です。働く本人の税金だけを見て判断すると、家族の誰かの負担が増えていた、ということが起こります。</p>
+        <p>当事務所では、<strong>初回のご相談（約60分）を無料</strong>でお受けしています。「うちの場合はいくらまでがよいのか」というご相談も歓迎です。ご家族の構成と、それぞれのおおよその年収をうかがえれば、その場で見当をお伝えできます。</p>
+
+        <p class="article-note">※本記事は一般的な解説です。記載の金額は給与収入だけの方を前提とした目安であり、他の所得がある場合や各種控除の適用により結果は異なります。令和8年12月1日以後に行う年末調整に適用される内容に基づいています。本記事は2026年10月時点の情報に基づいていますので、実際の判定は国税庁の資料または当事務所までご確認ください。</p>
+      </article>
+
+      <div class="article-cta">
+        <h2>「うちの場合はいくらまで？」もご相談ください</h2>
+        <p>ご家族の構成とおおよその年収をうかがえれば、その場で見当をお伝えします。初回のご相談（約60分）は無料です。</p>
+        <a class="btn btn-accent btn-lg" href="contact.html"><i class="fa-solid fa-paper-plane"></i> 初回無料相談はこちら</a>
+      </div>
+      <aside class="related" aria-labelledby="related-head" data-reveal>
+        <h2 class="related-head" id="related-head">あわせて読みたいコラム</h2>
+        <ul class="related-list">
+          <li>
+            <a href="column-shikinguri.html">
+              <span class="related-meta"><time datetime="2026-08-02">2026.08.02</time><span class="news-cat">税務・会計</span></span>
+              <span class="related-title">黒字なのに、お金が足りません　〜税理士が『利益と現金のズレ』と納税資金の備え方を解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-kessan.html">
+              <span class="related-meta"><time datetime="2026-03-18">2026.03.18</time><span class="news-cat">税務・会計</span></span>
+              <span class="related-title">決算前に見直したい法人の節税対策　〜税理士が『決算対策』のポイントをわかりやすく解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-haigusha.html">
+              <span class="related-meta"><time datetime="2026-10-18">2026.10.18</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">奥さまに全部相続させれば安心？　〜税理士が『配偶者の税額軽減と二次相続』について具体例でわかりやすく解説します〜</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <p class="article-back"><a href="column.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> お知らせ・コラム一覧へ戻る</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand-text"><span class="brand-name">日下部税理士事務所</span></span>
+      </a>
+      <p class="footer-desc">茨城県水戸市に根ざした、税理士による提案型の事務所です。</p>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">メニュー</h2>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">事務所紹介</a></li>
+        <li><a href="services.html">サービス・料金</a></li>
+        <li><a href="column.html">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">サービス</h2>
+      <ul>
+        <li><a href="service-tax.html">税務・会計顧問</a></li>
+        <li><a href="service-consulting.html">財務コンサルティング</a></li>
+        <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">事務所情報</h2>
+      <address class="footer-address">
+        〒311-4151<br>
+        茨城県水戸市姫子1丁目820-6<br>
+        ヴィラエスポワールⅠ 1F<br>
+        <a href="tel:029-215-9400">TEL：029-215-9400</a><br>
+        <span>FAX：029-215-9477</span>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <small>&copy; <span id="year">2026</span> 日下部税理士事務所</small>
+      <small>茨城県水戸市の税理士事務所</small>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "令和8年分の年末調整はここが変わります〜税理士が『基礎控除104万円と178万円の目安』についてわかりやすく解説します〜",
+  "description": "令和8年分は基礎控除が最大104万円、給与所得控除の最低保障が74万円に。所得税がかからないのは178万円まで、扶養に入れるのは136万円までです。",
+  "datePublished": "2026-10-26",
+  "dateModified": "2026-10-26",
+  "inLanguage": "ja",
+  "author": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "publisher": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://kskac.com/column-nencho.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kskac.com/" },
+    { "@type": "ListItem", "position": 2, "name": "お知らせ・コラム", "item": "https://kskac.com/column.html" },
+    { "@type": "ListItem", "position": 3, "name": "令和8年分の年末調整はここが変わります", "item": "https://kskac.com/column-nencho.html" }
+  ]
+}
+</script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
