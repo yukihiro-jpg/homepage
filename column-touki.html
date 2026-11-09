@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1b28">
+
+<!-- Google アナリティクス（GA4）※測定IDを変えるときは全HTMLを一括置換すること -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJYJXQECM"></script>
+<script>
+  /* 事務所内からのアクセスを集計に含めないための仕組み。
+     https://kskac.com/?noga=1 を一度開いた端末は、以後そのブラウザでは計測しない。
+     解除するときは https://kskac.com/?noga=0 を開く。 */
+  (function () {
+    try {
+      var q = window.location.search;
+      if (q.indexOf("noga=1") > -1) localStorage.setItem("kskac-noga", "1");
+      if (q.indexOf("noga=0") > -1) localStorage.removeItem("kskac-noga");
+      if (localStorage.getItem("kskac-noga") === "1") window["ga-disable-G-EYJYJXQECM"] = true;
+    } catch (e) {}
+  })();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-EYJYJXQECM");
+</script>
+<title>親の家の名義、そのままにしていませんか？｜相続登記の義務化と令和9年3月31日の期限｜日下部税理士事務所（茨城県水戸市）</title>
+<meta name="description" content="相続登記は令和6年4月から義務になりました。見落とされがちですが昔の相続もさかのぼって対象で、期限は令和9年3月31日です。過料10万円の実際、話がまとまらないときの相続人申告登記、評価額100万円以下の土地の登録免許税の免税まで、水戸市の税理士が図表でわかりやすく解説します。">
+<link rel="canonical" href="https://kskac.com/column-touki.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="親の家の名義、そのままにしていませんか？〜税理士が『相続登記の義務化』についてわかりやすく解説します〜">
+<meta property="og:description" content="何十年も前の相続も対象です。期限は令和9年3月31日、あと5か月足らず。放置の本当のコストは過料ではありません。">
+<meta property="og:url" content="https://kskac.com/column-touki.html">
+<meta property="og:site_name" content="日下部税理士事務所">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="icons/icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="日下部税理士事務所 ホームへ">
+      <span class="brand-text">
+        <span class="brand-name">日下部税理士事務所</span>
+        <span class="brand-sub">Kusakabe Tax &amp; Accounting</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
+      <ul class="nav-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">事務所紹介 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="about.html#greeting">代表挨拶</a></li>
+            <li><a href="about.html#works">業務案内</a></li>
+            <li><a href="about.html#access">アクセスマップ</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス・料金 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="service-tax.html">税務・会計顧問</a></li>
+            <li><a href="service-consulting.html">財務コンサルティング</a></li>
+            <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+          </ul>
+        </li>
+        <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">初回相談 無料</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" data-en="COLUMN">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくず">
+        <ol>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+          <li aria-current="page">親の家の名義、そのままにしていませんか？</li>
+        </ol>
+      </nav>
+      <p class="article-meta"><time datetime="2026-11-09">2026.11.09</time> <span class="news-cat">相続・相続対策</span></p>
+      <h1>親の家の名義、そのままにしていませんか？<br>〜税理士が『相続登記の義務化』についてわかりやすく解説します〜</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="col-intro" data-reveal>
+        <p>今回は、相続登記の義務化について解説をしていきます。<br>
+        令和6年4月から、相続した土地や建物の名義変更が義務になりました。これまでは「いつかやればいい」で済んでいたものが、期限付きになったのです。そして見落とされがちなのですが、この義務は<strong>昔の相続にもさかのぼって及びます</strong>。何十年も前にお父さまが亡くなったときのご実家が、いまだにお父さまの名義のまま。そういうお宅も対象です。その期限が、令和9年3月31日に迫っています。</p>
+        <p class="ci-lead-in">このコラムを読むと…</p>
+        <div class="col-qbox">
+          <ul>
+          <li>何十年も前の相続まで、今さらやらないといけないの？</li>
+          <li>放っておくと、本当に罰金が来るんだろうか？</li>
+          <li>まだ兄弟で話がまとまっていないんだけど、どうすればいいの？</li>
+          </ul>
+        </div>
+        <p>このようなことが理解できるようになります。とても分かりやすく簡潔にまとめましたので、ぜひ最後まで読んでくださいね。</p>
+      </div>
+
+      <nav class="toc" aria-label="目次">
+        <p class="toc-head"><i class="fa-solid fa-list-ul" aria-hidden="true"></i> 目次</p>
+        <ol>
+          <li><a href="#ch1">期限まで、あと5か月足らずです</a></li>
+          <li><a href="#ch2">何がどう義務になったのか</a></li>
+          <li><a href="#ch3">「3年」はいつから数えるのか</a></li>
+          <li><a href="#ch4">過料10万円は、本当に来るのでしょうか</a></li>
+          <li><a href="#ch5">本当に怖いのは、相続人が増えていくことです</a></li>
+          <li><a href="#ch6">話がまとまらないときは「相続人申告登記」</a></li>
+          <li><a href="#ch7">今からできること｜調べ方と費用</a></li>
+        </ol>
+      </nav>
+
+      <article class="article-body">
+        <h2 id="ch1" class="ch-head"><span class="ch-num" aria-hidden="true">1</span>期限まで、あと5か月足らずです</h2>
+        <p>相続登記の義務化が始まったのは、令和6年4月1日です。ニュースでご覧になった方も多いと思います。</p>
+        <p>ただ、このときにあまり強く報じられなかった点があります。この義務は、これから起きる相続だけのものではないのです。<strong class="em-mark">施行前に起きた相続で、まだ名義を変えていないものも、すべて対象になります。</strong></p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 215" role="img" aria-label="相続登記の義務化は令和6年4月1日に始まり、それ以前に起きた相続で未登記のものも令和9年3月31日までに登記が必要。2026年11月現在、残りはおよそ5か月。">
+            <text x="20" y="24" fill="#16202b" font-size="15" font-weight="700">施行前に起きた相続も対象です</text>
+
+            <text x="58" y="54" text-anchor="middle" fill="#1c5c94" font-size="14" font-weight="700">2024.4.1</text>
+            <text x="350" y="54" text-anchor="middle" fill="#a5442f" font-size="14" font-weight="700">2027.3.31</text>
+
+            <rect x="30" y="64" width="340" height="24" rx="4" fill="#dce5ee"/>
+            <rect x="288" y="64" width="82" height="24" rx="4" fill="#f3cdc2"/>
+            <line x1="58" y1="60" x2="58" y2="92" stroke="#1c5c94" stroke-width="3"/>
+            <line x1="288" y1="56" x2="288" y2="96" stroke="#16202b" stroke-width="3"/>
+            <line x1="366" y1="60" x2="366" y2="92" stroke="#a5442f" stroke-width="3"/>
+
+            <text x="58" y="110" text-anchor="middle" fill="#16202b" font-size="14">義務化</text>
+            <text x="288" y="110" text-anchor="middle" fill="#16202b" font-size="14" font-weight="700">今</text>
+            <text x="366" y="110" text-anchor="middle" fill="#16202b" font-size="14">期限</text>
+
+            <rect x="30" y="124" width="340" height="52" rx="8" fill="#fbeeea" stroke="#a5442f" stroke-width="1.5"/>
+            <text x="200" y="147" text-anchor="middle" fill="#a5442f" font-size="17" font-weight="700">残り およそ5か月</text>
+            <text x="200" y="167" text-anchor="middle" fill="#16202b" font-size="14">何十年前の相続でも、期限は同じです</text>
+
+            <text x="30" y="200" fill="#5a6774" font-size="14">※施行後に相続を知った場合は、知った日から3年以内</text>
+          </svg>
+          <figcaption>図1：昔の相続は、施行日から3年の猶予がありました。その3年がもう終わりかけています。</figcaption>
+        </figure>
+
+        <p>つまり、昭和の時代に亡くなられたおじいさまの土地であっても、名義がそのままであれば、令和9年3月31日までに登記をしなければなりません。今日からかぞえて、あと5か月足らずです。</p>
+        <p>「うちは関係ないだろう」と思われた方にも、一度確かめていただきたいのです。ご実家の名義が今どなたになっているか、即答できる方はそれほど多くありません。「父が亡くなったときに、兄が全部やってくれたはず」というお話をうかがって調べてみると、手をつけていなかった、ということは実際にあります。</p>
+
+        <h2 id="ch2" class="ch-head"><span class="ch-num" aria-hidden="true">2</span>何がどう義務になったのか</h2>
+        <p>制度の中身を、表にまとめます。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>項目</th><th>内容</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>いつから</th><td>令和6年4月1日</td></tr>
+            <tr><th>誰に</th><td>相続や遺言で不動産を取得した相続人</td></tr>
+            <tr><th>いつまでに</th><td>所有権を取得したことを知った日から3年以内</td></tr>
+            <tr><th>守らないと</th><td>10万円以下の過料</td></tr>
+            <tr class="is-total"><th>施行前の相続は</th><td>令和9年3月31日まで</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>注意していただきたいのは、期限の数え方です。<strong class="em-mark">亡くなった日からではなく、不動産を取得したことを知った日から3年です。</strong></p>
+        <p>たとえば、疎遠だった親族が亡くなり、ずっと後になって「あなたが相続人です」と知らされることがあります。この場合の3年は、知らされた日から始まります。ご自分が相続人だと知らないうちに期限が過ぎてしまう、ということは起こらない仕組みになっています。</p>
+        <p>そして、義務はもう一つあります。遺産分割がまとまった場合は、<strong>まとまった日から3年以内</strong>に、その内容どおりの登記をしなければなりません。</p>
+
+        <h2 id="ch3" class="ch-head"><span class="ch-num" aria-hidden="true">3</span>「3年」はいつから数えるのか</h2>
+        <p>場合によって起点が変わりますので、整理しておきます。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>どんな場合</th><th>いつまでに登記するか</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>令和6年4月1日以後に相続があった</th><td>不動産を取得したことを知った日から3年以内</td></tr>
+            <tr><th>令和6年3月31日以前の相続で未登記</th><td>令和9年3月31日まで</td></tr>
+            <tr><th>遺言で不動産をもらった</th><td>遺言の内容を知った日から3年以内</td></tr>
+            <tr><th>遺産分割がまとまった</th><td>まとまった日から3年以内</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>ここで、ややこしい点をひとつお伝えします。<strong class="em-red">同じ相続について、期限が2回来ることがあります。</strong></p>
+        <p>遺産分割がすぐにまとまらない場合、まずは法定相続分どおりの登記（相続人全員の共有にする登記）をして、3年以内という最初の義務を果たすことになります。そして後日、遺産分割がまとまったら、その日から3年以内に、決まった内容へ登記を直します。登記を2回するということは、登録免許税も司法書士への報酬も2回分かかるということです。</p>
+        <p>ですから「とりあえず共有で登記しておく」という選択は、費用の面では必ずしも得ではありません。この点は、次の章のあとでもう一度触れます。</p>
+
+        <h2 id="ch4" class="ch-head"><span class="ch-num" aria-hidden="true">4</span>過料10万円は、本当に来るのでしょうか</h2>
+        <p>ここが、いちばん多くご質問をいただくところです。正直にお答えします。</p>
+        <p>過料は、期限を過ぎた瞬間に自動で課されるものではありません。まず登記官から「申請をしてください」という催告があり、それでも正当な理由なく応じなかった場合に、裁判所が判断する仕組みになっています。</p>
+        <p>また、過料は刑罰ではありません。前科になることはなく、前歴にも残りません。</p>
+        <p>ですから「期限を1日過ぎたら10万円取られる」と怖がる必要はないのです。ただ、だから放置してよいという話ではありません。本当の問題は、過料ではないところにあります。</p>
+        <p>なお、正当な理由として想定されているのは、相続人が極めて多数で戸籍の収集に多くの時間がかかる場合、遺言の有効性が裁判で争われている場合、相続人自身が重い病気である場合などです。<strong class="em-red">「忙しかった」「知らなかった」は正当な理由になりません。</strong></p>
+
+        <h2 id="ch5" class="ch-head"><span class="ch-num" aria-hidden="true">5</span>本当に怖いのは、相続人が増えていくことです</h2>
+        <p>名義を変えないまま放置した不動産は、時間とともに手がつけられなくなっていきます。理由は単純で、関係者が増えるからです。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 240" role="img" aria-label="登記をしないまま世代が移ると、関係者が3人から9人、さらに20人超へと増えていく。登記には原則として全員の同意と実印が必要。">
+            <text x="20" y="24" fill="#16202b" font-size="15" font-weight="700">登記をしないまま世代が移ると</text>
+
+            <line x1="35" y1="182" x2="380" y2="182" stroke="#b4bfc9" stroke-width="1.5"/>
+
+            <rect x="55" y="166" width="72" height="16" rx="3" fill="#2a6ca6"/>
+            <text x="91" y="158" text-anchor="middle" fill="#16202b" font-size="16" font-weight="700">3人</text>
+            <text x="91" y="202" text-anchor="middle" fill="#16202b" font-size="14">相続のとき</text>
+
+            <rect x="164" y="134" width="72" height="48" rx="3" fill="#2a6ca6"/>
+            <text x="200" y="164" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">9人</text>
+            <text x="200" y="202" text-anchor="middle" fill="#16202b" font-size="14">20年後</text>
+
+            <rect x="273" y="62" width="72" height="120" rx="3" fill="#a5442f"/>
+            <text x="309" y="127" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="700">20人超</text>
+            <text x="309" y="202" text-anchor="middle" fill="#16202b" font-size="14">40年後</text>
+
+            <text x="200" y="228" text-anchor="middle" fill="#a5442f" font-size="15" font-weight="700">登記には原則、全員の同意と実印が必要です</text>
+          </svg>
+          <figcaption>図2：関係者はねずみ算式に増えます。一人でも反対すれば、話は止まります。</figcaption>
+        </figure>
+
+        <p>たとえばお父さまが亡くなり、相続人がご兄弟3人だったとします。このときなら、3人で話し合えば決まります。</p>
+        <p>ところが放置したまま20年が経ち、ご兄弟3人がそれぞれ亡くなられたとします。すると、その配偶者とお子さんが相続人に加わります。3人がそれぞれ配偶者1人とお子さん2人を残せば、関係者は9人です。さらに20年経てば、いとこのお子さん同士、つまり顔も名前も知らない方々が、同じ土地について権利を持つことになります。20人を超えることも珍しくありません。</p>
+        <p>登記をするには、原則としてこの全員から同意と実印をいただく必要があります。一人でも「ハンコは押さない」と言えば、そこで止まります。連絡先の分からない方、海外にお住まいの方、認知症が進んでいる方がいれば、その都度、別の手続きが必要になります。</p>
+        <p>そして、その間もずっと不便が続きます。</p>
+        <ul>
+          <li><strong>売れません。</strong>亡くなった方の名義のままでは、売買の手続きができません</li>
+          <li><strong>担保に入れられません。</strong>その不動産を使ってお金を借りることができません</li>
+          <li><strong>建て替えや取り壊しも進めにくくなります。</strong>共有者全員の意思確認が必要になるためです</li>
+          <li><strong>固定資産税だけは、誰かが払い続けます。</strong>使っていない土地でも毎年かかります</li>
+        </ul>
+        <p>つまり、放置のコストは過料10万円ではありません。<strong class="em-red">時間が経つほど、取り返しがつかなくなっていくことがコストなのです。</strong></p>
+        <p>当事務所でも、相続税の申告のご依頼をお受けして財産を調べていくうちに、「この土地はおじいさまの名義のままですね」と分かることがあります。こうなると、まずそちらを片づけないと今回の分割の話ができません。先に手を打っておけば済んだことです。</p>
+
+        <h2 id="ch6" class="ch-head"><span class="ch-num" aria-hidden="true">6</span>話がまとまらないときは「相続人申告登記」</h2>
+        <p>「そうは言っても、兄弟で話がまとまらないんです」。これもよくいただくご相談です。</p>
+        <p>そうした方のために、義務化と同時に新しい手続きが用意されました。<strong>相続人申告登記</strong>です。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 250" role="img" aria-label="誰が相続するか決まっていれば相続登記、決まっていなければ相続人申告登記でいったん義務を果たし、まとまった後に相続登記をする。">
+            <rect x="100" y="12" width="200" height="42" rx="8" fill="#1f4f7a"/>
+            <text x="200" y="30" text-anchor="middle" fill="#ffffff" font-size="14">誰が相続するか</text>
+            <text x="200" y="47" text-anchor="middle" fill="#ffffff" font-size="14">決まっていますか？</text>
+
+            <line x1="200" y1="54" x2="200" y2="66" stroke="#b4bfc9" stroke-width="2"/>
+            <line x1="105" y1="66" x2="295" y2="66" stroke="#b4bfc9" stroke-width="2"/>
+            <line x1="105" y1="66" x2="105" y2="88" stroke="#b4bfc9" stroke-width="2"/>
+            <line x1="295" y1="66" x2="295" y2="88" stroke="#b4bfc9" stroke-width="2"/>
+
+            <text x="80" y="84" text-anchor="end" fill="#1c5c94" font-size="14" font-weight="700">はい</text>
+            <text x="320" y="84" fill="#a5442f" font-size="14" font-weight="700">いいえ</text>
+
+            <rect x="18" y="88" width="172" height="46" rx="6" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="104" y="108" text-anchor="middle" fill="#1c5c94" font-size="15" font-weight="700">相続登記</text>
+            <text x="104" y="126" text-anchor="middle" fill="#16202b" font-size="14">名義が変わります</text>
+
+            <rect x="210" y="88" width="172" height="46" rx="6" fill="#fbeeea" stroke="#a5442f" stroke-width="1.5"/>
+            <text x="296" y="108" text-anchor="middle" fill="#a5442f" font-size="15" font-weight="700">相続人申告登記</text>
+            <text x="296" y="126" text-anchor="middle" fill="#16202b" font-size="14">義務は果たせます</text>
+
+            <line x1="296" y1="134" x2="296" y2="152" stroke="#b4bfc9" stroke-width="2"/>
+            <text x="296" y="169" text-anchor="middle" fill="#16202b" font-size="14">話がまとまったら</text>
+            <line x1="296" y1="176" x2="296" y2="194" stroke="#b4bfc9" stroke-width="2"/>
+
+            <rect x="210" y="194" width="172" height="32" rx="6" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="296" y="215" text-anchor="middle" fill="#1c5c94" font-size="15" font-weight="700">改めて相続登記</text>
+
+            <text x="18" y="243" fill="#5a6774" font-size="14">※申告登記だけでは、売却も担保の設定もできません</text>
+          </svg>
+          <figcaption>図3：話がまとまっていなくても、義務だけ先に果たす道があります。</figcaption>
+        </figure>
+
+        <p>これは「私はこの不動産の相続人の一人です」ということを、登記簿に記録してもらう手続きです。特徴は3つあります。</p>
+        <ul>
+          <li>相続人の1人からでも、<strong>単独で申請できます</strong>。他の相続人の同意は要りません</li>
+          <li>提出する戸籍などの書類が、通常の相続登記より少なくて済みます</li>
+          <li>これをしておけば、<strong>3年以内の申請義務を果たしたことになります</strong></li>
+        </ul>
+        <p>ただし、できないこともあります。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>できること・できないこと</th><th>相続人申告登記</th><th>相続登記</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>申請義務を果たせる</th><td>○</td><td>○</td></tr>
+            <tr><th>名義が自分に変わる</th><td>×</td><td>○</td></tr>
+            <tr><th>その不動産を売れる</th><td>×</td><td>○</td></tr>
+            <tr><th>担保に入れられる</th><td>×</td><td>○</td></tr>
+            <tr><th>他の相続人の同意</th><td>要りません</td><td>必要です</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p><strong class="em-red">相続人申告登記だけでは、その不動産を売ることはできません。</strong>あくまで時間を稼ぐための手続きです。遺産分割がまとまったら、改めて相続登記をする必要があります。「これで終わり」ではない、ということにご注意ください。</p>
+        <p>前の章で触れた「とりあえず共有で登記しておく」という方法と比べると、相続人申告登記のほうが書類も費用も軽くて済みます。話がまとまるまでの繋ぎとしては、こちらを検討する価値があります。</p>
+
+        <h2 id="ch7" class="ch-head"><span class="ch-num" aria-hidden="true">7</span>今からできること｜調べ方と費用</h2>
+        <p>まず、どこに何があるのかを調べることから始めます。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>調べたいこと</th><th>使うもの</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>どの不動産があるか</th><td>固定資産税の納税通知書・課税明細書</td></tr>
+            <tr><th>その市町村内の不動産を一覧で</th><td>名寄帳（市町村の窓口）</td></tr>
+            <tr><th>全国の不動産を一覧で</th><td>所有不動産記録証明制度（令和8年2月〜）</td></tr>
+            <tr><th>今の名義は誰か</th><td>登記事項証明書（法務局）</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>いちばん手近なのは、毎年春に届く固定資産税の納税通知書です。亡くなった方の分が届いているなら、課税明細書にその不動産が載っています。</p>
+        <p>そして令和8年2月から、<strong>所有不動産記録証明制度</strong>が始まりました。亡くなった方の名義になっている不動産を、全国から一覧にして証明してもらえる制度です。相続人であれば請求できます。「どこかに山林を持っていたと聞いたが、場所が分からない」という場合には、これが助けになります。ただし、請求書に書いた住所や氏名が登記の記録と一致しないと漏れることがありますので、結果をうのみにはしないでください。</p>
+        <p>費用の話もしておきます。登記のときには<strong>登録免許税</strong>がかかります。相続による登記の税率は、固定資産税評価額の0.4%です。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>固定資産税評価額</th><th>登録免許税</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>100万円以下の土地</th><td class="num">0円（免税）</td></tr>
+            <tr><th>500万円</th><td class="num">2万円</td></tr>
+            <tr><th>1,000万円</th><td class="num">4万円</td></tr>
+            <tr><th>2,000万円</th><td class="num">8万円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>注目していただきたいのが1行目です。評価額100万円以下の土地については、登録免許税が免税になります。使われていない農地や山林など、「売ってもたいした値段にならないから放っておいた」という土地ほど、今のうちに登記をしておく価値があります。</p>
+        <p>そしてこの免税の期限が、<strong class="em-mark">相続登記の期限と同じ令和9年3月31日です。</strong>どちらも同じ日に区切りが来ます。</p>
+        <p>このほかに、戸籍などの取得費が数千円から1万円程度かかります。司法書士に依頼する場合は報酬も必要です。報酬額は事務所ごとに、また不動産の数や相続人の人数によっても変わりますので、お見積りをお取りになってください。</p>
+        <p>最後に、正直に申し上げておきます。登記の申請そのものは司法書士の業務であり、税理士が代理することはできません。ですから当事務所では、相続税の申告や遺産分割のご相談をお受けするなかで登記が必要だと分かった場合に、信頼できる司法書士をご紹介しています。</p>
+        <p>というのも、この2つは切り離せないからです。誰がどの不動産を相続するかによって、相続税の額も、小規模宅地等の特例が使えるかどうかも変わります。登記を先に済ませてしまってから「税金のことを考えると分け方を変えたかった」と分かっても、やり直しには別の費用がかかります。分け方を決める段階で税理士に、決まった内容を登記する段階で司法書士に。この順番であれば、無駄がありません。</p>
+        <p>なお、令和8年4月からは、住所や氏名が変わったときの変更登記も義務になりました（変更から2年以内、5万円以下の過料）。相続登記を済ませたあとにお引っ越しをされた場合も、手続きが必要です。</p>
+        <p>今回の内容を整理します。</p>
+        <ul>
+          <li>相続登記は令和6年4月から義務です。取得を知った日から3年以内に申請します</li>
+          <li>施行前の相続も対象で、期限は<strong>令和9年3月31日</strong>。あと5か月足らずです</li>
+          <li>過料10万円がすぐ来ることはありませんが、放置の本当のコストは関係者が増えることです</li>
+          <li>話がまとまらないときは、<strong>相続人申告登記</strong>で義務だけ先に果たせます</li>
+          <li>評価額100万円以下の土地は、令和9年3月31日まで登録免許税が<strong>免税</strong>です</li>
+        </ul>
+        <p>当事務所では、<strong>初回のご相談（約60分）を無料</strong>でお受けしています。「実家の名義がどうなっているか分からない」という段階からでも結構です。固定資産税の納税通知書をお持ちいただければ、何から手をつけるべきかを、その場でお伝えできます。</p>
+
+        <p class="article-note">※本記事は一般的な解説であり、2026年11月時点の情報に基づいています。登記の申請は司法書士の業務であり、当事務所が代理するものではありません。登録免許税の額は固定資産税評価額を前提とした概算です。免税措置の適用には要件がありますので、実際の手続きは法務局、司法書士または当事務所までご確認ください。</p>
+      </article>
+
+      <div class="article-cta">
+        <h2>「実家の名義、どうなっているんだろう」からご相談ください</h2>
+        <p>固定資産税の納税通知書をお持ちいただければ、何から手をつけるべきかをその場でお伝えします。初回のご相談（約60分）は無料です。</p>
+        <a class="btn btn-accent btn-lg" href="contact.html"><i class="fa-solid fa-paper-plane"></i> 初回無料相談はこちら</a>
+      </div>
+      <aside class="related" aria-labelledby="related-head" data-reveal>
+        <h2 class="related-head" id="related-head">あわせて読みたいコラム</h2>
+        <ul class="related-list">
+          <li>
+            <a href="column-kyoyu.html">
+              <span class="related-meta"><time datetime="2026-05-20">2026.05.20</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">共有取得による遺産分割の注意点を理解しよう　〜税理士が『共有取得』についてわかりやすく解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-souzokunin.html">
+              <span class="related-meta"><time datetime="2026-04-15">2026.04.15</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">遺産を相続できるのは誰？　〜税理士が『法定相続人』についてわかりやすく解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-shokibo.html">
+              <span class="related-meta"><time datetime="2026-08-02">2026.08.02</time><span class="news-cat">相続・相続対策</span></span>
+              <span class="related-title">親を自分の家に引き取って介護したら、実家の8割引きが使えませんでした　〜税理士が『小規模宅地等の特例と介護』を実例で解説します〜</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <p class="article-back"><a href="column.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> お知らせ・コラム一覧へ戻る</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand-text"><span class="brand-name">日下部税理士事務所</span></span>
+      </a>
+      <p class="footer-desc">茨城県水戸市に根ざした、税理士による提案型の事務所です。</p>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">メニュー</h2>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">事務所紹介</a></li>
+        <li><a href="services.html">サービス・料金</a></li>
+        <li><a href="column.html">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">サービス</h2>
+      <ul>
+        <li><a href="service-tax.html">税務・会計顧問</a></li>
+        <li><a href="service-consulting.html">財務コンサルティング</a></li>
+        <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">事務所情報</h2>
+      <address class="footer-address">
+        〒311-4151<br>
+        茨城県水戸市姫子1丁目820-6<br>
+        ヴィラエスポワールⅠ 1F<br>
+        <a href="tel:029-215-9400">TEL：029-215-9400</a><br>
+        <span>FAX：029-215-9477</span>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <small>&copy; <span id="year">2026</span> 日下部税理士事務所</small>
+      <small>茨城県水戸市の税理士事務所</small>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "親の家の名義、そのままにしていませんか？〜税理士が『相続登記の義務化』についてわかりやすく解説します〜",
+  "description": "相続登記は令和6年4月から義務になりました。施行前の相続も対象で、期限は令和9年3月31日です。過料の実際、相続人申告登記、登録免許税の免税措置まで解説します。",
+  "datePublished": "2026-11-09",
+  "dateModified": "2026-11-09",
+  "inLanguage": "ja",
+  "author": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "publisher": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://kskac.com/column-touki.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kskac.com/" },
+    { "@type": "ListItem", "position": 2, "name": "お知らせ・コラム", "item": "https://kskac.com/column.html" },
+    { "@type": "ListItem", "position": 3, "name": "親の家の名義、そのままにしていませんか？", "item": "https://kskac.com/column-touki.html" }
+  ]
+}
+</script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
