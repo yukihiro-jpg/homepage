@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d1b28">
+
+<!-- Google アナリティクス（GA4）※測定IDを変えるときは全HTMLを一括置換すること -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYJYJXQECM"></script>
+<script>
+  /* 事務所内からのアクセスを集計に含めないための仕組み。
+     https://kskac.com/?noga=1 を一度開いた端末は、以後そのブラウザでは計測しない。
+     解除するときは https://kskac.com/?noga=0 を開く。 */
+  (function () {
+    try {
+      var q = window.location.search;
+      if (q.indexOf("noga=1") > -1) localStorage.setItem("kskac-noga", "1");
+      if (q.indexOf("noga=0") > -1) localStorage.removeItem("kskac-noga");
+      if (localStorage.getItem("kskac-noga") === "1") window["ga-disable-G-EYJYJXQECM"] = true;
+    } catch (e) {}
+  })();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-EYJYJXQECM");
+</script>
+<title>最低賃金1,136円、あなたの会社はいくら値上げすれば吸収できますか｜人件費の上昇と値上げの考え方｜日下部税理士事務所（茨城県水戸市）</title>
+<meta name="description" content="茨城県の最低賃金は2026年10月18日から1,136円になりました。増えた人件費を吸収するのに必要な値上げ率は「増えた人件費÷年間売上高」で出せます。値上げと数量増では必要な努力が2.5倍違うこと、値上げでお客さまが何%減るまで耐えられるかまで、水戸市の税理士が図表でわかりやすく解説します。">
+<link rel="canonical" href="https://kskac.com/column-neage.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="最低賃金1,136円、あなたの会社はいくら値上げすれば吸収できますか〜税理士が『人件費の上昇と値上げの考え方』についてわかりやすく解説します〜">
+<meta property="og:description" content="必要な値上げ率は「増えた人件費÷年間売上高」。思ったより小さい数字です。数を売って取り戻す道より2.5倍ラクだという話を、計算して示します。">
+<meta property="og:url" content="https://kskac.com/column-neage.html">
+<meta property="og:site_name" content="日下部税理士事務所">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="icons/icons.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="日下部税理士事務所 ホームへ">
+      <span class="brand-text">
+        <span class="brand-name">日下部税理士事務所</span>
+        <span class="brand-sub">Kusakabe Tax &amp; Accounting</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
+      <ul class="nav-list">
+        <li><a href="index.html">ホーム</a></li>
+        <li class="has-dropdown">
+          <a href="about.html">事務所紹介 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="about.html#greeting">代表挨拶</a></li>
+            <li><a href="about.html#works">業務案内</a></li>
+            <li><a href="about.html#access">アクセスマップ</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="services.html">サービス・料金 <i class="fa-solid fa-chevron-down nav-caret" aria-hidden="true"></i></a>
+          <ul class="dropdown">
+            <li><a href="service-tax.html">税務・会計顧問</a></li>
+            <li><a href="service-consulting.html">財務コンサルティング</a></li>
+            <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+          </ul>
+        </li>
+        <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="contact.html">初回相談 無料</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" data-en="COLUMN">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくず">
+        <ol>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="column.html" class="is-active">お知らせ・コラム</a></li>
+          <li aria-current="page">最低賃金1,136円、あなたの会社はいくら値上げすれば吸収できますか</li>
+        </ol>
+      </nav>
+      <p class="article-meta"><time datetime="2026-11-15">2026.11.15</time> <span class="news-cat">税務・会計</span></p>
+      <h1>最低賃金1,136円、あなたの会社はいくら値上げすれば吸収できますか<br>〜税理士が『人件費の上昇と値上げの考え方』についてわかりやすく解説します〜</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="col-intro" data-reveal>
+        <p>今回は、上がり続ける人件費と、値上げの考え方について解説をしていきます。<br>
+        茨城県の最低賃金は、令和8年10月18日から<strong>1,136円</strong>になりました。前の年より62円のアップです。「また上がったか」とため息をつかれた経営者の方も多いと思います。ただ、ため息の前にやっていただきたいことがあります。<strong>いくら増えて、それを吸収するには何%値上げすればよいのか</strong>を、計算してしまうことです。やってみると、思っていたより小さな数字が出てきます。</p>
+        <p class="ci-lead-in">このコラムを読むと…</p>
+        <div class="col-qbox">
+          <ul>
+          <li>うちの会社は、結局いくら負担が増えるんだろう？</li>
+          <li>値上げするとして、何%にすればいいの？</li>
+          <li>値上げしてお客さんが減ったら、かえって損じゃないだろうか？</li>
+          </ul>
+        </div>
+        <p>このようなことが理解できるようになります。とても分かりやすく簡潔にまとめましたので、ぜひ最後まで読んでくださいね。</p>
+      </div>
+
+      <nav class="toc" aria-label="目次">
+        <p class="toc-head"><i class="fa-solid fa-list-ul" aria-hidden="true"></i> 目次</p>
+        <ol>
+          <li><a href="#ch1">茨城県の最低賃金は1,136円になりました</a></li>
+          <li><a href="#ch2">「うちはもっと払っている」会社にも影響があります</a></li>
+          <li><a href="#ch3">まず、いくら増えるのかを出します</a></li>
+          <li><a href="#ch4">必要な値上げ率は、割り算ひとつで出ます</a></li>
+          <li><a href="#ch5">「値上げ」と「数を売る」では、必要な努力が違います</a></li>
+          <li><a href="#ch6">お客さまが何%減るまで耐えられるか</a></li>
+          <li><a href="#ch7">値上げ以外の手と、どう伝えるか</a></li>
+        </ol>
+      </nav>
+
+      <article class="article-body">
+        <h2 id="ch1" class="ch-head"><span class="ch-num" aria-hidden="true">1</span>茨城県の最低賃金は1,136円になりました</h2>
+        <p>令和8年10月18日から、茨城県の最低賃金は時間額1,136円になりました。前年度の1,074円から62円の引き上げです。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 225" role="img" aria-label="茨城県の最低賃金は令和6年度1,005円、令和7年度1,074円、令和8年度1,136円と上がり、この2年で131円、率にして13%上昇した。令和8年度は2026年10月18日発効。全国加重平均は1,177円。">
+            <text x="20" y="24" fill="#16202b" font-size="15" font-weight="700">茨城県の最低賃金</text>
+
+            <line x1="70" y1="78" x2="330" y2="78" stroke="#b4bfc9" stroke-width="2"/>
+            <circle cx="70" cy="78" r="7" fill="#2a6ca6"/>
+            <circle cx="200" cy="78" r="7" fill="#2a6ca6"/>
+            <circle cx="330" cy="78" r="9" fill="#a5442f"/>
+
+            <text x="70" y="60" text-anchor="middle" fill="#16202b" font-size="16" font-weight="700">1,005円</text>
+            <text x="200" y="60" text-anchor="middle" fill="#16202b" font-size="16" font-weight="700">1,074円</text>
+            <text x="330" y="58" text-anchor="middle" fill="#a5442f" font-size="18" font-weight="700">1,136円</text>
+
+            <text x="70" y="100" text-anchor="middle" fill="#5a6774" font-size="14">令和6年度</text>
+            <text x="200" y="100" text-anchor="middle" fill="#5a6774" font-size="14">令和7年度</text>
+            <text x="330" y="100" text-anchor="middle" fill="#5a6774" font-size="14">令和8年度</text>
+
+            <text x="135" y="124" text-anchor="middle" fill="#1c5c94" font-size="14" font-weight="700">＋69円</text>
+            <text x="265" y="124" text-anchor="middle" fill="#1c5c94" font-size="14" font-weight="700">＋62円</text>
+
+            <rect x="30" y="138" width="340" height="48" rx="8" fill="#fbeeea" stroke="#a5442f" stroke-width="1.5"/>
+            <text x="200" y="160" text-anchor="middle" fill="#a5442f" font-size="16" font-weight="700">この2年で ＋131円（＋13%）</text>
+            <text x="200" y="179" text-anchor="middle" fill="#16202b" font-size="14">令和8年度は2026年10月18日から</text>
+
+            <text x="30" y="210" fill="#5a6774" font-size="14">※全国の加重平均は1,177円です</text>
+          </svg>
+          <figcaption>図1：1年ごとの62円より、2年で131円というほうが実感に近いと思います。</figcaption>
+        </figure>
+
+        <p>1年だけを見れば62円ですが、<strong class="em-mark">この2年で131円、率にして13%上がりました。</strong>ここ数年、毎年のように上がり続けています。</p>
+        <p>ちなみに全国の加重平均は1,177円ですので、茨城県は41円低い水準です。とはいえ、近隣の県や東京との差が小さくなってきているのも事実で、人の採り合いという面では楽になっていません。</p>
+
+        <h2 id="ch2" class="ch-head"><span class="ch-num" aria-hidden="true">2</span>「うちはもっと払っている」会社にも影響があります</h2>
+        <p>「うちのパートさんは最初から1,200円出しているから、今回は関係ない」。このようにおっしゃる方がいます。ところが、そうとも言いきれません。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>連動して動くもの</th><th>なぜ動くのか</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>最低賃金近くの方の時給</th><td>1,136円を下回ることができません</td></tr>
+            <tr><th>それより上の方の時給</th><td>新しく入った方と差がなくなるため、上げざるを得なくなります</td></tr>
+            <tr><th>残業代・深夜手当</th><td>時給が上がれば、割増の単価も上がります</td></tr>
+            <tr><th>社会保険料の会社負担</th><td>賃金に比例して増えます（およそ15%）</td></tr>
+            <tr><th>正社員の給与</th><td>パートの方との逆転を避けるために見直しが必要になります</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>いちばん効いてくるのは、2つ目です。去年入った方が1,200円、今年入る方の募集も1,200円、では去年の方が納得しません。結局、全体を少しずつ上げることになります。<strong class="em-red">最低賃金ぎりぎりの方がいない会社でも、人件費は動きます。</strong></p>
+        <p>そして忘れられがちなのが、社会保険料です。賃金が増えれば、健康保険料も厚生年金保険料も増えます。会社が負担する分だけで、賃上げ額のおよそ15%が上乗せになるとお考えください。10万円の賃上げは、会社にとっては11万5千円の負担です。</p>
+
+        <h2 id="ch3" class="ch-head"><span class="ch-num" aria-hidden="true">3</span>まず、いくら増えるのかを出します</h2>
+        <p>対策を考える前に、金額を確定させましょう。<strong class="em-mark">まず「いくら増えるのか」を、紙に書き出してください。</strong>ここが決まらないと、値上げ幅も決まりません。</p>
+        <p>計算はとても単純です。<strong>上がる時給の差額 × 1人あたりの月間労働時間 × 人数 × 12か月</strong>。これだけです。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>パートの人数</th><th>1か月の増加</th><th>1年間の増加</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>5人</th><td class="num">37,200円</td><td class="num">約45万円</td></tr>
+            <tr><th>10人</th><td class="num">74,400円</td><td class="num">約89万円</td></tr>
+            <tr><th>20人</th><td class="num">148,800円</td><td class="num">約179万円</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>※時給を62円上げる場合／1人あたり月120時間で計算しています。社会保険に加入している方の分は、さらに約15%が上乗せになります。</p>
+        <p>必要な数字は、すべてお手元にあります。時給と労働時間は賃金台帳に、年間の売上高と粗利益率は前期の決算書（損益計算書）に載っています。粗利益率は<strong>売上総利益 ÷ 売上高</strong>です。決算書を1枚めくれば出てきますので、ぜひ実際の数字でやってみてください。</p>
+        <p>このコラムでは以降、<strong>パート10人、年間の人件費増がざっと100万円、年商1億円の会社</strong>を例にして話を進めます。ご自分の会社の数字に置き換えながら読んでみてください。</p>
+
+        <h2 id="ch4" class="ch-head"><span class="ch-num" aria-hidden="true">4</span>必要な値上げ率は、割り算ひとつで出ます</h2>
+        <p>では本題です。増えた100万円を値上げで吸収するには、何%上げればよいのでしょうか。</p>
+        <p>答えは<strong class="em-mark">「増えた人件費 ÷ 年間売上高」です。</strong>この会社なら、100万円 ÷ 1億円 = <strong>1%</strong>。たったそれだけです。</p>
+        <p>なぜこんなに単純なのか。値上げというのは、売る数が同じなら、仕入れも材料費も増えないからです。上乗せした分が、そっくりそのまま利益として残ります。ですから「増えたコストと同じ金額だけ売上を増やせばよい」ことになり、割り算ひとつで答えが出ます。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>年間売上高</th><th>必要な値上げ率</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>5,000万円</th><td class="num">2.0%</td></tr>
+            <tr class="is-total"><th>1億円</th><td class="num">1.0%</td></tr>
+            <tr><th>2億円</th><td class="num">0.5%</td></tr>
+            <tr><th>3億円</th><td class="num">0.3%</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>※人件費が年100万円増えた場合です。</p>
+        <p>1,000円の商品なら10円、500円のランチなら5円。これで100万円が埋まります。もちろん「10円でも上げたら怒られる」という商売はありますし、お気持ちも分かります。ただ、<strong>何%必要なのかを知らないまま悩むのと、1%だと分かったうえで悩むのとでは、まったく違う</strong>と思うのです。</p>
+        <p>なお、この計算は人件費以外の値上がりにもそのまま使えます。電気代が年30万円増えたなら、30万円 ÷ 1億円 = 0.3%。足し算していけば、必要な値上げ幅がまとめて出ます。</p>
+        <p>仕入れ値の上昇も同じです。ただしここで、よくある勘違いをひとつ。<strong>「仕入れ値が5%上がったから、5%値上げしないといけない」というのは誤りです。</strong>仕入れは売上の一部にすぎないからです。仕入れが売上の60%を占める会社なら、5%の値上がりで増えるのは年300万円。必要な値上げは300万円 ÷ 1億円で<strong>3%</strong>です。5%ではありません。</p>
+        <p>仕入れ先からの値上げ通知を見て反射的に同じ率を転嫁しようとすると、必要以上に上げてしまい、かえってお客さまを失いかねません。ここでも、まず割り算をしてください。</p>
+
+        <h2 id="ch5" class="ch-head"><span class="ch-num" aria-hidden="true">5</span>「値上げ」と「数を売る」では、必要な努力が違います</h2>
+        <p>「値上げはしたくない。そのぶん数を売って取り返す」。これもよくうかがう考え方です。その道を選んだ場合、どれだけ売ればよいのかを見てみましょう。</p>
+        <p>数を売る場合は、売上が増えると仕入れも増えます。ですから、増えた売上のうち手元に残るのは粗利益の分だけです。粗利益率が40%なら、100万円を残すのに250万円の売上増が必要になります。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 235" role="img" aria-label="人件費が年100万円増えたとき、年商1億円・粗利益率40%の会社が取り戻すには、値上げなら1.0%、数量を増やすなら2.5%が必要。">
+            <text x="20" y="24" fill="#16202b" font-size="15" font-weight="700">年100万円を取り戻すには</text>
+
+            <line x1="30" y1="178" x2="375" y2="178" stroke="#b4bfc9" stroke-width="1.5"/>
+
+            <rect x="72" y="138" width="88" height="40" rx="3" fill="#2a6ca6"/>
+            <text x="116" y="128" text-anchor="middle" fill="#1c5c94" font-size="18" font-weight="700">1.0%</text>
+            <text x="116" y="198" text-anchor="middle" fill="#16202b" font-size="14">値上げする</text>
+
+            <rect x="232" y="78" width="88" height="100" rx="3" fill="#a5442f"/>
+            <text x="276" y="68" text-anchor="middle" fill="#a5442f" font-size="18" font-weight="700">2.5%</text>
+            <text x="276" y="198" text-anchor="middle" fill="#16202b" font-size="14">数をたくさん売る</text>
+
+            <text x="200" y="224" text-anchor="middle" fill="#a5442f" font-size="15" font-weight="700">同じ100万円でも、必要な努力が違います</text>
+          </svg>
+          <figcaption>図2：粗利益率40%の会社の場合。数で取り返す道は、2.5倍の売上が要ります。</figcaption>
+        </figure>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>粗利益率</th><th>値上げで取り戻すなら</th><th>数を売って取り戻すなら</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>20%</th><td class="num">1.0%</td><td class="num">5.0%</td></tr>
+            <tr><th>30%</th><td class="num">1.0%</td><td class="num">3.3%</td></tr>
+            <tr><th>40%</th><td class="num">1.0%</td><td class="num">2.5%</td></tr>
+            <tr><th>60%</th><td class="num">1.0%</td><td class="num">1.7%</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>※年商1億円、人件費増100万円の場合です。</p>
+        <p><strong class="em-red">同じ100万円を取り戻すのに、数を売る道は何倍もの努力が要ります。</strong>しかも数を売るということは、仕入れも、手間も、場合によっては人も増えるということです。増やした人の分の人件費が、また乗ってきます。</p>
+        <p>とくに粗利益率が低い商売ほど、この差は開きます。粗利益率20%なら5倍です。薄利多売のお店が「数でカバーする」と言ったとき、それが実際にはどれだけ大変なことなのか、この表を見ていただくと分かると思います。</p>
+
+        <h2 id="ch6" class="ch-head"><span class="ch-num" aria-hidden="true">6</span>お客さまが何%減るまで耐えられるか</h2>
+        <p>ここまで読んで、まだ引っかかっているのは「値上げしたらお客さんが減るのでは」という点だと思います。これも計算できます。</p>
+
+        <figure class="col-fig col-fig--framed">
+          <svg viewBox="0 0 400 220" role="img" aria-label="耐えられる客数の減少は、値上げ率を粗利益率と値上げ率の合計で割って求める。粗利益率40%の会社が1%値上げすると2.4%。">
+            <text x="20" y="24" fill="#16202b" font-size="15" font-weight="700">どこまでお客さまが減っても大丈夫か</text>
+
+            <rect x="24" y="38" width="352" height="64" rx="8" fill="#eef4fa" stroke="#2a6ca6" stroke-width="1.5"/>
+            <text x="200" y="64" text-anchor="middle" fill="#1c5c94" font-size="15" font-weight="700">耐えられる客数の減少</text>
+            <text x="200" y="88" text-anchor="middle" fill="#16202b" font-size="15">値上げ率 ÷（粗利益率 ＋ 値上げ率）</text>
+
+            <text x="200" y="128" text-anchor="middle" fill="#5a6774" font-size="15">粗利益率40%の会社が1%値上げすると</text>
+            <text x="200" y="154" text-anchor="middle" fill="#16202b" font-size="16" font-weight="700">1% ÷（40% ＋ 1%）＝ 2.4%</text>
+
+            <rect x="24" y="168" width="352" height="40" rx="8" fill="#fbeeea" stroke="#a5442f" stroke-width="1.5"/>
+            <text x="200" y="194" text-anchor="middle" fill="#a5442f" font-size="15" font-weight="700">2.4%減るまでは、値上げしたほうが得です</text>
+          </svg>
+          <figcaption>図3：値上げのあと、どこまでの客離れなら許容できるかの境目です。</figcaption>
+        </figure>
+
+        <p>粗利益率40%の会社が1%値上げした場合、<strong class="em-mark">お客さまが2.4%減るまでは、値上げしたほうが手元に残ります。</strong>100人のお客さまのうち2人が離れても、まだプラスだということです。</p>
+
+        <div class="col-table-wrap">
+        <table class="col-table">
+          <thead>
+            <tr><th>粗利益率</th><th>1%値上げで耐えられる客数の減少</th></tr>
+          </thead>
+          <tbody>
+            <tr><th>20%</th><td class="num">4.8%</td></tr>
+            <tr><th>30%</th><td class="num">3.2%</td></tr>
+            <tr><th>40%</th><td class="num">2.4%</td></tr>
+            <tr><th>50%</th><td class="num">2.0%</td></tr>
+            <tr><th>60%</th><td class="num">1.6%</td></tr>
+          </tbody>
+        </table>
+        </div>
+
+        <p>この表には、少し意外な性質があります。<strong>粗利益率が低い会社ほど、客離れに強い</strong>のです。もともと1個売っても大して儲かっていないのですから、何人か減っても失うものが小さい、という理屈です。逆に粗利益率の高い商売は、1人減ったときの痛手が大きくなります。</p>
+        <p>では、どの商品が値上げに弱いのでしょうか。経験上、次のようなものは慎重にされたほうがよいと思います。<strong>すぐ近くに同じものを売っているお店があるもの</strong>、<strong>お客さまが値段を覚えてしまっているもの</strong>（毎日買う定番の品やドリンクなど）、<strong>一見のお客さまの割合が高い商売</strong>。逆に、手間をかけてお作りしているものや、お客さまと長いお付き合いがあるものは、事情をご説明すれば受け入れられやすいものです。</p>
+        <p>もうひとつ申し上げておくと、この計算は「値上げしたら本当に何%減るのか」までは教えてくれません。そこはお客さまとの関係や、他に選べるお店があるかどうかで決まります。ただ、<strong>耐えられる上限が分かっていれば、判断の軸ができます。</strong>「2.4%までなら許容できる。うちの常連さんが2%も離れるだろうか」。そう考えられるようになります。</p>
+
+        <h2 id="ch7" class="ch-head"><span class="ch-num" aria-hidden="true">7</span>値上げ以外の手と、どう伝えるか</h2>
+        <p>もちろん、値上げだけが答えではありません。</p>
+        <ul>
+          <li><strong>同じ人数でこなせる量を増やす。</strong>券売機やセルフレジ、受注の仕組みを見直すなど、設備で減らせる作業は案外あります</li>
+          <li><strong>仕入れを見直す。</strong>長く同じ業者さんと同じ条件で続いている取引ほど、一度見直す価値があります</li>
+          <li><strong>シフトを組み直す。</strong>手が空いている時間帯が固定化していないか確かめます</li>
+          <li><strong>取引先に価格転嫁を交渉する。</strong>言い出しにくいものですが、国も後押ししている分野です</li>
+        </ul>
+        <p>設備投資をお考えなら、<strong>業務改善助成金</strong>という制度もあります。事業場内でいちばん低い賃金を一定額以上引き上げ、あわせて生産性を上げる設備を導入した場合に、その費用の一部が助成されるものです。ただし令和8年度分の申請期間はすでに終了していますので、次の募集に向けて準備をしておく形になります。例年9月ごろに始まります。なお、この助成金の申請代行は社会保険労務士の業務ですので、ご相談をいただければ専門の先生をご紹介します。</p>
+        <p>最後に、値上げの伝え方について少しだけ。</p>
+        <p>お客さまが怒るのは、値上げそのものよりも「黙って上がっていた」ことに対してであることが多いように思います。<strong>いつから、いくら、なぜ</strong>。この3つを、紙でもメールでも構いませんので先にお伝えする。それだけで反応はずいぶん変わります。</p>
+        <p>また、全商品を一律に上げる必要もありません。よく出る看板商品は据え置いて、動きの鈍いものや手間のかかるものから上げる。そういう組み立て方もできます。必要なのは全体で1%なのですから、やり方には幅があります。</p>
+        <p>今回の内容を整理します。</p>
+        <ul>
+          <li>茨城県の最低賃金は令和8年10月18日から<strong>1,136円</strong>。この2年で131円上がりました</li>
+          <li>最低賃金より高く払っている会社でも、賃金の底上げと社会保険料で負担は増えます</li>
+          <li>必要な値上げ率は<strong>「増えた人件費 ÷ 年間売上高」</strong>。年商1億円で100万円増なら1%です</li>
+          <li>数を売って取り返す道は、粗利益率40%なら2.5倍、20%なら5倍の売上が要ります</li>
+          <li>耐えられる客離れは<strong>「値上げ率 ÷（粗利益率＋値上げ率）」</strong>で計算できます</li>
+        </ul>
+        <p>値上げをしないという判断も、もちろんあります。ただ、<strong class="em-red">それは数字を出したうえでの判断にしてください。</strong>何%必要なのかを知らないまま先送りにすると、気づいたときには利益がなくなっています。</p>
+        <p>当事務所では、<strong>初回のご相談（約60分）を無料</strong>でお受けしています。決算書を1期分お持ちいただければ、御社の粗利益率と、必要な値上げ率、耐えられる客数の減少まで、その場で計算してお見せできます。数字が分かると、不思議と気が楽になるものです。</p>
+
+        <p class="article-note">※本記事は一般的な解説であり、2026年11月時点の情報に基づいています。計算例は前提を単純化したもので、実際は変動費と固定費の区分、商品ごとの粗利益率の違いなどにより結果は異なります。社会保険料の負担割合は年度・業種により変動します。本文の「粗利益率」は、売上に比例して増える費用を差し引いた割合（限界利益率）を指しています。最低賃金および助成金の最新の内容は茨城労働局、労務の取り扱いは社会保険労務士、御社の数字については当事務所までご確認ください。</p>
+      </article>
+
+      <div class="article-cta">
+        <h2>御社の必要な値上げ率を、その場で計算します</h2>
+        <p>決算書を1期分お持ちいただければ、粗利益率・必要な値上げ率・耐えられる客数の減少まで計算してお見せします。初回のご相談（約60分）は無料です。</p>
+        <a class="btn btn-accent btn-lg" href="contact.html"><i class="fa-solid fa-paper-plane"></i> 初回無料相談はこちら</a>
+      </div>
+      <aside class="related" aria-labelledby="related-head" data-reveal>
+        <h2 class="related-head" id="related-head">あわせて読みたいコラム</h2>
+        <ul class="related-list">
+          <li>
+            <a href="column-shikinguri.html">
+              <span class="related-meta"><time datetime="2026-08-02">2026.08.02</time><span class="news-cat">税務・会計</span></span>
+              <span class="related-title">黒字なのに、お金が足りません　〜税理士が『利益と現金のズレ』と納税資金の備え方を解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-kessan.html">
+              <span class="related-meta"><time datetime="2026-03-18">2026.03.18</time><span class="news-cat">税務・会計</span></span>
+              <span class="related-title">決算前に見直したい法人の節税対策　〜税理士が『決算対策』のポイントをわかりやすく解説します〜</span>
+            </a>
+          </li>
+          <li>
+            <a href="column-nencho.html">
+              <span class="related-meta"><time datetime="2026-10-26">2026.10.26</time><span class="news-cat">税務・会計</span></span>
+              <span class="related-title">令和8年分の年末調整はここが変わります　〜税理士が『基礎控除104万円と178万円の目安』についてわかりやすく解説します〜</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <p class="article-back"><a href="column.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> お知らせ・コラム一覧へ戻る</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand-text"><span class="brand-name">日下部税理士事務所</span></span>
+      </a>
+      <p class="footer-desc">茨城県水戸市に根ざした、税理士による提案型の事務所です。</p>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">メニュー</h2>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">事務所紹介</a></li>
+        <li><a href="services.html">サービス・料金</a></li>
+        <li><a href="column.html">お知らせ・コラム</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">サービス</h2>
+      <ul>
+        <li><a href="service-tax.html">税務・会計顧問</a></li>
+        <li><a href="service-consulting.html">財務コンサルティング</a></li>
+        <li><a href="service-inheritance.html">相続税申告・相続対策</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h2 class="footer-head">事務所情報</h2>
+      <address class="footer-address">
+        〒311-4151<br>
+        茨城県水戸市姫子1丁目820-6<br>
+        ヴィラエスポワールⅠ 1F<br>
+        <a href="tel:029-215-9400">TEL：029-215-9400</a><br>
+        <span>FAX：029-215-9477</span>
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <small>&copy; <span id="year">2026</span> 日下部税理士事務所</small>
+      <small>茨城県水戸市の税理士事務所</small>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "最低賃金1,136円、あなたの会社はいくら値上げすれば吸収できますか〜税理士が『人件費の上昇と値上げの考え方』についてわかりやすく解説します〜",
+  "description": "茨城県の最低賃金は令和8年10月18日から1,136円に。増えた人件費を吸収するのに必要な値上げ率は「増えた人件費÷年間売上高」で出せます。値上げと数量増の比較、耐えられる客数の減少まで解説します。",
+  "datePublished": "2026-11-15",
+  "dateModified": "2026-11-15",
+  "inLanguage": "ja",
+  "author": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "publisher": { "@type": "AccountingService", "name": "日下部税理士事務所", "url": "https://kskac.com/" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://kskac.com/column-neage.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kskac.com/" },
+    { "@type": "ListItem", "position": 2, "name": "お知らせ・コラム", "item": "https://kskac.com/column.html" },
+    { "@type": "ListItem", "position": 3, "name": "最低賃金1,136円、あなたの会社はいくら値上げすれば吸収できますか", "item": "https://kskac.com/column-neage.html" }
+  ]
+}
+</script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
